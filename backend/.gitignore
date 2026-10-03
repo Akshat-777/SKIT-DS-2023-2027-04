@@ -1,0 +1,14 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Python virtual env & caches
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Uploaded files
+uploads/
