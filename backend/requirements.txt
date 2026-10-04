@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+python-magic-bin; sys_platform == 'win32'
+python-magic; sys_platform != 'win32'
+pdfplumber
+pymupdf
+python-docx
+pdf2image
+opencv-python
+pytesseract
+pytest
+httpx
