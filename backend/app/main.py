@@ -5,7 +5,9 @@ from fastapi.responses import JSONResponse
 
 from app.core.config import settings
 from app.core.logging import RequestIDMiddleware, logger, sanitize_pii
-from app.api.routes import health, resumes
+from app.api.routes import (
+    health, resumes, users, parsed_entities, skills, job_postings, analyses, audit_logs
+)
 
 def create_app() -> FastAPI:
     app = FastAPI(
@@ -31,7 +33,13 @@ def create_app() -> FastAPI:
 
     # Routers
     app.include_router(health.router)
+    app.include_router(users.router, prefix=settings.API_V1_STR)
     app.include_router(resumes.router, prefix=settings.API_V1_STR)
+    app.include_router(parsed_entities.router, prefix=settings.API_V1_STR)
+    app.include_router(skills.router, prefix=settings.API_V1_STR)
+    app.include_router(job_postings.router, prefix=settings.API_V1_STR)
+    app.include_router(analyses.router, prefix=settings.API_V1_STR)
+    app.include_router(audit_logs.router, prefix=settings.API_V1_STR)
 
     # Global Exception Handlers conforming strictly to {"error": {"code": str, "message": str}}
     @app.exception_handler(HTTPException)
@@ -45,6 +53,8 @@ def create_app() -> FastAPI:
 
         elif exc.status_code == status.HTTP_401_UNAUTHORIZED:
             code = "UNAUTHORIZED"
+        elif exc.status_code == status.HTTP_403_FORBIDDEN:
+            code = "FORBIDDEN"
         elif exc.status_code == status.HTTP_404_NOT_FOUND:
             code = "NOT_FOUND"
         elif exc.status_code == status.HTTP_422_UNPROCESSABLE_ENTITY:

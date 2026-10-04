@@ -4,10 +4,17 @@ import re
 from starlette.middleware.base import BaseHTTPMiddleware
 from fastapi import Request, Response
 
+class RequestIDFilter(logging.Filter):
+    def filter(self, record):
+        if not hasattr(record, "request_id"):
+            record.request_id = "SYSTEM"
+        return True
+
 # Setup structured logger
 logger = logging.getLogger("careerlens")
 logger.setLevel(logging.INFO)
 handler = logging.StreamHandler()
+handler.addFilter(RequestIDFilter())
 formatter = logging.Formatter('[%(asctime)s] [%(levelname)s] [ReqID: %(request_id)s] %(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
