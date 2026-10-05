@@ -1,17 +1,26 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
 import { ToastProvider } from './components/ui/Toast';
-import DemoPage from './components/DemoPage';
+import AppRoutes from './routes/AppRoutes';
 
 /**
- * CareerLens Main App Entry
- * Wraps application in ToastProvider and renders the master DemoPage dashboard.
+ * CareerLens Main Application
+ *
+ * Provider Hierarchy:
+ * 1. BrowserRouter (React Router v6 routing)
+ * 2. AuthProvider (JWT authentication, session persistence, login/logout)
+ * 3. ToastProvider (Non-blocking notification system)
+ * 4. AppRoutes (Lazy-loaded route views guarded by ProtectedRoute)
  */
-function App() {
+export default function App() {
   return (
-    <ToastProvider>
-      <DemoPage />
-    </ToastProvider>
+    <BrowserRouter>
+      <AuthProvider>
+        <ToastProvider>
+          <AppRoutes />
+        </ToastProvider>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
-
-export default App;
