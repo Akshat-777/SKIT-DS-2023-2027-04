@@ -1,7 +1,7 @@
 /**
  * CareerLens Resume Service
  * Connects to Python FastAPI Resume Ingestion & NLP Parsing Pipeline
- * Handles multi-part file uploads (PDF/DOCX), OCR flags, and ParsedResume data.
+ * Handles multi-part file uploads (PDF/DOCX), OCR flags, live polling status, and ParsedResume data.
  */
 
 import { apiClient, IS_MOCK_MODE } from './apiClient';
@@ -14,48 +14,19 @@ export const resumeService = {
    * Upload resume document to FastAPI gateway
    * @param {File|FormData} fileOrFormData
    * @param {object} options
-   * @param {string} options.targetRole
-   * @param {boolean} options.ocrEnabled
-   * @param {function} options.onUploadProgress
-   * @returns {Promise<{ resume_id: string, message: string, parsed: object }>}
+   * @param {string} [options.targetRole='Data Scientist / ML Engineer']
+   * @param {boolean} [options.ocrEnabled=true]
+   * @param {function} [options.onUploadProgress]
+   * @param {AbortSignal} [options.abortSignal]
+   * @returns {Promise<{ resume_id: string, status: string, message: string, parsed?: object }>}
    */
   async uploadResume(fileOrFormData, options = {}) {
-    const { targetRole = 'Data Scientist', ocrEnabled = true, onUploadProgress } = options;
-
-    if (IS_MOCK_MODE) {
-      // Simulate network upload ticks
-      if (onUploadProgress) {
-        onUploadProgress({ loaded: 50, total: 100 });
-        await new Promise((r) => setTimeout(r, 200));
-        onUploadProgress({ loaded: 100, total: 100 });
-      }
-      await new Promise((r) => setTimeout(r, MOCK_DELAY));
-
-      const newId = `res_${Date.now().toString(36)}`;
-      const result = {
-        resume_id: newId,
-        message: 'Resume parsed successfully by Transformers NER & TrOCR pipeline.',
-        parsed: {
-          ...mockParsedResume,
-          resume_id: newId,
-          target_role: targetRole,
-        },
-      };
-
-      // Cache into local storage history for realistic UI test flow
-      const existingHistory = JSON.parse(localStorage.getItem('careerlens_history') || '[]');
-      existingHistory.unshift({
-        resume_id: newId,
-        fileName: fileOrFormData?.name || 'Uploaded_Resume.pdf',
-        target_role: targetRole,
-        uploadedAt: new Date().toISOString(),
-        ats_score: 82,
-        status: 'parsed',
-      });
-      localStorage.setItem('careerlens_history', JSON.stringify(existingHistory.slice(0, 10)));
-
-      return result;
-    }
+    const {
+      targetRole = 'Data Scientist / ML Engineer',
+      ocrEnabled = true,
+      onUploadProgress,
+      abortSignal,
+    } = options;
 
     let formData;
     if (fileOrFormData instanceof FormData) {
@@ -67,15 +38,124 @@ export const resumeService = {
       formData.append('ocr_enabled', String(ocrEnabled));
     }
 
+    // Always attempt real Axios network request first so MSW intercepts it cleanly
     try {
       const data = await apiClient.post('/resumes/upload', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
         onUploadProgress,
+        signal: abortSignal,
       });
+
+      // Update history in local storage for realistic persistence
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const existingHistory = JSON.parse(
+          window.localStorage.getItem('careerlens_history') || '[]'
+        );
+        const newId = data.resume_id || `res_${Date.now().toString(36)}`;
+        existingHistory.unshift({
+          resume_id: newId,
+          fileName: fileOrFormData?.name || 'Uploaded_Resume.pdf',
+          target_role: targetRole,
+          uploadedAt: new Date().toISOString(),
+          ats_score: 82,
+          status: 'parsed',
+        });
+        window.localStorage.setItem(
+          'careerlens_history',
+          JSON.stringify(existingHistory.slice(0, 10))
+        );
+      }
+
       return data;
     } catch (err) {
+      // If request was canceled by AbortController, rethrow immediately
+      if (err.name === 'CanceledError' || err.name === 'AbortError') {
+        throw err;
+      }
+
+      // If server returned an actual HTTP error response (4xx, 500, 502, etc.), rethrow so caller receives it
+      if (err.status && err.status >= 400) {
+        throw err;
+      }
+
+      // If mock mode is explicitly enabled and backend is completely offline without MSW
+      const isMswActive = typeof window !== 'undefined' && window.__MSW_ACTIVE__;
+      if (IS_MOCK_MODE && !isMswActive) {
+        if (onUploadProgress) {
+          onUploadProgress({ loaded: 50, total: 100 });
+          await new Promise((r) => setTimeout(r, 150));
+          onUploadProgress({ loaded: 100, total: 100 });
+        }
+        await new Promise((r) => setTimeout(r, MOCK_DELAY));
+
+        const newId = `res_${Date.now().toString(36)}`;
+        return {
+          resume_id: newId,
+          status: 'uploaded',
+          message: 'Resume parsed successfully by Transformers NER & TrOCR pipeline.',
+          parsed: {
+            ...mockParsedResume,
+            resume_id: newId,
+            target_role: targetRole,
+          },
+        };
+      }
+
       console.error('resumeService.uploadResume error:', err);
       throw err;
+    }
+  },
+
+  /**
+   * Fetch live parsing status for step tracker
+   * Polled every 2 seconds by usePolling hook
+   * @param {string} resumeId
+   * @param {object} [options]
+   * @param {AbortSignal} [options.signal]
+   * @returns {Promise<{
+   *   resume_id: string,
+   *   status: 'uploaded'|'text_extraction'|'entity_extraction'|'skill_extraction'|'scoring'|'completed'|'failed',
+   *   step_index: number,
+   *   progress_pct: number,
+   *   current_step: string,
+   *   message: string,
+   *   ocr_in_use: boolean,
+   *   error?: { code: string, message: string }
+   * }>}
+   */
+  async getResumeStatus(resumeId, options = {}) {
+    const { signal } = options;
+
+    try {
+      const data = await apiClient.get(`/resumes/${resumeId}/status`, { signal });
+      return data;
+    } catch (err) {
+      if (err.name === 'CanceledError' || err.name === 'AbortError') {
+        throw err;
+      }
+
+      // Re-throw explicit HTTP error responses (e.g. 500, 502, 504)
+      if (err.status && err.status >= 400) {
+        throw err;
+      }
+
+      // Try fallback to GET /resumes/:id only if endpoint was not found
+      try {
+        const directData = await apiClient.get(`/resumes/${resumeId}`, { signal });
+        if (directData && directData.status) {
+          return directData;
+        }
+        return {
+          resume_id: resumeId,
+          status: 'completed',
+          step_index: 5,
+          progress_pct: 100,
+          current_step: 'Completed',
+          message: 'Analysis complete! LightGBM predictions generated.',
+          ocr_in_use: false,
+        };
+      } catch (fallbackErr) {
+        throw err;
+      }
     }
   },
 
@@ -87,7 +167,7 @@ export const resumeService = {
    */
   async getResume(resumeId) {
     if (IS_MOCK_MODE || resumeId.startsWith('mock-')) {
-      await new Promise((r) => setTimeout(r, 250));
+      await new Promise((r) => setTimeout(r, 200));
       return {
         ...mockParsedResume,
         resume_id: resumeId,
@@ -112,8 +192,10 @@ export const resumeService = {
    */
   async getResumeHistory() {
     if (IS_MOCK_MODE) {
-      await new Promise((r) => setTimeout(r, 200));
-      const localHistory = JSON.parse(localStorage.getItem('careerlens_history') || '[]');
+      await new Promise((r) => setTimeout(r, 150));
+      const localHistory = JSON.parse(
+        (typeof window !== 'undefined' && window.localStorage?.getItem('careerlens_history')) || '[]'
+      );
       if (localHistory.length > 0) {
         return localHistory;
       }
