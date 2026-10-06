@@ -1,0 +1,492 @@
+[
+  {
+    "name": "Python",
+    "aliases": [
+      "py",
+      "python3"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "R",
+    "aliases": [
+      "r language",
+      "r programming"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "Java",
+    "aliases": [
+      "java programming"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "JavaScript",
+    "aliases": [
+      "js",
+      "javascript",
+      "ecmascript"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "TypeScript",
+    "aliases": [
+      "ts",
+      "typescript"
+    ],
+    "category": "language",
+    "parent": "JavaScript"
+  },
+  {
+    "name": "C++",
+    "aliases": [
+      "cpp",
+      "cplusplus"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "C#",
+    "aliases": [
+      "c sharp",
+      "c-sharp"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "Go",
+    "aliases": [
+      "golang"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "SQL",
+    "aliases": [
+      "structured query language"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "HTML",
+    "aliases": [
+      "html5"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "CSS",
+    "aliases": [
+      "css3"
+    ],
+    "category": "language",
+    "parent": null
+  },
+  {
+    "name": "React",
+    "aliases": [
+      "react.js",
+      "reactjs"
+    ],
+    "category": "framework",
+    "parent": "JavaScript"
+  },
+  {
+    "name": "Next.js",
+    "aliases": [
+      "nextjs",
+      "next js"
+    ],
+    "category": "framework",
+    "parent": "React"
+  },
+  {
+    "name": "Node.js",
+    "aliases": [
+      "node",
+      "nodejs"
+    ],
+    "category": "framework",
+    "parent": "JavaScript"
+  },
+  {
+    "name": "FastAPI",
+    "aliases": [
+      "fast api"
+    ],
+    "category": "framework",
+    "parent": "Python"
+  },
+  {
+    "name": "Django",
+    "aliases": [
+      "django framework"
+    ],
+    "category": "framework",
+    "parent": "Python"
+  },
+  {
+    "name": "Flask",
+    "aliases": [
+      "flask framework"
+    ],
+    "category": "framework",
+    "parent": "Python"
+  },
+  {
+    "name": "PostgreSQL",
+    "aliases": [
+      "postgres",
+      "postgre",
+      "psql"
+    ],
+    "category": "database",
+    "parent": "SQL"
+  },
+  {
+    "name": "MySQL",
+    "aliases": [
+      "mysql db"
+    ],
+    "category": "database",
+    "parent": "SQL"
+  },
+  {
+    "name": "MongoDB",
+    "aliases": [
+      "mongo",
+      "mongodb database"
+    ],
+    "category": "database",
+    "parent": "NoSQL"
+  },
+  {
+    "name": "Redis",
+    "aliases": [
+      "redis cache"
+    ],
+    "category": "database",
+    "parent": "NoSQL"
+  },
+  {
+    "name": "Machine Learning",
+    "aliases": [
+      "ml",
+      "machine-learning",
+      "machine learning"
+    ],
+    "category": "ML/AI",
+    "parent": "Artificial Intelligence"
+  },
+  {
+    "name": "Deep Learning",
+    "aliases": [
+      "dl",
+      "deep-learning"
+    ],
+    "category": "ML/AI",
+    "parent": "Machine Learning"
+  },
+  {
+    "name": "Natural Language Processing",
+    "aliases": [
+      "nlp",
+      "natural language processing"
+    ],
+    "category": "ML/AI",
+    "parent": "Machine Learning"
+  },
+  {
+    "name": "Computer Vision",
+    "aliases": [
+      "cv",
+      "computer-vision"
+    ],
+    "category": "ML/AI",
+    "parent": "Machine Learning"
+  },
+  {
+    "name": "Scikit-learn",
+    "aliases": [
+      "sklearn",
+      "scikit learn"
+    ],
+    "category": "ML/AI",
+    "parent": "Machine Learning"
+  },
+  {
+    "name": "TensorFlow",
+    "aliases": [
+      "tensorflow 2",
+      "tf"
+    ],
+    "category": "ML/AI",
+    "parent": "Deep Learning"
+  },
+  {
+    "name": "PyTorch",
+    "aliases": [
+      "torch"
+    ],
+    "category": "ML/AI",
+    "parent": "Deep Learning"
+  },
+  {
+    "name": "Pandas",
+    "aliases": [
+      "pandas library"
+    ],
+    "category": "tool",
+    "parent": "Python"
+  },
+  {
+    "name": "NumPy",
+    "aliases": [
+      "numpy library"
+    ],
+    "category": "tool",
+    "parent": "Python"
+  },
+  {
+    "name": "Statistics",
+    "aliases": [
+      "statistical analysis",
+      "applied statistics"
+    ],
+    "category": "ML/AI",
+    "parent": "Data Science"
+  },
+  {
+    "name": "Data Analysis",
+    "aliases": [
+      "data analytics",
+      "analytics"
+    ],
+    "category": "tool",
+    "parent": "Data Science"
+  },
+  {
+    "name": "Data Visualization",
+    "aliases": [
+      "data viz",
+      "visualization"
+    ],
+    "category": "tool",
+    "parent": "Data Science"
+  },
+  {
+    "name": "Power BI",
+    "aliases": [
+      "powerbi",
+      "power bi"
+    ],
+    "category": "tool",
+    "parent": "Business Intelligence"
+  },
+  {
+    "name": "Tableau",
+    "aliases": [
+      "tableau desktop"
+    ],
+    "category": "tool",
+    "parent": "Business Intelligence"
+  },
+  {
+    "name": "Excel",
+    "aliases": [
+      "microsoft excel",
+      "ms excel"
+    ],
+    "category": "tool",
+    "parent": "Office Tools"
+  },
+  {
+    "name": "Apache Spark",
+    "aliases": [
+      "spark",
+      "pyspark"
+    ],
+    "category": "tool",
+    "parent": "Data Engineering"
+  },
+  {
+    "name": "Hadoop",
+    "aliases": [
+      "apache hadoop"
+    ],
+    "category": "tool",
+    "parent": "Data Engineering"
+  },
+  {
+    "name": "Apache Airflow",
+    "aliases": [
+      "airflow"
+    ],
+    "category": "tool",
+    "parent": "Data Engineering"
+  },
+  {
+    "name": "Apache Kafka",
+    "aliases": [
+      "kafka"
+    ],
+    "category": "tool",
+    "parent": "Data Engineering"
+  },
+  {
+    "name": "AWS",
+    "aliases": [
+      "amazon web services",
+      "amazon aws"
+    ],
+    "category": "cloud",
+    "parent": "Cloud Computing"
+  },
+  {
+    "name": "Microsoft Azure",
+    "aliases": [
+      "azure",
+      "ms azure"
+    ],
+    "category": "cloud",
+    "parent": "Cloud Computing"
+  },
+  {
+    "name": "Google Cloud",
+    "aliases": [
+      "gcp",
+      "google cloud platform"
+    ],
+    "category": "cloud",
+    "parent": "Cloud Computing"
+  },
+  {
+    "name": "Docker",
+    "aliases": [
+      "docker containers",
+      "containerization"
+    ],
+    "category": "tool",
+    "parent": "DevOps"
+  },
+  {
+    "name": "Kubernetes",
+    "aliases": [
+      "k8s",
+      "kube"
+    ],
+    "category": "tool",
+    "parent": "DevOps"
+  },
+  {
+    "name": "Terraform",
+    "aliases": [
+      "tf infrastructure",
+      "hashicorp terraform"
+    ],
+    "category": "tool",
+    "parent": "Infrastructure as Code"
+  },
+  {
+    "name": "Linux",
+    "aliases": [
+      "gnu linux"
+    ],
+    "category": "tool",
+    "parent": "Operating Systems"
+  },
+  {
+    "name": "Git",
+    "aliases": [
+      "version control",
+      "git scm"
+    ],
+    "category": "tool",
+    "parent": "Developer Tools"
+  },
+  {
+    "name": "CI/CD",
+    "aliases": [
+      "cicd",
+      "continuous integration",
+      "continuous delivery",
+      "continuous deployment"
+    ],
+    "category": "tool",
+    "parent": "DevOps"
+  },
+  {
+    "name": "MLOps",
+    "aliases": [
+      "ml ops",
+      "machine learning operations"
+    ],
+    "category": "ML/AI",
+    "parent": "Machine Learning"
+  },
+  {
+    "name": "REST API",
+    "aliases": [
+      "restful api",
+      "rest apis"
+    ],
+    "category": "framework",
+    "parent": "API Development"
+  },
+  {
+    "name": "GraphQL",
+    "aliases": [
+      "graphql api"
+    ],
+    "category": "framework",
+    "parent": "API Development"
+  },
+  {
+    "name": "Communication",
+    "aliases": [
+      "communication skills",
+      "written communication"
+    ],
+    "category": "soft skill",
+    "parent": "Interpersonal Skills"
+  },
+  {
+    "name": "Problem Solving",
+    "aliases": [
+      "problem-solving",
+      "analytical thinking"
+    ],
+    "category": "soft skill",
+    "parent": "Interpersonal Skills"
+  },
+  {
+    "name": "Agile",
+    "aliases": [
+      "agile methodology",
+      "scrum"
+    ],
+    "category": "tool",
+    "parent": "Software Delivery"
+  },
+  {
+    "name": "Monitoring",
+    "aliases": [
+      "observability",
+      "application monitoring"
+    ],
+    "category": "tool",
+    "parent": "DevOps"
+  }
+]

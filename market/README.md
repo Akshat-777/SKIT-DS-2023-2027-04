@@ -41,3 +41,35 @@ python -m market.load_postgres --csv data/processed/job_postings.csv
 The optional PostgreSQL loader reads `DATABASE_URL`, creates `job_postings` if needed, and upserts by `job_id`. Its schema follows `market/data_dictionary.md`; align that table with the central migration maintained by Akshat before deploying shared-database changes.
 
 Run as a scheduled task by invoking `python -m market.collect` from the repository root. Override role/location/page/source arguments to set the collection window and coverage.
+
+## Role taxonomy and skill demand
+
+The shared taxonomy API is `from market.taxonomy import normalize_skill`. It maps common aliases (`JS`, `ML`, `Postgres`) to canonical skill labels. Exact/fuzzy suggestions and low-confidence unmatched input are recorded for manual review when building the index.
+
+Build taxonomy and skill-demand outputs from the processed jobs CSV:
+
+```powershell
+python -m market.build_taxonomy --input data/processed/job_postings.csv --minimum-postings 5 --as-of 2026-10-07
+```
+
+Outputs include `skills_taxonomy.json` and `.csv`, `roles.json`, `role_taxonomy.csv`, `title_role_mapping.csv`, `skill_demand.json` and `.csv`, `uncertain_skill_matches.csv`, `unmapped_skills.json`, `taxonomy_validation.json`, and one SVG per role/seniority under `role_charts/`. Demand rows are computed separately for each seniority and for `All` seniority. The index reports posting share, tie-aware rank, top co-occurring skills, average observed salary in LPA, and trend across the most recent 30 days versus the preceding 30 days. Missing dates or missing salary bounds remain excluded from that calculation.
+
+When `DATABASE_URL` is set (or passed with `--database-url`), the command also creates/upserts `role_taxonomy` and `skill_demand`. The FastAPI router reads the generated JSON artifacts and can be mounted by the API service:
+
+```python
+from fastapi import FastAPI
+from market.router import router as market_router
+
+app = FastAPI()
+app.include_router(market_router)
+```
+
+Endpoints: `GET /market/roles`, `GET /market/skill-demand?role=Data%20Scientist&top_n=15`, `GET /market/skill-demand?role=Data%20Scientist&seniority=Senior&top_n=15`, and `GET /market/skills/ML`.
+
+Focused tests:
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+The sample three-role top-15 output is in `market/taxonomy_demo.md`.

@@ -147,12 +147,12 @@ class MockJobBoardClient(JobBoardClient):
     """Deterministic realistic source that can generate thousands of postings."""
     source = "mock"
     SKILLS = {
-        "data scientist": ["Python", "SQL", "Machine Learning", "Pandas", "Scikit-learn", "Statistics", "TensorFlow", "NLP"],
-        "ml engineer": ["Python", "PyTorch", "Machine Learning", "Docker", "Kubernetes", "FastAPI", "MLOps", "SQL"],
-        "backend developer": ["Python", "Java", "Node.js", "PostgreSQL", "REST API", "Docker", "Redis", "AWS"],
-        "frontend developer": ["JavaScript", "React", "TypeScript", "HTML", "CSS", "REST API", "Git", "Next.js"],
-        "data analyst": ["SQL", "Excel", "Python", "Power BI", "Tableau", "Statistics", "Pandas", "Data Visualization"],
-        "devops engineer": ["Linux", "Docker", "Kubernetes", "AWS", "Terraform", "CI/CD", "Python", "Monitoring"],
+        "data scientist": ["Python", "SQL", "Machine Learning", "Pandas", "Scikit-learn", "Statistics", "TensorFlow", "NLP", "NumPy", "R", "Deep Learning", "PyTorch", "AWS", "Spark", "Data Analysis", "Data Visualization"],
+        "ml engineer": ["Python", "PyTorch", "Machine Learning", "Docker", "Kubernetes", "FastAPI", "MLOps", "SQL", "TensorFlow", "AWS", "GCP", "REST API", "Kafka", "Terraform", "Deep Learning", "Scikit-learn"],
+        "backend developer": ["Python", "Java", "Node.js", "PostgreSQL", "REST API", "Docker", "Redis", "AWS", "FastAPI", "Django", "Flask", "Kubernetes", "CI/CD", "Go", "GraphQL", "Git", "Linux", "JavaScript"],
+        "frontend developer": ["JavaScript", "React", "TypeScript", "HTML", "CSS", "REST API", "Git", "Next.js", "Node.js", "GraphQL", "AWS", "Docker", "PostgreSQL", "Python", "Communication", "Problem Solving", "Agile"],
+        "data analyst": ["SQL", "Excel", "Python", "Power BI", "Tableau", "Statistics", "Pandas", "Data Visualization", "R", "NumPy", "Data Analysis", "Communication", "Problem Solving", "PostgreSQL", "AWS"],
+        "devops engineer": ["Linux", "Docker", "Kubernetes", "AWS", "Terraform", "CI/CD", "Python", "Monitoring", "Azure", "GCP", "Git", "SQL", "PostgreSQL", "Kafka", "Airflow", "Problem Solving"],
     }
     COMPANIES = ["Jaipur Analytics", "Northstar Technologies", "BluePine Systems", "Saffron Labs",
                  "Kiteworks India", "Aster Digital", "Mosaic Cloud", "Horizon Data"]

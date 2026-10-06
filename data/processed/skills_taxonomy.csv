@@ -1,0 +1,57 @@
+﻿name,aliases,category,parent
+Python,"[""py"", ""python3""]",language,
+R,"[""r language"", ""r programming""]",language,
+Java,"[""java programming""]",language,
+JavaScript,"[""js"", ""javascript"", ""ecmascript""]",language,
+TypeScript,"[""ts"", ""typescript""]",language,JavaScript
+C++,"[""cpp"", ""cplusplus""]",language,
+C#,"[""c sharp"", ""c-sharp""]",language,
+Go,"[""golang""]",language,
+SQL,"[""structured query language""]",language,
+HTML,"[""html5""]",language,
+CSS,"[""css3""]",language,
+React,"[""react.js"", ""reactjs""]",framework,JavaScript
+Next.js,"[""nextjs"", ""next js""]",framework,React
+Node.js,"[""node"", ""nodejs""]",framework,JavaScript
+FastAPI,"[""fast api""]",framework,Python
+Django,"[""django framework""]",framework,Python
+Flask,"[""flask framework""]",framework,Python
+PostgreSQL,"[""postgres"", ""postgre"", ""psql""]",database,SQL
+MySQL,"[""mysql db""]",database,SQL
+MongoDB,"[""mongo"", ""mongodb database""]",database,NoSQL
+Redis,"[""redis cache""]",database,NoSQL
+Machine Learning,"[""ml"", ""machine-learning"", ""machine learning""]",ML/AI,Artificial Intelligence
+Deep Learning,"[""dl"", ""deep-learning""]",ML/AI,Machine Learning
+Natural Language Processing,"[""nlp"", ""natural language processing""]",ML/AI,Machine Learning
+Computer Vision,"[""cv"", ""computer-vision""]",ML/AI,Machine Learning
+Scikit-learn,"[""sklearn"", ""scikit learn""]",ML/AI,Machine Learning
+TensorFlow,"[""tensorflow 2"", ""tf""]",ML/AI,Deep Learning
+PyTorch,"[""torch""]",ML/AI,Deep Learning
+Pandas,"[""pandas library""]",tool,Python
+NumPy,"[""numpy library""]",tool,Python
+Statistics,"[""statistical analysis"", ""applied statistics""]",ML/AI,Data Science
+Data Analysis,"[""data analytics"", ""analytics""]",tool,Data Science
+Data Visualization,"[""data viz"", ""visualization""]",tool,Data Science
+Power BI,"[""powerbi"", ""power bi""]",tool,Business Intelligence
+Tableau,"[""tableau desktop""]",tool,Business Intelligence
+Excel,"[""microsoft excel"", ""ms excel""]",tool,Office Tools
+Apache Spark,"[""spark"", ""pyspark""]",tool,Data Engineering
+Hadoop,"[""apache hadoop""]",tool,Data Engineering
+Apache Airflow,"[""airflow""]",tool,Data Engineering
+Apache Kafka,"[""kafka""]",tool,Data Engineering
+AWS,"[""amazon web services"", ""amazon aws""]",cloud,Cloud Computing
+Microsoft Azure,"[""azure"", ""ms azure""]",cloud,Cloud Computing
+Google Cloud,"[""gcp"", ""google cloud platform""]",cloud,Cloud Computing
+Docker,"[""docker containers"", ""containerization""]",tool,DevOps
+Kubernetes,"[""k8s"", ""kube""]",tool,DevOps
+Terraform,"[""tf infrastructure"", ""hashicorp terraform""]",tool,Infrastructure as Code
+Linux,"[""gnu linux""]",tool,Operating Systems
+Git,"[""version control"", ""git scm""]",tool,Developer Tools
+CI/CD,"[""cicd"", ""continuous integration"", ""continuous delivery"", ""continuous deployment""]",tool,DevOps
+MLOps,"[""ml ops"", ""machine learning operations""]",ML/AI,Machine Learning
+REST API,"[""restful api"", ""rest apis""]",framework,API Development
+GraphQL,"[""graphql api""]",framework,API Development
+Communication,"[""communication skills"", ""written communication""]",soft skill,Interpersonal Skills
+Problem Solving,"[""problem-solving"", ""analytical thinking""]",soft skill,Interpersonal Skills
+Agile,"[""agile methodology"", ""scrum""]",tool,Software Delivery
+Monitoring,"[""observability"", ""application monitoring""]",tool,DevOps
