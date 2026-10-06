@@ -11,3 +11,9 @@ opencv-python
 pytesseract
 pytest
 httpx
+torch
+transformers
+datasets
+seqeval
+scikit-learn
+accelerate
