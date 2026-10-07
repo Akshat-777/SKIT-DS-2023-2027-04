@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="490" viewBox="0 0 900 490">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="30" font-family="Arial" font-size="20" font-weight="bold">Required skill frequency</text>
+<text x="20" y="65" font-family="Arial" font-size="13">Python</text>
+<rect x="210" y="51" width="620" height="17" fill="#4776c5"/>
+<text x="838" y="65" font-family="Arial" font-size="12">253</text>
+<text x="20" y="93" font-family="Arial" font-size="13">AWS</text>
+<rect x="210" y="79" width="602" height="17" fill="#4776c5"/>
+<text x="820" y="93" font-family="Arial" font-size="12">246</text>
+<text x="20" y="121" font-family="Arial" font-size="13">SQL</text>
+<rect x="210" y="107" width="438" height="17" fill="#4776c5"/>
+<text x="656" y="121" font-family="Arial" font-size="12">179</text>
+<text x="20" y="149" font-family="Arial" font-size="13">Docker</text>
+<rect x="210" y="135" width="428" height="17" fill="#4776c5"/>
+<text x="646" y="149" font-family="Arial" font-size="12">175</text>
+<text x="20" y="177" font-family="Arial" font-size="13">PostgreSQL</text>
+<rect x="210" y="163" width="411" height="17" fill="#4776c5"/>
+<text x="629" y="177" font-family="Arial" font-size="12">168</text>
+<text x="20" y="205" font-family="Arial" font-size="13">Kubernetes</text>
+<rect x="210" y="191" width="343" height="17" fill="#4776c5"/>
+<text x="561" y="205" font-family="Arial" font-size="12">140</text>
+<text x="20" y="233" font-family="Arial" font-size="13">REST API</text>
+<rect x="210" y="219" width="328" height="17" fill="#4776c5"/>
+<text x="546" y="233" font-family="Arial" font-size="12">134</text>
+<text x="20" y="261" font-family="Arial" font-size="13">Git</text>
+<rect x="210" y="247" width="298" height="17" fill="#4776c5"/>
+<text x="516" y="261" font-family="Arial" font-size="12">122</text>
+<text x="20" y="289" font-family="Arial" font-size="13">Problem Solving</text>
+<rect x="210" y="275" width="286" height="17" fill="#4776c5"/>
+<text x="504" y="289" font-family="Arial" font-size="12">117</text>
+<text x="20" y="317" font-family="Arial" font-size="13">Scikit-learn</text>
+<rect x="210" y="303" width="247" height="17" fill="#4776c5"/>
+<text x="465" y="317" font-family="Arial" font-size="12">101</text>
+<text x="20" y="345" font-family="Arial" font-size="13">Kafka</text>
+<rect x="210" y="331" width="242" height="17" fill="#4776c5"/>
+<text x="460" y="345" font-family="Arial" font-size="12">99</text>
+<text x="20" y="373" font-family="Arial" font-size="13">Data Analysis</text>
+<rect x="210" y="359" width="240" height="17" fill="#4776c5"/>
+<text x="458" y="373" font-family="Arial" font-size="12">98</text>
+<text x="20" y="401" font-family="Arial" font-size="13">NumPy</text>
+<rect x="210" y="387" width="240" height="17" fill="#4776c5"/>
+<text x="458" y="401" font-family="Arial" font-size="12">98</text>
+<text x="20" y="429" font-family="Arial" font-size="13">FastAPI</text>
+<rect x="210" y="415" width="232" height="17" fill="#4776c5"/>
+<text x="450" y="429" font-family="Arial" font-size="12">95</text>
+<text x="20" y="457" font-family="Arial" font-size="13">Linux</text>
+<rect x="210" y="443" width="232" height="17" fill="#4776c5"/>
+<text x="450" y="457" font-family="Arial" font-size="12">95</text>
+</svg>

@@ -1,0 +1,491 @@
+﻿role,seniority,skill,category,posting_count,total_postings,demand_pct,rank,co_occurring_skills,average_salary_lpa,trend,recent_demand_pct,previous_demand_pct,low_sample,minimum_postings
+Backend Developer,All,FastAPI,framework,51,200,25.5,1,"[""Django"", ""Java"", ""Git"", ""Kubernetes"", ""Node.js""]",18.01,stable,25.38,25.71,False,5
+Backend Developer,All,Linux,tool,46,200,23.0,2,"[""Django"", ""Python"", ""JavaScript"", ""FastAPI"", ""REST API""]",18.09,stable,22.31,24.29,False,5
+Backend Developer,All,Kubernetes,tool,45,200,22.5,3,"[""Django"", ""Java"", ""FastAPI"", ""Docker"", ""Redis""]",19.98,rising,25.38,17.14,False,5
+Backend Developer,All,Java,language,44,200,22.0,4,"[""FastAPI"", ""Docker"", ""Kubernetes"", ""JavaScript"", ""Flask""]",18.36,stable,21.54,22.86,False,5
+Backend Developer,All,Python,language,43,200,21.5,5,"[""Django"", ""Linux"", ""Git"", ""FastAPI"", ""Kubernetes""]",18.3,stable,21.54,21.43,False,5
+Backend Developer,All,Flask,framework,42,200,21.0,6,"[""CI/CD"", ""Java"", ""Redis"", ""FastAPI"", ""Linux""]",17.89,falling,18.46,25.71,False,5
+Backend Developer,All,AWS,cloud,41,200,20.5,7,"[""JavaScript"", ""CI/CD"", ""Django"", ""Linux"", ""Flask""]",18.63,rising,22.31,17.14,False,5
+Backend Developer,All,CI/CD,tool,41,200,20.5,7,"[""Flask"", ""AWS"", ""JavaScript"", ""Django"", ""GraphQL""]",17.2,falling,17.69,25.71,False,5
+Backend Developer,All,Django,framework,41,200,20.5,7,"[""FastAPI"", ""Kubernetes"", ""Python"", ""Linux"", ""Docker""]",18.57,rising,25.38,11.43,False,5
+Backend Developer,All,Redis,database,41,200,20.5,7,"[""JavaScript"", ""Kubernetes"", ""FastAPI"", ""Flask"", ""REST API""]",16.68,stable,21.54,18.57,False,5
+Backend Developer,All,JavaScript,language,40,200,20.0,11,"[""AWS"", ""Redis"", ""Java"", ""CI/CD"", ""Linux""]",18.14,stable,20.77,18.57,False,5
+Backend Developer,All,PostgreSQL,database,40,200,20.0,11,"[""FastAPI"", ""Kubernetes"", ""GraphQL"", ""REST API"", ""Flask""]",20.06,falling,16.92,25.71,False,5
+Backend Developer,All,Git,tool,39,200,19.5,13,"[""FastAPI"", ""Python"", ""JavaScript"", ""REST API"", ""CI/CD""]",16.81,stable,19.23,20.0,False,5
+Backend Developer,All,Docker,tool,38,200,19.0,14,"[""Java"", ""Django"", ""Kubernetes"", ""Redis"", ""JavaScript""]",18.83,stable,17.69,21.43,False,5
+Backend Developer,All,REST API,framework,38,200,19.0,14,"[""Redis"", ""Linux"", ""Java"", ""Git"", ""PostgreSQL""]",19.16,stable,19.23,18.57,False,5
+Backend Developer,All,Node.js,framework,34,200,17.0,16,"[""FastAPI"", ""Kubernetes"", ""AWS"", ""Flask"", ""Redis""]",16.84,rising,20.77,10.0,False,5
+Backend Developer,All,GraphQL,framework,30,200,15.0,17,"[""CI/CD"", ""PostgreSQL"", ""Kubernetes"", ""Redis"", ""REST API""]",17.15,stable,15.38,14.29,False,5
+Backend Developer,All,Go,language,29,200,14.5,18,"[""PostgreSQL"", ""Linux"", ""AWS"", ""FastAPI"", ""Python""]",20.28,rising,17.69,8.57,False,5
+Backend Developer,Entry,Kubernetes,tool,19,65,29.23,1,"[""Docker"", ""Linux"", ""FastAPI"", ""Java"", ""JavaScript""]",19.61,rising,35.71,17.39,False,5
+Backend Developer,Entry,Linux,tool,19,65,29.23,1,"[""Python"", ""Flask"", ""FastAPI"", ""Django"", ""Kubernetes""]",18.87,falling,26.19,34.78,False,5
+Backend Developer,Entry,FastAPI,framework,17,65,26.15,3,"[""Django"", ""Linux"", ""Flask"", ""Python"", ""Docker""]",17.41,rising,28.57,21.74,False,5
+Backend Developer,Entry,Flask,framework,16,65,24.62,4,"[""CI/CD"", ""Linux"", ""FastAPI"", ""Java"", ""Python""]",18.0,rising,28.57,17.39,False,5
+Backend Developer,Entry,Java,language,16,65,24.62,4,"[""JavaScript"", ""CI/CD"", ""Docker"", ""Flask"", ""Linux""]",17.12,stable,26.19,21.74,False,5
+Backend Developer,Entry,Python,language,16,65,24.62,4,"[""Linux"", ""Redis"", ""FastAPI"", ""Django"", ""Flask""]",19.28,rising,28.57,17.39,False,5
+Backend Developer,Entry,Docker,tool,15,65,23.08,7,"[""Kubernetes"", ""Django"", ""Java"", ""FastAPI"", ""Linux""]",18.43,falling,16.67,34.78,False,5
+Backend Developer,Entry,CI/CD,tool,14,65,21.54,8,"[""Flask"", ""Java"", ""Go"", ""AWS"", ""FastAPI""]",18.25,rising,23.81,17.39,False,5
+Backend Developer,Entry,Django,framework,14,65,21.54,8,"[""FastAPI"", ""Linux"", ""Docker"", ""Python"", ""REST API""]",17.57,rising,26.19,13.04,False,5
+Backend Developer,Entry,Git,tool,14,65,21.54,8,"[""Django"", ""Kubernetes"", ""FastAPI"", ""Redis"", ""Java""]",16.11,rising,23.81,17.39,False,5
+Backend Developer,Entry,Redis,database,13,65,20.0,11,"[""Python"", ""JavaScript"", ""Kubernetes"", ""Linux"", ""Flask""]",18.38,stable,21.43,17.39,False,5
+Backend Developer,Entry,AWS,cloud,12,65,18.46,12,"[""JavaScript"", ""CI/CD"", ""Java"", ""Flask"", ""Kubernetes""]",19.17,stable,19.05,17.39,False,5
+Backend Developer,Entry,PostgreSQL,database,12,65,18.46,12,"[""Kubernetes"", ""Linux"", ""CI/CD"", ""Docker"", ""AWS""]",22.46,falling,9.52,34.78,False,5
+Backend Developer,Entry,JavaScript,language,11,65,16.92,14,"[""Java"", ""AWS"", ""Redis"", ""Kubernetes"", ""CI/CD""]",19.91,falling,14.29,21.74,False,5
+Backend Developer,Entry,REST API,framework,11,65,16.92,14,"[""Django"", ""Kubernetes"", ""Redis"", ""Git"", ""PostgreSQL""]",20.73,rising,19.05,13.04,False,5
+Backend Developer,Entry,Go,language,10,65,15.38,16,"[""Linux"", ""CI/CD"", ""Flask"", ""Kubernetes"", ""FastAPI""]",23.05,stable,16.67,13.04,False,5
+Backend Developer,Entry,GraphQL,framework,7,65,10.77,17,"[""Kubernetes"", ""CI/CD"", ""FastAPI"", ""Linux"", ""Python""]",22.5,rising,14.29,4.35,False,5
+Backend Developer,Entry,Node.js,framework,7,65,10.77,17,"[""Python"", ""Kubernetes"", ""Redis"", ""PostgreSQL"", ""Git""]",19.79,stable,11.9,8.7,False,5
+Backend Developer,Intern,Java,language,9,29,31.03,1,"[""FastAPI"", ""PostgreSQL"", ""Docker"", ""REST API"", ""Kubernetes""]",18.89,falling,26.32,40.0,False,5
+Backend Developer,Intern,Python,language,8,29,27.59,2,"[""Git"", ""REST API"", ""PostgreSQL"", ""Flask"", ""FastAPI""]",14.12,falling,21.05,40.0,False,5
+Backend Developer,Intern,Redis,database,8,29,27.59,2,"[""CI/CD"", ""Flask"", ""Node.js"", ""AWS"", ""REST API""]",13.69,rising,31.58,20.0,False,5
+Backend Developer,Intern,AWS,cloud,7,29,24.14,4,"[""Git"", ""JavaScript"", ""Redis"", ""Node.js"", ""Docker""]",15.14,rising,31.58,10.0,False,5
+Backend Developer,Intern,Flask,framework,7,29,24.14,4,"[""Redis"", ""PostgreSQL"", ""Python"", ""REST API"", ""Docker""]",11.64,falling,21.05,30.0,False,5
+Backend Developer,Intern,Git,tool,7,29,24.14,4,"[""Python"", ""AWS"", ""PostgreSQL"", ""FastAPI"", ""REST API""]",14.07,falling,21.05,30.0,False,5
+Backend Developer,Intern,Node.js,framework,7,29,24.14,4,"[""Kubernetes"", ""Redis"", ""AWS"", ""GraphQL"", ""CI/CD""]",14.21,rising,36.84,0.0,False,5
+Backend Developer,Intern,Docker,tool,6,29,20.69,8,"[""AWS"", ""Flask"", ""REST API"", ""Java"", ""Django""]",17.92,stable,21.05,20.0,False,5
+Backend Developer,Intern,FastAPI,framework,6,29,20.69,8,"[""Java"", ""AWS"", ""Git"", ""PostgreSQL"", ""Python""]",14.17,falling,15.79,30.0,False,5
+Backend Developer,Intern,GraphQL,framework,6,29,20.69,8,"[""Kubernetes"", ""Node.js"", ""Django"", ""Docker"", ""PostgreSQL""]",15.83,falling,15.79,30.0,False,5
+Backend Developer,Intern,Kubernetes,tool,6,29,20.69,8,"[""Node.js"", ""GraphQL"", ""Django"", ""Java"", ""Go""]",15.17,rising,26.32,10.0,False,5
+Backend Developer,Intern,REST API,framework,6,29,20.69,8,"[""Redis"", ""Python"", ""Git"", ""PostgreSQL"", ""Flask""]",15.0,falling,15.79,30.0,False,5
+Backend Developer,Intern,CI/CD,tool,5,29,17.24,13,"[""Redis"", ""Docker"", ""AWS"", ""Django"", ""JavaScript""]",15.8,stable,15.79,20.0,False,5
+Backend Developer,Intern,JavaScript,language,5,29,17.24,13,"[""AWS"", ""Git"", ""CI/CD"", ""Redis"", ""PostgreSQL""]",12.6,falling,10.53,30.0,False,5
+Backend Developer,Intern,PostgreSQL,database,5,29,17.24,13,"[""Git"", ""Java"", ""FastAPI"", ""Python"", ""Flask""]",14.3,falling,10.53,30.0,False,5
+Backend Developer,Intern,Django,framework,4,29,13.79,16,"[""Kubernetes"", ""Docker"", ""CI/CD"", ""GraphQL"", ""Node.js""]",20.12,rising,21.05,0.0,False,5
+Backend Developer,Intern,Linux,tool,3,29,10.34,17,"[""Java"", ""Docker"", ""AWS"", ""Django"", ""CI/CD""]",25.17,stable,10.53,10.0,False,5
+Backend Developer,Intern,Go,language,2,29,6.9,18,"[""Kubernetes"", ""Docker"", ""Java"", ""Git"", ""Django""]",16.25,rising,10.53,0.0,False,5
+Backend Developer,Mid,FastAPI,framework,20,70,28.57,1,"[""Django"", ""Node.js"", ""Kubernetes"", ""JavaScript"", ""Redis""]",19.4,falling,25.53,34.78,False,5
+Backend Developer,Mid,JavaScript,language,16,70,22.86,2,"[""Git"", ""Python"", ""FastAPI"", ""CI/CD"", ""Kubernetes""]",17.25,rising,25.53,17.39,False,5
+Backend Developer,Mid,CI/CD,tool,15,70,21.43,3,"[""Python"", ""GraphQL"", ""Kubernetes"", ""Django"", ""Flask""]",17.73,falling,14.89,34.78,False,5
+Backend Developer,Mid,Django,framework,15,70,21.43,3,"[""Kubernetes"", ""FastAPI"", ""CI/CD"", ""Python"", ""PostgreSQL""]",18.1,stable,21.28,21.74,False,5
+Backend Developer,Mid,Redis,database,15,70,21.43,3,"[""GraphQL"", ""REST API"", ""FastAPI"", ""Kubernetes"", ""Git""]",17.13,stable,21.28,21.74,False,5
+Backend Developer,Mid,REST API,framework,15,70,21.43,3,"[""Redis"", ""Linux"", ""GraphQL"", ""Python"", ""JavaScript""]",19.1,rising,23.4,17.39,False,5
+Backend Developer,Mid,PostgreSQL,database,14,70,20.0,7,"[""Django"", ""Go"", ""Flask"", ""GraphQL"", ""AWS""]",21.0,stable,21.28,17.39,False,5
+Backend Developer,Mid,Python,language,14,70,20.0,7,"[""Kubernetes"", ""CI/CD"", ""JavaScript"", ""Django"", ""AWS""]",20.75,falling,17.02,26.09,False,5
+Backend Developer,Mid,AWS,cloud,13,70,18.57,9,"[""Linux"", ""Flask"", ""Kubernetes"", ""GraphQL"", ""Python""]",19.27,stable,17.02,21.74,False,5
+Backend Developer,Mid,Flask,framework,13,70,18.57,9,"[""CI/CD"", ""PostgreSQL"", ""AWS"", ""Node.js"", ""Kubernetes""]",19.15,falling,14.89,26.09,False,5
+Backend Developer,Mid,GraphQL,framework,13,70,18.57,9,"[""Redis"", ""CI/CD"", ""PostgreSQL"", ""AWS"", ""REST API""]",16.08,stable,19.15,17.39,False,5
+Backend Developer,Mid,Java,language,13,70,18.57,9,"[""FastAPI"", ""Kubernetes"", ""JavaScript"", ""Python"", ""PostgreSQL""]",19.54,stable,17.02,21.74,False,5
+Backend Developer,Mid,Kubernetes,tool,13,70,18.57,9,"[""Django"", ""FastAPI"", ""Python"", ""CI/CD"", ""AWS""]",21.73,stable,17.02,21.74,False,5
+Backend Developer,Mid,Node.js,framework,13,70,18.57,9,"[""FastAPI"", ""Linux"", ""Flask"", ""CI/CD"", ""PostgreSQL""]",13.73,rising,23.4,8.7,False,5
+Backend Developer,Mid,Git,tool,12,70,17.14,15,"[""JavaScript"", ""Go"", ""FastAPI"", ""Redis"", ""Java""]",18.04,stable,17.02,17.39,False,5
+Backend Developer,Mid,Go,language,12,70,17.14,15,"[""PostgreSQL"", ""Git"", ""GraphQL"", ""REST API"", ""FastAPI""]",18.58,rising,19.15,13.04,False,5
+Backend Developer,Mid,Linux,tool,11,70,15.71,17,"[""REST API"", ""AWS"", ""Node.js"", ""Python"", ""GraphQL""]",15.27,stable,17.02,13.04,False,5
+Backend Developer,Mid,Docker,tool,6,70,8.57,18,"[""Git"", ""JavaScript"", ""Flask"", ""CI/CD"", ""Python""]",19.33,rising,10.64,4.35,False,5
+Backend Developer,Senior,Linux,tool,13,36,36.11,1,"[""JavaScript"", ""Django"", ""AWS"", ""REST API"", ""CI/CD""]",17.69,stable,36.36,35.71,False,5
+Backend Developer,Senior,Docker,tool,11,36,30.56,2,"[""JavaScript"", ""Kubernetes"", ""Redis"", ""PostgreSQL"", ""REST API""]",19.59,stable,31.82,28.57,False,5
+Backend Developer,Senior,AWS,cloud,9,36,25.0,3,"[""Django"", ""Linux"", ""JavaScript"", ""Node.js"", ""Go""]",19.72,rising,31.82,14.29,False,5
+Backend Developer,Senior,PostgreSQL,database,9,36,25.0,3,"[""Docker"", ""JavaScript"", ""FastAPI"", ""Redis"", ""Kubernetes""]",18.61,rising,27.27,21.43,False,5
+Backend Developer,Senior,Django,framework,8,36,22.22,5,"[""Linux"", ""AWS"", ""Go"", ""Python"", ""Docker""]",20.44,rising,36.36,0.0,False,5
+Backend Developer,Senior,FastAPI,framework,8,36,22.22,5,"[""PostgreSQL"", ""Linux"", ""Git"", ""REST API"", ""Docker""]",18.69,rising,27.27,14.29,False,5
+Backend Developer,Senior,JavaScript,language,8,36,22.22,5,"[""Linux"", ""Docker"", ""PostgreSQL"", ""AWS"", ""Kubernetes""]",20.94,rising,31.82,7.14,False,5
+Backend Developer,Senior,CI/CD,tool,7,36,19.44,8,"[""Linux"", ""Git"", ""Python"", ""Docker"", ""Django""]",14.93,falling,13.64,28.57,False,5
+Backend Developer,Senior,Kubernetes,tool,7,36,19.44,8,"[""Docker"", ""Linux"", ""Redis"", ""JavaScript"", ""Node.js""]",21.86,rising,22.73,14.29,False,5
+Backend Developer,Senior,Node.js,framework,7,36,19.44,8,"[""AWS"", ""Kubernetes"", ""FastAPI"", ""Docker"", ""Java""]",22.29,stable,18.18,21.43,False,5
+Backend Developer,Senior,Flask,framework,6,36,16.67,11,"[""Docker"", ""Kubernetes"", ""Node.js"", ""PostgreSQL"", ""REST API""]",22.17,falling,4.55,35.71,False,5
+Backend Developer,Senior,Git,tool,6,36,16.67,11,"[""Linux"", ""FastAPI"", ""CI/CD"", ""AWS"", ""Java""]",19.17,falling,13.64,21.43,False,5
+Backend Developer,Senior,Java,language,6,36,16.67,11,"[""Docker"", ""REST API"", ""Kubernetes"", ""Linux"", ""FastAPI""]",18.33,stable,18.18,14.29,False,5
+Backend Developer,Senior,REST API,framework,6,36,16.67,11,"[""Docker"", ""Linux"", ""Java"", ""FastAPI"", ""AWS""]",20.58,falling,13.64,21.43,False,5
+Backend Developer,Senior,Go,language,5,36,13.89,15,"[""Django"", ""AWS"", ""PostgreSQL"", ""Node.js"", ""Linux""]",20.4,rising,22.73,0.0,False,5
+Backend Developer,Senior,Python,language,5,36,13.89,15,"[""AWS"", ""Django"", ""JavaScript"", ""Linux"", ""PostgreSQL""]",15.0,rising,18.18,7.14,False,5
+Backend Developer,Senior,Redis,database,5,36,13.89,15,"[""Docker"", ""Linux"", ""Kubernetes"", ""JavaScript"", ""PostgreSQL""]",15.7,stable,13.64,14.29,False,5
+Backend Developer,Senior,GraphQL,framework,4,36,11.11,18,"[""PostgreSQL"", ""Linux"", ""Redis"", ""Flask"", ""Docker""]",13.25,falling,9.09,14.29,False,5
+Data Analyst,All,NumPy,tool,55,200,27.5,1,"[""Data Analysis"", ""SQL"", ""Python"", ""PostgreSQL"", ""Excel""]",18.26,falling,24.26,34.38,False,5
+Data Analyst,All,Data Analysis,tool,52,200,26.0,2,"[""NumPy"", ""PostgreSQL"", ""Pandas"", ""AWS"", ""Python""]",18.16,falling,24.26,29.69,False,5
+Data Analyst,All,SQL,language,50,200,25.0,3,"[""Excel"", ""NumPy"", ""Pandas"", ""Communication"", ""PostgreSQL""]",18.31,rising,28.68,17.19,False,5
+Data Analyst,All,Pandas,tool,49,200,24.5,4,"[""SQL"", ""Data Analysis"", ""Excel"", ""Python"", ""PostgreSQL""]",18.29,stable,25.74,21.88,False,5
+Data Analyst,All,R,language,49,200,24.5,4,"[""Python"", ""PostgreSQL"", ""Tableau"", ""Statistics"", ""Excel""]",17.92,rising,27.21,18.75,False,5
+Data Analyst,All,AWS,cloud,47,200,23.5,6,"[""Tableau"", ""Problem Solving"", ""PostgreSQL"", ""Data Analysis"", ""NumPy""]",18.68,falling,21.32,28.12,False,5
+Data Analyst,All,PostgreSQL,database,47,200,23.5,6,"[""Statistics"", ""NumPy"", ""Problem Solving"", ""Data Analysis"", ""AWS""]",20.81,stable,22.79,25.0,False,5
+Data Analyst,All,Power BI,tool,47,200,23.5,6,"[""Python"", ""Communication"", ""AWS"", ""Tableau"", ""Pandas""]",17.69,rising,27.21,15.62,False,5
+Data Analyst,All,Tableau,tool,47,200,23.5,6,"[""AWS"", ""R"", ""Power BI"", ""Statistics"", ""Communication""]",16.72,stable,24.26,21.88,False,5
+Data Analyst,All,Communication,soft skill,46,200,23.0,10,"[""Power BI"", ""SQL"", ""Data Analysis"", ""AWS"", ""Tableau""]",18.7,stable,23.53,21.88,False,5
+Data Analyst,All,Problem Solving,soft skill,46,200,23.0,10,"[""PostgreSQL"", ""AWS"", ""Statistics"", ""R"", ""NumPy""]",17.82,falling,19.85,29.69,False,5
+Data Analyst,All,Statistics,ML/AI,46,200,23.0,10,"[""PostgreSQL"", ""Data Visualization"", ""R"", ""Problem Solving"", ""Tableau""]",16.9,falling,21.32,26.56,False,5
+Data Analyst,All,Python,language,44,200,22.0,13,"[""NumPy"", ""Power BI"", ""R"", ""Pandas"", ""Data Analysis""]",18.6,stable,21.32,23.44,False,5
+Data Analyst,All,Data Visualization,tool,41,200,20.5,14,"[""Statistics"", ""Data Analysis"", ""PostgreSQL"", ""SQL"", ""Excel""]",18.74,falling,18.38,25.0,False,5
+Data Analyst,All,Excel,tool,41,200,20.5,14,"[""SQL"", ""NumPy"", ""Pandas"", ""R"", ""Communication""]",19.13,stable,19.85,21.88,False,5
+Data Analyst,Entry,NumPy,tool,19,63,30.16,1,"[""Data Analysis"", ""Python"", ""SQL"", ""Data Visualization"", ""Excel""]",17.89,stable,29.73,30.77,False,5
+Data Analyst,Entry,Data Visualization,tool,18,63,28.57,2,"[""Statistics"", ""Data Analysis"", ""Power BI"", ""Tableau"", ""PostgreSQL""]",16.67,stable,27.03,30.77,False,5
+Data Analyst,Entry,Python,language,18,63,28.57,2,"[""R"", ""Power BI"", ""NumPy"", ""Data Analysis"", ""Data Visualization""]",20.19,stable,27.03,30.77,False,5
+Data Analyst,Entry,Power BI,tool,17,63,26.98,4,"[""SQL"", ""Python"", ""Tableau"", ""Data Visualization"", ""Excel""]",18.18,rising,37.84,11.54,False,5
+Data Analyst,Entry,Statistics,ML/AI,17,63,26.98,4,"[""Data Visualization"", ""R"", ""Tableau"", ""PostgreSQL"", ""Problem Solving""]",14.5,falling,21.62,34.62,False,5
+Data Analyst,Entry,Tableau,tool,17,63,26.98,4,"[""Statistics"", ""PostgreSQL"", ""Power BI"", ""Data Visualization"", ""Data Analysis""]",18.97,rising,32.43,19.23,False,5
+Data Analyst,Entry,Problem Solving,soft skill,16,63,25.4,7,"[""AWS"", ""Statistics"", ""SQL"", ""PostgreSQL"", ""Data Visualization""]",18.28,falling,16.22,38.46,False,5
+Data Analyst,Entry,AWS,cloud,15,63,23.81,8,"[""Problem Solving"", ""Data Analysis"", ""R"", ""Data Visualization"", ""Tableau""]",17.93,falling,18.92,30.77,False,5
+Data Analyst,Entry,Data Analysis,tool,15,63,23.81,8,"[""NumPy"", ""Data Visualization"", ""Tableau"", ""AWS"", ""Python""]",17.17,stable,24.32,23.08,False,5
+Data Analyst,Entry,PostgreSQL,database,14,63,22.22,10,"[""Tableau"", ""Statistics"", ""Data Visualization"", ""Problem Solving"", ""Data Analysis""]",21.89,stable,21.62,23.08,False,5
+Data Analyst,Entry,R,language,14,63,22.22,10,"[""Python"", ""Statistics"", ""AWS"", ""Data Visualization"", ""NumPy""]",16.68,rising,24.32,19.23,False,5
+Data Analyst,Entry,SQL,language,14,63,22.22,10,"[""Power BI"", ""NumPy"", ""Data Visualization"", ""Problem Solving"", ""Statistics""]",18.5,rising,27.03,15.38,False,5
+Data Analyst,Entry,Excel,tool,10,63,15.87,13,"[""Data Visualization"", ""NumPy"", ""Power BI"", ""SQL"", ""Communication""]",20.9,falling,10.81,23.08,False,5
+Data Analyst,Entry,Pandas,tool,8,63,12.7,14,"[""Statistics"", ""Tableau"", ""Data Analysis"", ""PostgreSQL"", ""NumPy""]",14.38,stable,13.51,11.54,False,5
+Data Analyst,Entry,Communication,soft skill,6,63,9.52,15,"[""Power BI"", ""Excel"", ""Python"", ""Tableau"", ""NumPy""]",23.58,stable,8.11,11.54,False,5
+Data Analyst,Intern,Pandas,tool,14,42,33.33,1,"[""Power BI"", ""Excel"", ""Statistics"", ""Communication"", ""Python""]",19.07,falling,26.67,50.0,False,5
+Data Analyst,Intern,Communication,soft skill,12,42,28.57,2,"[""SQL"", ""Data Analysis"", ""R"", ""Problem Solving"", ""Python""]",18.62,falling,26.67,33.33,False,5
+Data Analyst,Intern,NumPy,tool,12,42,28.57,2,"[""SQL"", ""Statistics"", ""Tableau"", ""Data Analysis"", ""Problem Solving""]",19.21,falling,26.67,33.33,False,5
+Data Analyst,Intern,SQL,language,12,42,28.57,2,"[""Communication"", ""NumPy"", ""Problem Solving"", ""Tableau"", ""Excel""]",19.79,rising,30.0,25.0,False,5
+Data Analyst,Intern,Statistics,ML/AI,12,42,28.57,2,"[""NumPy"", ""Pandas"", ""AWS"", ""Data Visualization"", ""Python""]",18.21,rising,30.0,25.0,False,5
+Data Analyst,Intern,Tableau,tool,12,42,28.57,2,"[""SQL"", ""NumPy"", ""Problem Solving"", ""Communication"", ""Python""]",17.0,rising,33.33,16.67,False,5
+Data Analyst,Intern,Problem Solving,soft skill,11,42,26.19,7,"[""SQL"", ""Tableau"", ""Communication"", ""NumPy"", ""Excel""]",19.91,rising,30.0,16.67,False,5
+Data Analyst,Intern,Data Analysis,tool,10,42,23.81,8,"[""Communication"", ""Power BI"", ""NumPy"", ""PostgreSQL"", ""Pandas""]",18.15,stable,23.33,25.0,False,5
+Data Analyst,Intern,Excel,tool,10,42,23.81,8,"[""Pandas"", ""SQL"", ""Tableau"", ""Problem Solving"", ""Communication""]",21.15,stable,23.33,25.0,False,5
+Data Analyst,Intern,R,language,10,42,23.81,8,"[""Communication"", ""NumPy"", ""Problem Solving"", ""PostgreSQL"", ""SQL""]",19.8,rising,26.67,16.67,False,5
+Data Analyst,Intern,Power BI,tool,9,42,21.43,11,"[""Pandas"", ""Data Analysis"", ""Communication"", ""Tableau"", ""Problem Solving""]",18.78,falling,20.0,25.0,False,5
+Data Analyst,Intern,Data Visualization,tool,8,42,19.05,12,"[""Statistics"", ""Python"", ""Pandas"", ""Communication"", ""Excel""]",23.0,falling,13.33,33.33,False,5
+Data Analyst,Intern,PostgreSQL,database,8,42,19.05,12,"[""Data Analysis"", ""Pandas"", ""NumPy"", ""R"", ""Problem Solving""]",21.0,rising,23.33,8.33,False,5
+Data Analyst,Intern,AWS,cloud,7,42,16.67,14,"[""SQL"", ""Statistics"", ""Pandas"", ""Communication"", ""PostgreSQL""]",16.43,rising,23.33,0.0,False,5
+Data Analyst,Intern,Python,language,7,42,16.67,14,"[""Communication"", ""Tableau"", ""Pandas"", ""Statistics"", ""Data Visualization""]",16.14,falling,13.33,25.0,False,5
+Data Analyst,Mid,NumPy,tool,21,62,33.87,1,"[""AWS"", ""Data Analysis"", ""SQL"", ""PostgreSQL"", ""Excel""]",17.12,falling,28.57,45.0,False,5
+Data Analyst,Mid,PostgreSQL,database,18,62,29.03,2,"[""NumPy"", ""Data Analysis"", ""Statistics"", ""SQL"", ""AWS""]",19.19,stable,28.57,30.0,False,5
+Data Analyst,Mid,Data Analysis,tool,17,62,27.42,3,"[""NumPy"", ""PostgreSQL"", ""R"", ""AWS"", ""Data Visualization""]",18.29,falling,21.43,40.0,False,5
+Data Analyst,Mid,Pandas,tool,17,62,27.42,3,"[""SQL"", ""NumPy"", ""Excel"", ""PostgreSQL"", ""Python""]",17.91,rising,33.33,15.0,False,5
+Data Analyst,Mid,SQL,language,17,62,27.42,3,"[""Pandas"", ""Excel"", ""NumPy"", ""PostgreSQL"", ""Python""]",15.76,rising,33.33,15.0,False,5
+Data Analyst,Mid,Communication,soft skill,16,62,25.81,6,"[""Power BI"", ""Statistics"", ""NumPy"", ""Problem Solving"", ""AWS""]",15.59,stable,26.19,25.0,False,5
+Data Analyst,Mid,AWS,cloud,15,62,24.19,7,"[""NumPy"", ""PostgreSQL"", ""Problem Solving"", ""Data Analysis"", ""Power BI""]",18.5,falling,16.67,40.0,False,5
+Data Analyst,Mid,Statistics,ML/AI,15,62,24.19,7,"[""PostgreSQL"", ""Problem Solving"", ""Communication"", ""NumPy"", ""R""]",18.17,rising,26.19,20.0,False,5
+Data Analyst,Mid,Problem Solving,soft skill,14,62,22.58,9,"[""PostgreSQL"", ""AWS"", ""Statistics"", ""NumPy"", ""Tableau""]",15.5,falling,19.05,30.0,False,5
+Data Analyst,Mid,R,language,12,62,19.35,10,"[""Data Analysis"", ""PostgreSQL"", ""SQL"", ""NumPy"", ""Statistics""]",17.12,rising,21.43,15.0,False,5
+Data Analyst,Mid,Excel,tool,11,62,17.74,11,"[""SQL"", ""NumPy"", ""Pandas"", ""PostgreSQL"", ""Python""]",16.23,stable,19.05,15.0,False,5
+Data Analyst,Mid,Power BI,tool,11,62,17.74,11,"[""Communication"", ""AWS"", ""NumPy"", ""Python"", ""PostgreSQL""]",15.82,stable,19.05,15.0,False,5
+Data Analyst,Mid,Python,language,11,62,17.74,11,"[""NumPy"", ""SQL"", ""Power BI"", ""Pandas"", ""PostgreSQL""]",15.32,stable,19.05,15.0,False,5
+Data Analyst,Mid,Tableau,tool,11,62,17.74,11,"[""Problem Solving"", ""AWS"", ""Communication"", ""NumPy"", ""Pandas""]",13.55,falling,14.29,25.0,False,5
+Data Analyst,Mid,Data Visualization,tool,8,62,12.9,15,"[""PostgreSQL"", ""Data Analysis"", ""Statistics"", ""Power BI"", ""NumPy""]",19.44,stable,14.29,10.0,False,5
+Data Analyst,Senior,R,language,13,33,39.39,1,"[""Tableau"", ""Power BI"", ""Excel"", ""Pandas"", ""PostgreSQL""]",18.54,rising,40.74,33.33,False,5
+Data Analyst,Senior,Communication,soft skill,12,33,36.36,2,"[""Python"", ""AWS"", ""Excel"", ""Data Analysis"", ""Tableau""]",20.46,stable,37.04,33.33,False,5
+Data Analyst,Senior,AWS,cloud,10,33,30.3,3,"[""Communication"", ""Power BI"", ""Tableau"", ""Pandas"", ""PostgreSQL""]",21.65,stable,29.63,33.33,False,5
+Data Analyst,Senior,Data Analysis,tool,10,33,30.3,3,"[""Pandas"", ""Communication"", ""Python"", ""Excel"", ""Power BI""]",19.45,stable,29.63,33.33,False,5
+Data Analyst,Senior,Excel,tool,10,33,30.3,3,"[""R"", ""Communication"", ""Python"", ""Power BI"", ""Data Analysis""]",18.55,stable,29.63,33.33,False,5
+Data Analyst,Senior,Pandas,tool,10,33,30.3,3,"[""Data Analysis"", ""Python"", ""R"", ""AWS"", ""Power BI""]",20.95,stable,29.63,33.33,False,5
+Data Analyst,Senior,Power BI,tool,10,33,30.3,3,"[""R"", ""Excel"", ""AWS"", ""Tableau"", ""Pandas""]",17.95,rising,33.33,16.67,False,5
+Data Analyst,Senior,Python,language,8,33,24.24,8,"[""Communication"", ""Pandas"", ""Excel"", ""R"", ""Power BI""]",21.69,rising,25.93,16.67,False,5
+Data Analyst,Senior,Data Visualization,tool,7,33,21.21,9,"[""R"", ""AWS"", ""SQL"", ""Data Analysis"", ""Pandas""]",18.43,falling,18.52,33.33,False,5
+Data Analyst,Senior,PostgreSQL,database,7,33,21.21,9,"[""R"", ""AWS"", ""Pandas"", ""Problem Solving"", ""Power BI""]",22.57,falling,14.81,50.0,False,5
+Data Analyst,Senior,SQL,language,7,33,21.21,9,"[""Communication"", ""Pandas"", ""R"", ""Data Visualization"", ""Data Analysis""]",21.57,rising,22.22,16.67,False,5
+Data Analyst,Senior,Tableau,tool,7,33,21.21,9,"[""R"", ""AWS"", ""Power BI"", ""Communication"", ""PostgreSQL""]",15.79,falling,18.52,33.33,False,5
+Data Analyst,Senior,Problem Solving,soft skill,5,33,15.15,13,"[""R"", ""Communication"", ""Data Visualization"", ""PostgreSQL"", ""Pandas""]",18.2,stable,14.81,16.67,False,5
+Data Analyst,Senior,NumPy,tool,3,33,9.09,14,"[""Excel"", ""Python"", ""AWS"", ""Communication"", ""Data Analysis""]",24.83,falling,7.41,16.67,False,5
+Data Analyst,Senior,Statistics,ML/AI,2,33,6.06,15,"[""Data Visualization"", ""Tableau"", ""Data Analysis"", ""R"", ""PostgreSQL""]",20.0,falling,3.7,16.67,False,5
+Data Scientist,All,Python,language,53,200,26.5,1,"[""Natural Language Processing"", ""Data Visualization"", ""SQL"", ""Apache Spark"", ""Statistics""]",18.08,rising,28.15,23.08,False,5
+Data Scientist,All,Scikit-learn,ML/AI,53,200,26.5,1,"[""NumPy"", ""Natural Language Processing"", ""Python"", ""SQL"", ""PyTorch""]",18.29,rising,31.11,16.92,False,5
+Data Scientist,All,TensorFlow,ML/AI,50,200,25.0,3,"[""SQL"", ""Deep Learning"", ""NumPy"", ""R"", ""Data Analysis""]",18.29,stable,24.44,26.15,False,5
+Data Scientist,All,Data Visualization,tool,47,200,23.5,4,"[""Python"", ""Apache Spark"", ""Pandas"", ""Scikit-learn"", ""NumPy""]",18.04,stable,22.96,24.62,False,5
+Data Scientist,All,Data Analysis,tool,46,200,23.0,5,"[""Natural Language Processing"", ""AWS"", ""TensorFlow"", ""Scikit-learn"", ""NumPy""]",17.67,stable,22.96,23.08,False,5
+Data Scientist,All,Natural Language Processing,ML/AI,46,200,23.0,5,"[""Python"", ""Scikit-learn"", ""Machine Learning"", ""NumPy"", ""Data Analysis""]",16.75,stable,22.22,24.62,False,5
+Data Scientist,All,SQL,language,46,200,23.0,5,"[""TensorFlow"", ""Python"", ""Statistics"", ""PyTorch"", ""Scikit-learn""]",18.93,stable,23.7,21.54,False,5
+Data Scientist,All,Statistics,ML/AI,45,200,22.5,8,"[""SQL"", ""Python"", ""Machine Learning"", ""PyTorch"", ""R""]",20.04,stable,23.7,20.0,False,5
+Data Scientist,All,NumPy,tool,43,200,21.5,9,"[""Scikit-learn"", ""TensorFlow"", ""Python"", ""SQL"", ""Natural Language Processing""]",19.49,stable,21.48,21.54,False,5
+Data Scientist,All,PyTorch,ML/AI,41,200,20.5,10,"[""SQL"", ""Scikit-learn"", ""AWS"", ""Statistics"", ""Python""]",20.46,rising,22.22,16.92,False,5
+Data Scientist,All,R,language,41,200,20.5,10,"[""Apache Spark"", ""TensorFlow"", ""Deep Learning"", ""SQL"", ""Data Visualization""]",18.48,stable,20.74,20.0,False,5
+Data Scientist,All,Pandas,tool,40,200,20.0,12,"[""Data Visualization"", ""Python"", ""Deep Learning"", ""TensorFlow"", ""NumPy""]",20.34,stable,18.52,23.08,False,5
+Data Scientist,All,Apache Spark,tool,38,200,19.0,13,"[""Data Visualization"", ""Python"", ""R"", ""Statistics"", ""TensorFlow""]",16.36,stable,18.52,20.0,False,5
+Data Scientist,All,Deep Learning,ML/AI,37,200,18.5,14,"[""TensorFlow"", ""Pandas"", ""R"", ""Data Analysis"", ""Data Visualization""]",19.15,falling,16.3,23.08,False,5
+Data Scientist,All,AWS,cloud,35,200,17.5,15,"[""Data Analysis"", ""PyTorch"", ""Machine Learning"", ""Data Visualization"", ""Pandas""]",19.46,stable,17.04,18.46,False,5
+Data Scientist,All,Machine Learning,ML/AI,34,200,17.0,16,"[""Natural Language Processing"", ""Statistics"", ""TensorFlow"", ""Data Visualization"", ""AWS""]",18.71,rising,19.26,12.31,False,5
+Data Scientist,Entry,Data Visualization,tool,22,77,28.57,1,"[""Apache Spark"", ""Natural Language Processing"", ""AWS"", ""Pandas"", ""Python""]",19.09,stable,28.0,29.63,False,5
+Data Scientist,Entry,TensorFlow,ML/AI,22,77,28.57,1,"[""SQL"", ""Deep Learning"", ""R"", ""NumPy"", ""Apache Spark""]",17.64,rising,32.0,22.22,False,5
+Data Scientist,Entry,Apache Spark,tool,20,77,25.97,3,"[""Data Visualization"", ""Python"", ""R"", ""Natural Language Processing"", ""NumPy""]",17.95,falling,24.0,29.63,False,5
+Data Scientist,Entry,Natural Language Processing,ML/AI,18,77,23.38,4,"[""Data Visualization"", ""Python"", ""Apache Spark"", ""R"", ""AWS""]",16.44,rising,28.0,14.81,False,5
+Data Scientist,Entry,Python,language,18,77,23.38,4,"[""Apache Spark"", ""SQL"", ""Natural Language Processing"", ""Data Visualization"", ""Statistics""]",17.31,stable,24.0,22.22,False,5
+Data Scientist,Entry,R,language,18,77,23.38,4,"[""Apache Spark"", ""TensorFlow"", ""Natural Language Processing"", ""Data Visualization"", ""Scikit-learn""]",16.83,stable,22.0,25.93,False,5
+Data Scientist,Entry,SQL,language,18,77,23.38,4,"[""Python"", ""TensorFlow"", ""NumPy"", ""PyTorch"", ""Scikit-learn""]",18.39,stable,24.0,22.22,False,5
+Data Scientist,Entry,Pandas,tool,17,77,22.08,8,"[""Data Visualization"", ""Data Analysis"", ""Apache Spark"", ""AWS"", ""Deep Learning""]",20.24,falling,18.0,29.63,False,5
+Data Scientist,Entry,NumPy,tool,16,77,20.78,9,"[""SQL"", ""TensorFlow"", ""Scikit-learn"", ""Apache Spark"", ""Data Visualization""]",21.22,stable,22.0,18.52,False,5
+Data Scientist,Entry,Scikit-learn,ML/AI,16,77,20.78,9,"[""NumPy"", ""PyTorch"", ""SQL"", ""TensorFlow"", ""AWS""]",18.69,rising,26.0,11.11,False,5
+Data Scientist,Entry,AWS,cloud,15,77,19.48,11,"[""Data Visualization"", ""Data Analysis"", ""Natural Language Processing"", ""Pandas"", ""Scikit-learn""]",21.13,stable,18.0,22.22,False,5
+Data Scientist,Entry,PyTorch,ML/AI,15,77,19.48,11,"[""Scikit-learn"", ""SQL"", ""Deep Learning"", ""Pandas"", ""Python""]",21.87,falling,16.0,25.93,False,5
+Data Scientist,Entry,Data Analysis,tool,14,77,18.18,13,"[""AWS"", ""Pandas"", ""Data Visualization"", ""TensorFlow"", ""Natural Language Processing""]",19.57,rising,20.0,14.81,False,5
+Data Scientist,Entry,Deep Learning,ML/AI,13,77,16.88,14,"[""TensorFlow"", ""Data Visualization"", ""Pandas"", ""PyTorch"", ""Scikit-learn""]",18.42,rising,20.0,11.11,False,5
+Data Scientist,Entry,Statistics,ML/AI,12,77,15.58,15,"[""Python"", ""NumPy"", ""PyTorch"", ""R"", ""SQL""]",22.04,rising,18.0,11.11,False,5
+Data Scientist,Entry,Machine Learning,ML/AI,10,77,12.99,16,"[""Data Visualization"", ""AWS"", ""Natural Language Processing"", ""NumPy"", ""Data Analysis""]",18.9,stable,12.0,14.81,False,5
+Data Scientist,Intern,Deep Learning,ML/AI,12,38,31.58,1,"[""R"", ""Data Analysis"", ""Natural Language Processing"", ""Pandas"", ""Apache Spark""]",20.0,falling,22.73,43.75,False,5
+Data Scientist,Intern,Natural Language Processing,ML/AI,11,38,28.95,2,"[""NumPy"", ""Scikit-learn"", ""PyTorch"", ""Deep Learning"", ""Statistics""]",18.55,stable,27.27,31.25,False,5
+Data Scientist,Intern,Data Analysis,tool,10,38,26.32,3,"[""Deep Learning"", ""NumPy"", ""Python"", ""Data Visualization"", ""TensorFlow""]",19.95,falling,22.73,31.25,False,5
+Data Scientist,Intern,Data Visualization,tool,10,38,26.32,3,"[""PyTorch"", ""SQL"", ""Python"", ""R"", ""Data Analysis""]",15.75,stable,27.27,25.0,False,5
+Data Scientist,Intern,NumPy,tool,10,38,26.32,3,"[""Python"", ""Natural Language Processing"", ""Scikit-learn"", ""SQL"", ""Data Analysis""]",20.65,falling,18.18,37.5,False,5
+Data Scientist,Intern,Python,language,10,38,26.32,3,"[""NumPy"", ""Statistics"", ""TensorFlow"", ""Pandas"", ""Data Visualization""]",21.55,stable,27.27,25.0,False,5
+Data Scientist,Intern,PyTorch,ML/AI,10,38,26.32,3,"[""Natural Language Processing"", ""Machine Learning"", ""Data Visualization"", ""Deep Learning"", ""SQL""]",17.5,rising,36.36,12.5,False,5
+Data Scientist,Intern,TensorFlow,ML/AI,9,38,23.68,8,"[""Machine Learning"", ""NumPy"", ""Python"", ""Data Analysis"", ""Deep Learning""]",19.44,stable,22.73,25.0,False,5
+Data Scientist,Intern,R,language,8,38,21.05,9,"[""Deep Learning"", ""SQL"", ""Data Visualization"", ""Pandas"", ""PyTorch""]",19.81,stable,22.73,18.75,False,5
+Data Scientist,Intern,Scikit-learn,ML/AI,8,38,21.05,9,"[""NumPy"", ""Natural Language Processing"", ""Data Analysis"", ""PyTorch"", ""SQL""]",14.75,stable,22.73,18.75,False,5
+Data Scientist,Intern,SQL,language,8,38,21.05,9,"[""Pandas"", ""NumPy"", ""Data Visualization"", ""R"", ""PyTorch""]",20.94,stable,22.73,18.75,False,5
+Data Scientist,Intern,Statistics,ML/AI,8,38,21.05,9,"[""Python"", ""Natural Language Processing"", ""Machine Learning"", ""NumPy"", ""Apache Spark""]",19.31,falling,13.64,31.25,False,5
+Data Scientist,Intern,Pandas,tool,7,38,18.42,13,"[""SQL"", ""Python"", ""Deep Learning"", ""R"", ""NumPy""]",24.07,stable,18.18,18.75,False,5
+Data Scientist,Intern,Machine Learning,ML/AI,6,38,15.79,14,"[""TensorFlow"", ""PyTorch"", ""Statistics"", ""NumPy"", ""Data Visualization""]",21.33,rising,18.18,12.5,False,5
+Data Scientist,Intern,AWS,cloud,5,38,13.16,15,"[""Pandas"", ""Deep Learning"", ""SQL"", ""Data Visualization"", ""Python""]",21.9,stable,13.64,12.5,False,5
+Data Scientist,Intern,Apache Spark,tool,4,38,10.53,16,"[""Deep Learning"", ""Statistics"", ""Data Visualization"", ""R"", ""Natural Language Processing""]",13.88,falling,4.55,18.75,False,5
+Data Scientist,Mid,Scikit-learn,ML/AI,22,53,41.51,1,"[""Python"", ""NumPy"", ""Machine Learning"", ""Data Visualization"", ""SQL""]",19.23,rising,44.19,30.0,False,5
+Data Scientist,Mid,Python,language,17,53,32.08,2,"[""Scikit-learn"", ""Natural Language Processing"", ""Machine Learning"", ""Data Analysis"", ""Pandas""]",16.74,rising,34.88,20.0,False,5
+Data Scientist,Mid,Statistics,ML/AI,17,53,32.08,2,"[""SQL"", ""PyTorch"", ""Machine Learning"", ""Data Analysis"", ""Scikit-learn""]",18.0,stable,32.56,30.0,False,5
+Data Scientist,Mid,Data Analysis,tool,14,53,26.42,4,"[""SQL"", ""Python"", ""TensorFlow"", ""NumPy"", ""Statistics""]",16.0,falling,23.26,40.0,False,5
+Data Scientist,Mid,Machine Learning,ML/AI,13,53,24.53,5,"[""Scikit-learn"", ""Python"", ""Natural Language Processing"", ""AWS"", ""Statistics""]",16.12,rising,30.23,0.0,False,5
+Data Scientist,Mid,SQL,language,13,53,24.53,5,"[""Statistics"", ""TensorFlow"", ""Data Analysis"", ""Scikit-learn"", ""NumPy""]",17.08,rising,25.58,20.0,False,5
+Data Scientist,Mid,TensorFlow,ML/AI,13,53,24.53,5,"[""SQL"", ""Data Analysis"", ""Scikit-learn"", ""Deep Learning"", ""Statistics""]",19.88,falling,20.93,40.0,False,5
+Data Scientist,Mid,NumPy,tool,12,53,22.64,8,"[""Scikit-learn"", ""Data Analysis"", ""SQL"", ""TensorFlow"", ""Machine Learning""]",16.29,stable,23.26,20.0,False,5
+Data Scientist,Mid,Data Visualization,tool,10,53,18.87,9,"[""Scikit-learn"", ""Python"", ""Machine Learning"", ""Pandas"", ""SQL""]",16.05,rising,20.93,10.0,False,5
+Data Scientist,Mid,Natural Language Processing,ML/AI,10,53,18.87,9,"[""Python"", ""Machine Learning"", ""Statistics"", ""Scikit-learn"", ""Data Analysis""]",14.2,falling,16.28,30.0,False,5
+Data Scientist,Mid,Apache Spark,tool,9,53,16.98,11,"[""AWS"", ""Python"", ""Statistics"", ""NumPy"", ""Scikit-learn""]",14.28,rising,18.6,10.0,False,5
+Data Scientist,Mid,AWS,cloud,9,53,16.98,11,"[""Apache Spark"", ""PyTorch"", ""Machine Learning"", ""Scikit-learn"", ""Statistics""]",17.89,rising,20.93,0.0,False,5
+Data Scientist,Mid,PyTorch,ML/AI,9,53,16.98,11,"[""AWS"", ""Statistics"", ""Scikit-learn"", ""Machine Learning"", ""Data Analysis""]",23.67,rising,20.93,0.0,False,5
+Data Scientist,Mid,R,language,9,53,16.98,11,"[""Statistics"", ""Data Analysis"", ""TensorFlow"", ""SQL"", ""Scikit-learn""]",18.39,stable,16.28,20.0,False,5
+Data Scientist,Mid,Pandas,tool,8,53,15.09,15,"[""Python"", ""Data Visualization"", ""Scikit-learn"", ""TensorFlow"", ""Machine Learning""]",16.69,falling,13.95,20.0,False,5
+Data Scientist,Mid,Deep Learning,ML/AI,7,53,13.21,16,"[""TensorFlow"", ""Data Analysis"", ""SQL"", ""Python"", ""Scikit-learn""]",17.86,falling,11.63,20.0,False,5
+Data Scientist,Senior,Data Analysis,tool,8,32,25.0,1,"[""AWS"", ""Scikit-learn"", ""Pandas"", ""Natural Language Processing"", ""Statistics""]",14.44,rising,30.0,16.67,False,5
+Data Scientist,Senior,Pandas,tool,8,32,25.0,1,"[""R"", ""Scikit-learn"", ""Data Analysis"", ""Python"", ""Statistics""]",20.94,rising,30.0,16.67,False,5
+Data Scientist,Senior,Python,language,8,32,25.0,1,"[""SQL"", ""PyTorch"", ""Pandas"", ""Natural Language Processing"", ""Scikit-learn""]",18.38,stable,25.0,25.0,False,5
+Data Scientist,Senior,Statistics,ML/AI,8,32,25.0,1,"[""SQL"", ""Scikit-learn"", ""Pandas"", ""AWS"", ""Machine Learning""]",22.12,rising,30.0,16.67,False,5
+Data Scientist,Senior,Natural Language Processing,ML/AI,7,32,21.88,5,"[""Data Analysis"", ""NumPy"", ""Machine Learning"", ""SQL"", ""Python""]",18.36,falling,15.0,33.33,False,5
+Data Scientist,Senior,PyTorch,ML/AI,7,32,21.88,5,"[""Python"", ""SQL"", ""Natural Language Processing"", ""TensorFlow"", ""NumPy""]",17.57,rising,25.0,16.67,False,5
+Data Scientist,Senior,Scikit-learn,ML/AI,7,32,21.88,5,"[""Pandas"", ""Data Analysis"", ""Statistics"", ""Natural Language Processing"", ""Python""]",18.5,rising,25.0,16.67,False,5
+Data Scientist,Senior,SQL,language,7,32,21.88,5,"[""Python"", ""PyTorch"", ""Statistics"", ""Machine Learning"", ""Natural Language Processing""]",21.5,falling,20.0,25.0,False,5
+Data Scientist,Senior,AWS,cloud,6,32,18.75,9,"[""Data Analysis"", ""Statistics"", ""Deep Learning"", ""Natural Language Processing"", ""NumPy""]",15.58,falling,10.0,33.33,False,5
+Data Scientist,Senior,R,language,6,32,18.75,9,"[""Pandas"", ""Natural Language Processing"", ""Scikit-learn"", ""Data Analysis"", ""Python""]",21.75,rising,25.0,8.33,False,5
+Data Scientist,Senior,TensorFlow,ML/AI,6,32,18.75,9,"[""NumPy"", ""Machine Learning"", ""Apache Spark"", ""Deep Learning"", ""PyTorch""]",15.5,falling,15.0,25.0,False,5
+Data Scientist,Senior,Apache Spark,tool,5,32,15.62,12,"[""Machine Learning"", ""TensorFlow"", ""Data Analysis"", ""Natural Language Processing"", ""R""]",15.7,rising,20.0,8.33,False,5
+Data Scientist,Senior,Data Visualization,tool,5,32,15.62,12,"[""Python"", ""Natural Language Processing"", ""PyTorch"", ""SQL"", ""AWS""]",22.0,falling,10.0,25.0,False,5
+Data Scientist,Senior,Deep Learning,ML/AI,5,32,15.62,12,"[""AWS"", ""TensorFlow"", ""Statistics"", ""Scikit-learn"", ""Data Analysis""]",20.8,falling,10.0,25.0,False,5
+Data Scientist,Senior,Machine Learning,ML/AI,5,32,15.62,12,"[""Natural Language Processing"", ""TensorFlow"", ""SQL"", ""Apache Spark"", ""Statistics""]",21.9,stable,15.0,16.67,False,5
+Data Scientist,Senior,NumPy,tool,5,32,15.62,12,"[""TensorFlow"", ""Natural Language Processing"", ""Scikit-learn"", ""PyTorch"", ""Data Analysis""]",19.3,rising,20.0,8.33,False,5
+DevOps Engineer,All,CI/CD,tool,52,200,26.0,1,"[""Git"", ""Google Cloud"", ""Microsoft Azure"", ""Docker"", ""PostgreSQL""]",17.62,stable,26.81,24.19,False,5
+DevOps Engineer,All,Microsoft Azure,cloud,52,200,26.0,1,"[""Problem Solving"", ""Kubernetes"", ""CI/CD"", ""Git"", ""AWS""]",20.73,stable,27.54,22.58,False,5
+DevOps Engineer,All,Kubernetes,tool,50,200,25.0,3,"[""Microsoft Azure"", ""Docker"", ""Google Cloud"", ""Problem Solving"", ""Terraform""]",19.88,falling,21.74,32.26,False,5
+DevOps Engineer,All,Google Cloud,cloud,49,200,24.5,4,"[""CI/CD"", ""AWS"", ""Kubernetes"", ""Apache Kafka"", ""Linux""]",18.34,stable,23.19,27.42,False,5
+DevOps Engineer,All,Linux,tool,49,200,24.5,4,"[""Apache Airflow"", ""Terraform"", ""PostgreSQL"", ""AWS"", ""Microsoft Azure""]",18.08,rising,29.71,12.9,False,5
+DevOps Engineer,All,Apache Kafka,tool,47,200,23.5,6,"[""Terraform"", ""Google Cloud"", ""Microsoft Azure"", ""Problem Solving"", ""AWS""]",18.45,stable,23.91,22.58,False,5
+DevOps Engineer,All,Terraform,tool,46,200,23.0,7,"[""Apache Kafka"", ""Linux"", ""Microsoft Azure"", ""Kubernetes"", ""Problem Solving""]",17.68,stable,21.74,25.81,False,5
+DevOps Engineer,All,AWS,cloud,45,200,22.5,8,"[""Google Cloud"", ""Microsoft Azure"", ""Linux"", ""CI/CD"", ""Docker""]",18.59,falling,20.29,27.42,False,5
+DevOps Engineer,All,Docker,tool,45,200,22.5,8,"[""Kubernetes"", ""CI/CD"", ""Linux"", ""Google Cloud"", ""PostgreSQL""]",19.34,stable,21.01,25.81,False,5
+DevOps Engineer,All,PostgreSQL,database,45,200,22.5,8,"[""Linux"", ""CI/CD"", ""Apache Airflow"", ""SQL"", ""Docker""]",16.94,stable,21.74,24.19,False,5
+DevOps Engineer,All,Git,tool,44,200,22.0,11,"[""CI/CD"", ""Microsoft Azure"", ""PostgreSQL"", ""Google Cloud"", ""Linux""]",18.27,stable,22.46,20.97,False,5
+DevOps Engineer,All,Problem Solving,soft skill,43,200,21.5,12,"[""Microsoft Azure"", ""Kubernetes"", ""Terraform"", ""Apache Kafka"", ""Google Cloud""]",18.45,stable,21.74,20.97,False,5
+DevOps Engineer,All,SQL,language,42,200,21.0,13,"[""Kubernetes"", ""PostgreSQL"", ""CI/CD"", ""Git"", ""Google Cloud""]",18.0,stable,19.57,24.19,False,5
+DevOps Engineer,All,Apache Airflow,tool,37,200,18.5,14,"[""Linux"", ""PostgreSQL"", ""Google Cloud"", ""AWS"", ""Microsoft Azure""]",17.2,rising,21.01,12.9,False,5
+DevOps Engineer,All,Monitoring,tool,37,200,18.5,14,"[""Linux"", ""Kubernetes"", ""Google Cloud"", ""Terraform"", ""AWS""]",19.27,stable,19.57,16.13,False,5
+DevOps Engineer,All,Python,language,29,200,14.5,16,"[""Apache Kafka"", ""Terraform"", ""AWS"", ""Microsoft Azure"", ""Git""]",18.1,falling,11.59,20.97,False,5
+DevOps Engineer,Entry,Kubernetes,tool,21,61,34.43,1,"[""Problem Solving"", ""Google Cloud"", ""Microsoft Azure"", ""Docker"", ""CI/CD""]",20.1,falling,28.57,47.37,False,5
+DevOps Engineer,Entry,CI/CD,tool,19,61,31.15,2,"[""Google Cloud"", ""Git"", ""Microsoft Azure"", ""Docker"", ""Kubernetes""]",16.58,rising,33.33,26.32,False,5
+DevOps Engineer,Entry,Google Cloud,cloud,17,61,27.87,3,"[""Docker"", ""Kubernetes"", ""CI/CD"", ""Problem Solving"", ""SQL""]",15.5,falling,21.43,42.11,False,5
+DevOps Engineer,Entry,Docker,tool,16,61,26.23,4,"[""Google Cloud"", ""Kubernetes"", ""CI/CD"", ""Apache Kafka"", ""Linux""]",20.72,falling,19.05,42.11,False,5
+DevOps Engineer,Entry,Linux,tool,16,61,26.23,4,"[""PostgreSQL"", ""Apache Airflow"", ""Microsoft Azure"", ""Python"", ""Google Cloud""]",20.22,rising,33.33,10.53,False,5
+DevOps Engineer,Entry,PostgreSQL,database,16,61,26.23,4,"[""Linux"", ""Terraform"", ""Microsoft Azure"", ""CI/CD"", ""Kubernetes""]",16.56,rising,28.57,21.05,False,5
+DevOps Engineer,Entry,Terraform,tool,14,61,22.95,7,"[""PostgreSQL"", ""Python"", ""CI/CD"", ""Google Cloud"", ""Kubernetes""]",17.71,stable,23.81,21.05,False,5
+DevOps Engineer,Entry,Microsoft Azure,cloud,13,61,21.31,8,"[""Kubernetes"", ""CI/CD"", ""Problem Solving"", ""Linux"", ""PostgreSQL""]",18.85,rising,23.81,15.79,False,5
+DevOps Engineer,Entry,Problem Solving,soft skill,13,61,21.31,8,"[""Kubernetes"", ""Microsoft Azure"", ""Google Cloud"", ""Terraform"", ""Docker""]",20.54,falling,16.67,31.58,False,5
+DevOps Engineer,Entry,Git,tool,11,61,18.03,10,"[""CI/CD"", ""Linux"", ""PostgreSQL"", ""Microsoft Azure"", ""Terraform""]",16.27,stable,19.05,15.79,False,5
+DevOps Engineer,Entry,SQL,language,11,61,18.03,10,"[""Google Cloud"", ""CI/CD"", ""Apache Airflow"", ""Linux"", ""PostgreSQL""]",16.59,rising,21.43,10.53,False,5
+DevOps Engineer,Entry,Apache Kafka,tool,10,61,16.39,12,"[""Docker"", ""Kubernetes"", ""Microsoft Azure"", ""Python"", ""PostgreSQL""]",18.9,rising,19.05,10.53,False,5
+DevOps Engineer,Entry,Python,language,10,61,16.39,12,"[""Microsoft Azure"", ""Terraform"", ""CI/CD"", ""PostgreSQL"", ""Linux""]",20.0,stable,16.67,15.79,False,5
+DevOps Engineer,Entry,Apache Airflow,tool,9,61,14.75,14,"[""Linux"", ""Google Cloud"", ""PostgreSQL"", ""SQL"", ""CI/CD""]",15.0,rising,16.67,10.53,False,5
+DevOps Engineer,Entry,Monitoring,tool,7,61,11.48,15,"[""Kubernetes"", ""Google Cloud"", ""Terraform"", ""Git"", ""SQL""]",15.29,stable,11.9,10.53,False,5
+DevOps Engineer,Entry,AWS,cloud,6,61,9.84,16,"[""CI/CD"", ""Kubernetes"", ""Microsoft Azure"", ""Terraform"", ""Problem Solving""]",20.67,rising,11.9,5.26,False,5
+DevOps Engineer,Intern,CI/CD,tool,11,36,30.56,1,"[""Google Cloud"", ""Git"", ""Docker"", ""PostgreSQL"", ""Microsoft Azure""]",16.09,stable,30.77,30.0,False,5
+DevOps Engineer,Intern,Google Cloud,cloud,10,36,27.78,2,"[""CI/CD"", ""Kubernetes"", ""PostgreSQL"", ""AWS"", ""Apache Airflow""]",18.65,stable,26.92,30.0,False,5
+DevOps Engineer,Intern,Kubernetes,tool,10,36,27.78,2,"[""Docker"", ""Linux"", ""Monitoring"", ""AWS"", ""Google Cloud""]",21.2,stable,26.92,30.0,False,5
+DevOps Engineer,Intern,Microsoft Azure,cloud,10,36,27.78,2,"[""Terraform"", ""Git"", ""CI/CD"", ""Problem Solving"", ""Docker""]",21.5,stable,26.92,30.0,False,5
+DevOps Engineer,Intern,Git,tool,9,36,25.0,5,"[""CI/CD"", ""Microsoft Azure"", ""Google Cloud"", ""Terraform"", ""Apache Airflow""]",20.78,rising,26.92,20.0,False,5
+DevOps Engineer,Intern,Terraform,tool,9,36,25.0,5,"[""Microsoft Azure"", ""Apache Kafka"", ""Google Cloud"", ""Problem Solving"", ""Monitoring""]",18.72,falling,15.38,50.0,False,5
+DevOps Engineer,Intern,Apache Airflow,tool,8,36,22.22,7,"[""AWS"", ""Google Cloud"", ""Problem Solving"", ""PostgreSQL"", ""Git""]",14.94,stable,23.08,20.0,False,5
+DevOps Engineer,Intern,AWS,cloud,8,36,22.22,7,"[""Kubernetes"", ""Apache Airflow"", ""Google Cloud"", ""PostgreSQL"", ""Apache Kafka""]",18.88,falling,19.23,30.0,False,5
+DevOps Engineer,Intern,Linux,tool,8,36,22.22,7,"[""Monitoring"", ""Kubernetes"", ""Docker"", ""Terraform"", ""PostgreSQL""]",15.88,falling,19.23,30.0,False,5
+DevOps Engineer,Intern,Apache Kafka,tool,7,36,19.44,10,"[""Terraform"", ""Monitoring"", ""AWS"", ""Microsoft Azure"", ""Google Cloud""]",20.86,rising,23.08,10.0,False,5
+DevOps Engineer,Intern,Docker,tool,7,36,19.44,10,"[""Kubernetes"", ""CI/CD"", ""Linux"", ""Monitoring"", ""PostgreSQL""]",18.64,rising,23.08,10.0,False,5
+DevOps Engineer,Intern,Monitoring,tool,7,36,19.44,10,"[""Linux"", ""Kubernetes"", ""PostgreSQL"", ""Docker"", ""Apache Kafka""]",19.93,stable,19.23,20.0,False,5
+DevOps Engineer,Intern,PostgreSQL,database,7,36,19.44,10,"[""Google Cloud"", ""CI/CD"", ""Monitoring"", ""Kubernetes"", ""AWS""]",13.5,falling,11.54,40.0,False,5
+DevOps Engineer,Intern,Problem Solving,soft skill,6,36,16.67,14,"[""Apache Airflow"", ""Terraform"", ""Microsoft Azure"", ""Google Cloud"", ""Monitoring""]",18.58,rising,23.08,0.0,False,5
+DevOps Engineer,Intern,Python,language,5,36,13.89,15,"[""AWS"", ""Monitoring"", ""Git"", ""PostgreSQL"", ""Google Cloud""]",16.6,falling,11.54,20.0,False,5
+DevOps Engineer,Intern,SQL,language,4,36,11.11,16,"[""CI/CD"", ""Docker"", ""PostgreSQL"", ""Microsoft Azure"", ""Apache Airflow""]",16.62,stable,11.54,10.0,False,5
+DevOps Engineer,Mid,AWS,cloud,24,64,37.5,1,"[""Microsoft Azure"", ""Linux"", ""Google Cloud"", ""Docker"", ""Apache Kafka""]",18.04,falling,30.43,55.56,False,5
+DevOps Engineer,Mid,Apache Kafka,tool,20,64,31.25,2,"[""Terraform"", ""Problem Solving"", ""AWS"", ""Google Cloud"", ""Python""]",16.12,falling,26.09,44.44,False,5
+DevOps Engineer,Mid,Microsoft Azure,cloud,20,64,31.25,2,"[""AWS"", ""Problem Solving"", ""Kubernetes"", ""Terraform"", ""Linux""]",21.43,rising,34.78,22.22,False,5
+DevOps Engineer,Mid,CI/CD,tool,17,64,26.56,4,"[""Git"", ""Monitoring"", ""Problem Solving"", ""Microsoft Azure"", ""AWS""]",19.82,rising,30.43,16.67,False,5
+DevOps Engineer,Mid,Problem Solving,soft skill,17,64,26.56,4,"[""Microsoft Azure"", ""Apache Kafka"", ""AWS"", ""CI/CD"", ""Terraform""]",19.15,stable,26.09,27.78,False,5
+DevOps Engineer,Mid,Linux,tool,16,64,25.0,6,"[""AWS"", ""Microsoft Azure"", ""Terraform"", ""Apache Kafka"", ""Apache Airflow""]",16.31,rising,28.26,16.67,False,5
+DevOps Engineer,Mid,Terraform,tool,16,64,25.0,6,"[""Apache Kafka"", ""Microsoft Azure"", ""Problem Solving"", ""Linux"", ""AWS""]",17.12,stable,23.91,27.78,False,5
+DevOps Engineer,Mid,Git,tool,15,64,23.44,8,"[""CI/CD"", ""PostgreSQL"", ""AWS"", ""SQL"", ""Apache Kafka""]",17.57,stable,23.91,22.22,False,5
+DevOps Engineer,Mid,Google Cloud,cloud,15,64,23.44,8,"[""AWS"", ""Apache Kafka"", ""Problem Solving"", ""Linux"", ""Monitoring""]",19.03,stable,23.91,22.22,False,5
+DevOps Engineer,Mid,PostgreSQL,database,14,64,21.88,10,"[""Git"", ""SQL"", ""AWS"", ""CI/CD"", ""Linux""]",16.93,rising,26.09,11.11,False,5
+DevOps Engineer,Mid,SQL,language,14,64,21.88,10,"[""PostgreSQL"", ""Apache Kafka"", ""Python"", ""Git"", ""Docker""]",16.61,falling,19.57,27.78,False,5
+DevOps Engineer,Mid,Docker,tool,13,64,20.31,12,"[""AWS"", ""CI/CD"", ""SQL"", ""PostgreSQL"", ""Apache Kafka""]",18.58,stable,19.57,22.22,False,5
+DevOps Engineer,Mid,Monitoring,tool,12,64,18.75,13,"[""CI/CD"", ""Linux"", ""Problem Solving"", ""AWS"", ""Google Cloud""]",17.58,stable,19.57,16.67,False,5
+DevOps Engineer,Mid,Kubernetes,tool,11,64,17.19,14,"[""Microsoft Azure"", ""Terraform"", ""SQL"", ""Docker"", ""Problem Solving""]",19.5,stable,17.39,16.67,False,5
+DevOps Engineer,Mid,Apache Airflow,tool,10,64,15.62,15,"[""Linux"", ""Terraform"", ""PostgreSQL"", ""Microsoft Azure"", ""Kubernetes""]",16.5,rising,17.39,11.11,False,5
+DevOps Engineer,Mid,Python,language,8,64,12.5,16,"[""Apache Kafka"", ""SQL"", ""AWS"", ""Problem Solving"", ""Terraform""]",16.31,falling,8.7,22.22,False,5
+DevOps Engineer,Senior,SQL,language,13,39,33.33,1,"[""Kubernetes"", ""Microsoft Azure"", ""Monitoring"", ""Terraform"", ""Apache Airflow""]",21.12,falling,25.0,46.67,False,5
+DevOps Engineer,Senior,Monitoring,tool,11,39,28.21,2,"[""AWS"", ""Apache Airflow"", ""Google Cloud"", ""SQL"", ""Kubernetes""]",23.23,rising,33.33,20.0,False,5
+DevOps Engineer,Senior,Apache Airflow,tool,10,39,25.64,3,"[""Docker"", ""AWS"", ""Monitoring"", ""Microsoft Azure"", ""SQL""]",21.7,rising,33.33,13.33,False,5
+DevOps Engineer,Senior,Apache Kafka,tool,10,39,25.64,3,"[""Microsoft Azure"", ""Linux"", ""Kubernetes"", ""Apache Airflow"", ""Google Cloud""]",20.95,rising,29.17,20.0,False,5
+DevOps Engineer,Senior,Docker,tool,9,39,23.08,5,"[""Linux"", ""Apache Airflow"", ""Git"", ""PostgreSQL"", ""Terraform""]",18.56,rising,25.0,20.0,False,5
+DevOps Engineer,Senior,Git,tool,9,39,23.08,5,"[""Linux"", ""Microsoft Azure"", ""Google Cloud"", ""Docker"", ""SQL""]",19.39,falling,20.83,26.67,False,5
+DevOps Engineer,Senior,Linux,tool,9,39,23.08,5,"[""Git"", ""Docker"", ""Terraform"", ""Google Cloud"", ""Apache Kafka""]",19.39,rising,37.5,0.0,False,5
+DevOps Engineer,Senior,Microsoft Azure,cloud,9,39,23.08,5,"[""Git"", ""SQL"", ""Apache Kafka"", ""Apache Airflow"", ""CI/CD""]",21.06,falling,20.83,26.67,False,5
+DevOps Engineer,Senior,Kubernetes,tool,8,39,20.51,9,"[""SQL"", ""AWS"", ""Apache Airflow"", ""Monitoring"", ""Docker""]",18.19,falling,12.5,33.33,False,5
+DevOps Engineer,Senior,PostgreSQL,database,8,39,20.51,9,"[""Docker"", ""Git"", ""SQL"", ""Apache Airflow"", ""Monitoring""]",20.75,falling,12.5,33.33,False,5
+DevOps Engineer,Senior,AWS,cloud,7,39,17.95,11,"[""Apache Airflow"", ""Monitoring"", ""Google Cloud"", ""Kubernetes"", ""Linux""]",18.36,stable,16.67,20.0,False,5
+DevOps Engineer,Senior,Google Cloud,cloud,7,39,17.95,11,"[""Monitoring"", ""Linux"", ""AWS"", ""Git"", ""Microsoft Azure""]",23.29,rising,20.83,13.33,False,5
+DevOps Engineer,Senior,Problem Solving,soft skill,7,39,17.95,11,"[""Apache Kafka"", ""PostgreSQL"", ""SQL"", ""Docker"", ""Git""]",12.79,rising,20.83,13.33,False,5
+DevOps Engineer,Senior,Terraform,tool,7,39,17.95,11,"[""Linux"", ""SQL"", ""Docker"", ""Monitoring"", ""Python""]",17.57,rising,20.83,13.33,False,5
+DevOps Engineer,Senior,Python,language,6,39,15.38,15,"[""SQL"", ""Google Cloud"", ""Monitoring"", ""Kubernetes"", ""Terraform""]",18.58,falling,8.33,26.67,False,5
+DevOps Engineer,Senior,CI/CD,tool,5,39,12.82,16,"[""AWS"", ""Microsoft Azure"", ""Apache Airflow"", ""SQL"", ""Git""]",17.4,falling,4.17,26.67,False,5
+Frontend Developer,All,Next.js,framework,59,200,29.5,1,"[""CSS"", ""GraphQL"", ""REST API"", ""Python"", ""Node.js""]",19.18,falling,25.76,36.76,False,5
+Frontend Developer,All,REST API,framework,51,200,25.5,2,"[""Next.js"", ""Docker"", ""CSS"", ""GraphQL"", ""Node.js""]",17.85,rising,28.03,20.59,False,5
+Frontend Developer,All,CSS,language,49,200,24.5,3,"[""Next.js"", ""REST API"", ""Python"", ""Git"", ""Docker""]",20.15,stable,25.0,23.53,False,5
+Frontend Developer,All,Node.js,framework,49,200,24.5,3,"[""Next.js"", ""Git"", ""Docker"", ""AWS"", ""Python""]",21.4,rising,26.52,20.59,False,5
+Frontend Developer,All,Docker,tool,47,200,23.5,5,"[""REST API"", ""Next.js"", ""Node.js"", ""Python"", ""GraphQL""]",18.76,rising,26.52,17.65,False,5
+Frontend Developer,All,Python,language,46,200,23.0,6,"[""Next.js"", ""GraphQL"", ""CSS"", ""Docker"", ""PostgreSQL""]",19.9,stable,22.73,23.53,False,5
+Frontend Developer,All,Agile,tool,43,200,21.5,7,"[""REST API"", ""Next.js"", ""HTML"", ""AWS"", ""Python""]",18.51,stable,21.97,20.59,False,5
+Frontend Developer,All,GraphQL,framework,42,200,21.0,8,"[""Next.js"", ""REST API"", ""Python"", ""Docker"", ""React""]",19.15,stable,20.45,22.06,False,5
+Frontend Developer,All,AWS,cloud,39,200,19.5,9,"[""Node.js"", ""Git"", ""JavaScript"", ""REST API"", ""Agile""]",20.62,falling,16.67,25.0,False,5
+Frontend Developer,All,Git,tool,39,200,19.5,9,"[""Node.js"", ""Next.js"", ""CSS"", ""AWS"", ""REST API""]",17.55,stable,19.7,19.12,False,5
+Frontend Developer,All,JavaScript,language,38,200,19.0,11,"[""REST API"", ""AWS"", ""Node.js"", ""CSS"", ""Agile""]",20.11,stable,18.18,20.59,False,5
+Frontend Developer,All,PostgreSQL,database,36,200,18.0,12,"[""Python"", ""Next.js"", ""Docker"", ""CSS"", ""React""]",19.79,rising,21.97,10.29,False,5
+Frontend Developer,All,React,framework,34,200,17.0,13,"[""Next.js"", ""GraphQL"", ""REST API"", ""Docker"", ""Git""]",19.93,stable,17.42,16.18,False,5
+Frontend Developer,All,HTML,language,32,200,16.0,14,"[""Agile"", ""Communication"", ""Docker"", ""Node.js"", ""PostgreSQL""]",19.27,stable,17.42,13.24,False,5
+Frontend Developer,All,TypeScript,language,32,200,16.0,14,"[""CSS"", ""Docker"", ""Next.js"", ""Problem Solving"", ""JavaScript""]",19.39,stable,14.39,19.12,False,5
+Frontend Developer,All,Communication,soft skill,30,200,15.0,16,"[""GraphQL"", ""Next.js"", ""HTML"", ""CSS"", ""Python""]",18.4,stable,15.91,13.24,False,5
+Frontend Developer,All,Problem Solving,soft skill,28,200,14.0,17,"[""Node.js"", ""Docker"", ""TypeScript"", ""PostgreSQL"", ""Next.js""]",19.93,stable,13.64,14.71,False,5
+Frontend Developer,Entry,Next.js,framework,25,69,36.23,1,"[""GraphQL"", ""CSS"", ""REST API"", ""Git"", ""React""]",22.22,falling,31.91,45.45,False,5
+Frontend Developer,Entry,CSS,language,18,69,26.09,2,"[""Next.js"", ""JavaScript"", ""TypeScript"", ""Python"", ""REST API""]",20.22,falling,21.28,36.36,False,5
+Frontend Developer,Entry,Docker,tool,18,69,26.09,2,"[""Node.js"", ""Problem Solving"", ""TypeScript"", ""PostgreSQL"", ""REST API""]",20.14,rising,29.79,18.18,False,5
+Frontend Developer,Entry,Git,tool,18,69,26.09,2,"[""Next.js"", ""Node.js"", ""Problem Solving"", ""CSS"", ""React""]",18.47,stable,25.53,27.27,False,5
+Frontend Developer,Entry,Agile,tool,17,69,24.64,5,"[""REST API"", ""CSS"", ""JavaScript"", ""AWS"", ""PostgreSQL""]",18.82,falling,21.28,31.82,False,5
+Frontend Developer,Entry,GraphQL,framework,16,69,23.19,6,"[""Next.js"", ""REST API"", ""Docker"", ""Communication"", ""Python""]",21.53,rising,25.53,18.18,False,5
+Frontend Developer,Entry,REST API,framework,16,69,23.19,6,"[""Next.js"", ""GraphQL"", ""Agile"", ""Docker"", ""CSS""]",20.88,rising,25.53,18.18,False,5
+Frontend Developer,Entry,Node.js,framework,15,69,21.74,8,"[""Next.js"", ""Git"", ""Docker"", ""React"", ""Python""]",21.3,rising,25.53,13.64,False,5
+Frontend Developer,Entry,PostgreSQL,database,14,69,20.29,9,"[""Docker"", ""Python"", ""React"", ""Next.js"", ""Agile""]",22.14,stable,21.28,18.18,False,5
+Frontend Developer,Entry,TypeScript,language,14,69,20.29,9,"[""Docker"", ""CSS"", ""Next.js"", ""Python"", ""REST API""]",22.07,falling,12.77,36.36,False,5
+Frontend Developer,Entry,AWS,cloud,12,69,17.39,11,"[""Agile"", ""Git"", ""Node.js"", ""GraphQL"", ""REST API""]",23.83,falling,14.89,22.73,False,5
+Frontend Developer,Entry,JavaScript,language,12,69,17.39,11,"[""CSS"", ""Agile"", ""AWS"", ""Problem Solving"", ""TypeScript""]",23.21,stable,17.02,18.18,False,5
+Frontend Developer,Entry,Python,language,12,69,17.39,11,"[""Next.js"", ""PostgreSQL"", ""CSS"", ""TypeScript"", ""Node.js""]",23.04,rising,19.15,13.64,False,5
+Frontend Developer,Entry,React,framework,12,69,17.39,11,"[""Next.js"", ""PostgreSQL"", ""Git"", ""Node.js"", ""Python""]",22.25,rising,21.28,9.09,False,5
+Frontend Developer,Entry,HTML,language,11,69,15.94,15,"[""Docker"", ""Communication"", ""Node.js"", ""Agile"", ""Next.js""]",20.95,rising,19.15,9.09,False,5
+Frontend Developer,Entry,Problem Solving,soft skill,11,69,15.94,15,"[""Docker"", ""Git"", ""REST API"", ""TypeScript"", ""Node.js""]",20.05,stable,17.02,13.64,False,5
+Frontend Developer,Entry,Communication,soft skill,8,69,11.59,17,"[""Next.js"", ""GraphQL"", ""HTML"", ""JavaScript"", ""React""]",19.25,rising,14.89,4.55,False,5
+Frontend Developer,Intern,CSS,language,10,32,31.25,1,"[""REST API"", ""Next.js"", ""Node.js"", ""Docker"", ""React""]",17.15,rising,50.0,12.5,False,5
+Frontend Developer,Intern,Node.js,framework,10,32,31.25,1,"[""Next.js"", ""AWS"", ""Problem Solving"", ""Git"", ""CSS""]",21.1,stable,31.25,31.25,False,5
+Frontend Developer,Intern,AWS,cloud,9,32,28.12,3,"[""Git"", ""Node.js"", ""Next.js"", ""Python"", ""CSS""]",17.56,falling,18.75,37.5,False,5
+Frontend Developer,Intern,Next.js,framework,9,32,28.12,3,"[""Node.js"", ""AWS"", ""CSS"", ""TypeScript"", ""Git""]",17.22,falling,25.0,31.25,False,5
+Frontend Developer,Intern,REST API,framework,7,32,21.88,5,"[""CSS"", ""Docker"", ""Next.js"", ""Git"", ""React""]",14.71,rising,31.25,12.5,False,5
+Frontend Developer,Intern,Agile,tool,6,32,18.75,6,"[""Python"", ""Docker"", ""Node.js"", ""HTML"", ""CSS""]",18.25,rising,31.25,6.25,False,5
+Frontend Developer,Intern,Docker,tool,6,32,18.75,6,"[""REST API"", ""Agile"", ""CSS"", ""Python"", ""React""]",14.75,rising,25.0,12.5,False,5
+Frontend Developer,Intern,Git,tool,6,32,18.75,6,"[""AWS"", ""Node.js"", ""Next.js"", ""REST API"", ""TypeScript""]",17.08,falling,12.5,25.0,False,5
+Frontend Developer,Intern,Python,language,6,32,18.75,6,"[""AWS"", ""Agile"", ""GraphQL"", ""TypeScript"", ""Docker""]",17.17,falling,12.5,25.0,False,5
+Frontend Developer,Intern,TypeScript,language,6,32,18.75,6,"[""Next.js"", ""Python"", ""GraphQL"", ""Git"", ""JavaScript""]",13.25,falling,12.5,25.0,False,5
+Frontend Developer,Intern,JavaScript,language,5,32,15.62,11,"[""TypeScript"", ""Node.js"", ""Problem Solving"", ""Docker"", ""Git""]",20.6,falling,6.25,25.0,False,5
+Frontend Developer,Intern,Communication,soft skill,4,32,12.5,12,"[""CSS"", ""Python"", ""AWS"", ""Docker"", ""Agile""]",15.0,stable,12.5,12.5,False,5
+Frontend Developer,Intern,React,framework,4,32,12.5,12,"[""CSS"", ""Docker"", ""REST API"", ""Next.js"", ""JavaScript""]",18.38,rising,18.75,6.25,False,5
+Frontend Developer,Intern,GraphQL,framework,3,32,9.38,14,"[""Python"", ""TypeScript"", ""Agile"", ""Node.js"", ""CSS""]",14.83,rising,12.5,6.25,False,5
+Frontend Developer,Intern,HTML,language,3,32,9.38,14,"[""Agile"", ""Node.js"", ""CSS"", ""Git"", ""TypeScript""]",14.83,falling,6.25,12.5,False,5
+Frontend Developer,Intern,PostgreSQL,database,3,32,9.38,14,"[""Node.js"", ""Problem Solving"", ""Communication"", ""REST API""]",25.0,falling,6.25,12.5,False,5
+Frontend Developer,Intern,Problem Solving,soft skill,3,32,9.38,14,"[""Node.js"", ""PostgreSQL"", ""CSS"", ""Next.js"", ""JavaScript""]",19.33,falling,6.25,12.5,False,5
+Frontend Developer,Mid,REST API,framework,21,62,33.87,1,"[""Next.js"", ""Docker"", ""Python"", ""JavaScript"", ""GraphQL""]",16.07,falling,31.82,38.89,False,5
+Frontend Developer,Mid,Next.js,framework,18,62,29.03,2,"[""Python"", ""REST API"", ""GraphQL"", ""CSS"", ""Docker""]",17.19,falling,25.0,38.89,False,5
+Frontend Developer,Mid,Node.js,framework,17,62,27.42,3,"[""REST API"", ""JavaScript"", ""Python"", ""Agile"", ""Docker""]",21.65,rising,31.82,16.67,False,5
+Frontend Developer,Mid,Python,language,17,62,27.42,3,"[""Next.js"", ""REST API"", ""PostgreSQL"", ""Node.js"", ""Communication""]",18.94,falling,22.73,38.89,False,5
+Frontend Developer,Mid,Docker,tool,16,62,25.81,5,"[""REST API"", ""React"", ""Next.js"", ""Communication"", ""Node.js""]",19.28,stable,25.0,27.78,False,5
+Frontend Developer,Mid,GraphQL,framework,16,62,25.81,5,"[""Next.js"", ""React"", ""REST API"", ""Python"", ""Communication""]",19.28,falling,22.73,33.33,False,5
+Frontend Developer,Mid,Agile,tool,14,62,22.58,7,"[""Next.js"", ""Node.js"", ""HTML"", ""REST API"", ""Problem Solving""]",19.21,rising,25.0,16.67,False,5
+Frontend Developer,Mid,Communication,soft skill,14,62,22.58,7,"[""Docker"", ""React"", ""Python"", ""Next.js"", ""GraphQL""]",17.0,falling,18.18,33.33,False,5
+Frontend Developer,Mid,HTML,language,14,62,22.58,7,"[""PostgreSQL"", ""Agile"", ""React"", ""Node.js"", ""Docker""]",18.82,rising,25.0,16.67,False,5
+Frontend Developer,Mid,PostgreSQL,database,14,62,22.58,7,"[""Next.js"", ""HTML"", ""Python"", ""Problem Solving"", ""Agile""]",16.54,rising,29.55,5.56,False,5
+Frontend Developer,Mid,React,framework,14,62,22.58,7,"[""Docker"", ""GraphQL"", ""REST API"", ""Communication"", ""HTML""]",18.43,stable,22.73,22.22,False,5
+Frontend Developer,Mid,CSS,language,12,62,19.35,12,"[""Next.js"", ""REST API"", ""Python"", ""Node.js"", ""Communication""]",20.88,falling,15.91,27.78,False,5
+Frontend Developer,Mid,Git,tool,11,62,17.74,13,"[""React"", ""JavaScript"", ""GraphQL"", ""Node.js"", ""REST API""]",15.68,rising,20.45,11.11,False,5
+Frontend Developer,Mid,JavaScript,language,11,62,17.74,13,"[""REST API"", ""Node.js"", ""Git"", ""Docker"", ""GraphQL""]",18.5,rising,20.45,11.11,False,5
+Frontend Developer,Mid,Problem Solving,soft skill,9,62,14.52,15,"[""Agile"", ""Node.js"", ""Next.js"", ""PostgreSQL"", ""Python""]",20.28,stable,13.64,16.67,False,5
+Frontend Developer,Mid,AWS,cloud,8,62,12.9,16,"[""CSS"", ""PostgreSQL"", ""Node.js"", ""GraphQL"", ""Next.js""]",20.69,falling,11.36,16.67,False,5
+Frontend Developer,Mid,TypeScript,language,7,62,11.29,17,"[""Node.js"", ""Docker"", ""Agile"", ""Communication"", ""PostgreSQL""]",19.43,rising,13.64,5.56,False,5
+Frontend Developer,Senior,Python,language,11,37,29.73,1,"[""AWS"", ""Agile"", ""CSS"", ""GraphQL"", ""Docker""]",19.45,rising,36.0,16.67,False,5
+Frontend Developer,Senior,AWS,cloud,10,37,27.03,2,"[""JavaScript"", ""Python"", ""REST API"", ""CSS"", ""Agile""]",19.45,stable,28.0,25.0,False,5
+Frontend Developer,Senior,JavaScript,language,10,37,27.03,2,"[""AWS"", ""Node.js"", ""Agile"", ""Python"", ""TypeScript""]",17.9,falling,24.0,33.33,False,5
+Frontend Developer,Senior,CSS,language,9,37,24.32,4,"[""Python"", ""PostgreSQL"", ""AWS"", ""REST API"", ""Docker""]",22.39,rising,32.0,8.33,False,5
+Frontend Developer,Senior,Docker,tool,7,37,18.92,5,"[""GraphQL"", ""Next.js"", ""Python"", ""PostgreSQL"", ""AWS""]",17.43,rising,24.0,8.33,False,5
+Frontend Developer,Senior,GraphQL,framework,7,37,18.92,5,"[""Docker"", ""Python"", ""Next.js"", ""Agile"", ""AWS""]",15.29,falling,12.0,33.33,False,5
+Frontend Developer,Senior,Next.js,framework,7,37,18.92,5,"[""Docker"", ""GraphQL"", ""CSS"", ""Node.js"", ""JavaScript""]",15.93,falling,16.0,25.0,False,5
+Frontend Developer,Senior,Node.js,framework,7,37,18.92,5,"[""JavaScript"", ""REST API"", ""Docker"", ""CSS"", ""GraphQL""]",21.43,falling,16.0,25.0,False,5
+Frontend Developer,Senior,REST API,framework,7,37,18.92,5,"[""AWS"", ""PostgreSQL"", ""Node.js"", ""CSS"", ""JavaScript""]",19.43,rising,24.0,8.33,False,5
+Frontend Developer,Senior,Agile,tool,6,37,16.22,10,"[""Python"", ""GraphQL"", ""Git"", ""AWS"", ""JavaScript""]",16.25,falling,12.0,25.0,False,5
+Frontend Developer,Senior,PostgreSQL,database,5,37,13.51,11,"[""CSS"", ""REST API"", ""Docker"", ""AWS"", ""Node.js""]",19.2,rising,20.0,0.0,False,5
+Frontend Developer,Senior,Problem Solving,soft skill,5,37,13.51,11,"[""TypeScript"", ""JavaScript"", ""React"", ""Next.js""]",19.4,stable,12.0,16.67,False,5
+Frontend Developer,Senior,TypeScript,language,5,37,13.51,11,"[""Problem Solving"", ""JavaScript"", ""Agile"", ""Git"", ""AWS""]",19.2,rising,20.0,0.0,False,5
+Frontend Developer,Senior,Communication,soft skill,4,37,10.81,14,"[""Python"", ""HTML"", ""CSS"", ""Node.js"", ""JavaScript""]",25.0,rising,16.0,0.0,False,5
+Frontend Developer,Senior,Git,tool,4,37,10.81,14,"[""Agile"", ""CSS"", ""TypeScript"", ""AWS"", ""HTML""]",19.25,stable,12.0,8.33,False,5
+Frontend Developer,Senior,HTML,language,4,37,10.81,14,"[""Communication"", ""CSS"", ""Python"", ""React"", ""Agile""]",19.5,falling,8.0,16.67,False,5
+Frontend Developer,Senior,React,framework,4,37,10.81,14,"[""CSS"", ""Node.js"", ""JavaScript"", ""GraphQL"", ""Problem Solving""]",19.75,falling,0.0,33.33,False,5
+ML Engineer,All,Machine Learning,ML/AI,53,200,26.5,1,"[""Docker"", ""Apache Kafka"", ""Scikit-learn"", ""PyTorch"", ""Kubernetes""]",19.87,falling,24.82,30.51,False,5
+ML Engineer,All,Apache Kafka,tool,52,200,26.0,2,"[""Machine Learning"", ""FastAPI"", ""Kubernetes"", ""REST API"", ""Terraform""]",17.33,stable,26.24,25.42,False,5
+ML Engineer,All,Terraform,tool,49,200,24.5,3,"[""FastAPI"", ""Docker"", ""REST API"", ""Apache Kafka"", ""SQL""]",18.81,stable,24.82,23.73,False,5
+ML Engineer,All,Scikit-learn,ML/AI,48,200,24.0,4,"[""Machine Learning"", ""SQL"", ""AWS"", ""Deep Learning"", ""TensorFlow""]",18.91,falling,21.28,30.51,False,5
+ML Engineer,All,Docker,tool,45,200,22.5,5,"[""Machine Learning"", ""Terraform"", ""REST API"", ""Kubernetes"", ""AWS""]",17.54,stable,22.7,22.03,False,5
+ML Engineer,All,Kubernetes,tool,45,200,22.5,5,"[""Apache Kafka"", ""REST API"", ""AWS"", ""Docker"", ""Machine Learning""]",19.18,rising,24.11,18.64,False,5
+ML Engineer,All,REST API,framework,45,200,22.5,5,"[""Apache Kafka"", ""Docker"", ""AWS"", ""Terraform"", ""Kubernetes""]",18.4,falling,19.15,30.51,False,5
+ML Engineer,All,FastAPI,framework,44,200,22.0,8,"[""Terraform"", ""Apache Kafka"", ""Google Cloud"", ""PyTorch"", ""Python""]",18.78,stable,22.7,20.34,False,5
+ML Engineer,All,Google Cloud,cloud,43,200,21.5,9,"[""FastAPI"", ""Deep Learning"", ""Machine Learning"", ""SQL"", ""Kubernetes""]",18.98,falling,19.15,27.12,False,5
+ML Engineer,All,Deep Learning,ML/AI,42,200,21.0,10,"[""Google Cloud"", ""Scikit-learn"", ""Apache Kafka"", ""PyTorch"", ""TensorFlow""]",17.23,rising,22.7,16.95,False,5
+ML Engineer,All,SQL,language,41,200,20.5,11,"[""Scikit-learn"", ""Terraform"", ""REST API"", ""Apache Kafka"", ""AWS""]",17.17,stable,20.57,20.34,False,5
+ML Engineer,All,AWS,cloud,39,200,19.5,12,"[""REST API"", ""Kubernetes"", ""Scikit-learn"", ""Docker"", ""SQL""]",19.04,rising,21.99,13.56,False,5
+ML Engineer,All,Python,language,38,200,19.0,13,"[""Apache Kafka"", ""Machine Learning"", ""FastAPI"", ""Terraform"", ""PyTorch""]",18.71,stable,17.73,22.03,False,5
+ML Engineer,All,PyTorch,ML/AI,38,200,19.0,13,"[""FastAPI"", ""Machine Learning"", ""Deep Learning"", ""SQL"", ""Apache Kafka""]",18.68,stable,19.86,16.95,False,5
+ML Engineer,All,TensorFlow,ML/AI,38,200,19.0,13,"[""Kubernetes"", ""Scikit-learn"", ""Terraform"", ""REST API"", ""Deep Learning""]",19.13,stable,18.44,20.34,False,5
+ML Engineer,All,MLOps,ML/AI,37,200,18.5,16,"[""Kubernetes"", ""FastAPI"", ""Google Cloud"", ""Terraform"", ""Apache Kafka""]",19.12,stable,17.73,20.34,False,5
+ML Engineer,Entry,Machine Learning,ML/AI,23,75,30.67,1,"[""Docker"", ""Scikit-learn"", ""Deep Learning"", ""FastAPI"", ""Apache Kafka""]",19.37,stable,32.56,28.12,False,5
+ML Engineer,Entry,Scikit-learn,ML/AI,22,75,29.33,2,"[""REST API"", ""Machine Learning"", ""Docker"", ""FastAPI"", ""AWS""]",17.73,stable,27.91,31.25,False,5
+ML Engineer,Entry,Terraform,tool,22,75,29.33,2,"[""FastAPI"", ""REST API"", ""Docker"", ""TensorFlow"", ""Machine Learning""]",18.23,falling,25.58,34.38,False,5
+ML Engineer,Entry,Apache Kafka,tool,20,75,26.67,4,"[""FastAPI"", ""Kubernetes"", ""Python"", ""Machine Learning"", ""Terraform""]",17.05,rising,30.23,21.88,False,5
+ML Engineer,Entry,Docker,tool,19,75,25.33,5,"[""REST API"", ""Machine Learning"", ""Terraform"", ""Scikit-learn"", ""TensorFlow""]",15.53,falling,20.93,31.25,False,5
+ML Engineer,Entry,FastAPI,framework,18,75,24.0,6,"[""Apache Kafka"", ""Terraform"", ""Machine Learning"", ""Scikit-learn"", ""Kubernetes""]",16.89,stable,25.58,21.88,False,5
+ML Engineer,Entry,Kubernetes,tool,17,75,22.67,7,"[""Apache Kafka"", ""REST API"", ""TensorFlow"", ""MLOps"", ""FastAPI""]",21.12,rising,25.58,18.75,False,5
+ML Engineer,Entry,REST API,framework,17,75,22.67,7,"[""Docker"", ""Terraform"", ""Scikit-learn"", ""Kubernetes"", ""AWS""]",17.29,falling,18.6,28.12,False,5
+ML Engineer,Entry,Google Cloud,cloud,16,75,21.33,9,"[""SQL"", ""Terraform"", ""Machine Learning"", ""Deep Learning"", ""Scikit-learn""]",19.22,falling,13.95,31.25,False,5
+ML Engineer,Entry,TensorFlow,ML/AI,16,75,21.33,9,"[""Terraform"", ""Kubernetes"", ""Apache Kafka"", ""Docker"", ""FastAPI""]",18.5,rising,25.58,15.62,False,5
+ML Engineer,Entry,Deep Learning,ML/AI,15,75,20.0,11,"[""Machine Learning"", ""Scikit-learn"", ""Apache Kafka"", ""TensorFlow"", ""Google Cloud""]",16.33,rising,23.26,15.62,False,5
+ML Engineer,Entry,Python,language,14,75,18.67,12,"[""Apache Kafka"", ""Machine Learning"", ""FastAPI"", ""Kubernetes"", ""AWS""]",20.14,rising,20.93,15.62,False,5
+ML Engineer,Entry,MLOps,ML/AI,13,75,17.33,13,"[""Kubernetes"", ""Deep Learning"", ""AWS"", ""Machine Learning"", ""Scikit-learn""]",20.19,stable,16.28,18.75,False,5
+ML Engineer,Entry,PyTorch,ML/AI,12,75,16.0,14,"[""Scikit-learn"", ""Google Cloud"", ""Kubernetes"", ""FastAPI"", ""TensorFlow""]",19.42,stable,13.95,18.75,False,5
+ML Engineer,Entry,AWS,cloud,11,75,14.67,15,"[""Scikit-learn"", ""REST API"", ""Apache Kafka"", ""Python"", ""MLOps""]",18.91,rising,20.93,6.25,False,5
+ML Engineer,Entry,SQL,language,10,75,13.33,16,"[""Google Cloud"", ""Terraform"", ""Docker"", ""Scikit-learn"", ""REST API""]",18.2,stable,11.63,15.62,False,5
+ML Engineer,Intern,SQL,language,12,28,42.86,1,"[""REST API"", ""Apache Kafka"", ""FastAPI"", ""Terraform"", ""Scikit-learn""]",15.08,rising,45.0,37.5,False,5
+ML Engineer,Intern,Apache Kafka,tool,10,28,35.71,2,"[""SQL"", ""REST API"", ""Google Cloud"", ""Deep Learning"", ""FastAPI""]",14.65,stable,35.0,37.5,False,5
+ML Engineer,Intern,REST API,framework,9,28,32.14,3,"[""SQL"", ""Apache Kafka"", ""TensorFlow"", ""MLOps"", ""PyTorch""]",19.22,rising,35.0,25.0,False,5
+ML Engineer,Intern,Terraform,tool,9,28,32.14,3,"[""FastAPI"", ""SQL"", ""TensorFlow"", ""AWS"", ""Scikit-learn""]",14.39,rising,35.0,25.0,False,5
+ML Engineer,Intern,FastAPI,framework,8,28,28.57,5,"[""Terraform"", ""SQL"", ""Scikit-learn"", ""Apache Kafka"", ""Google Cloud""]",15.69,falling,25.0,37.5,False,5
+ML Engineer,Intern,PyTorch,ML/AI,7,28,25.0,6,"[""MLOps"", ""SQL"", ""REST API"", ""FastAPI"", ""Machine Learning""]",18.21,falling,20.0,37.5,False,5
+ML Engineer,Intern,Machine Learning,ML/AI,6,28,21.43,7,"[""Python"", ""Google Cloud"", ""Apache Kafka"", ""SQL"", ""PyTorch""]",19.5,falling,15.0,37.5,False,5
+ML Engineer,Intern,Python,language,6,28,21.43,7,"[""Docker"", ""Machine Learning"", ""SQL"", ""Terraform"", ""PyTorch""]",16.5,falling,15.0,37.5,False,5
+ML Engineer,Intern,Deep Learning,ML/AI,5,28,17.86,9,"[""Apache Kafka"", ""SQL"", ""Google Cloud"", ""FastAPI"", ""Machine Learning""]",15.0,rising,20.0,12.5,False,5
+ML Engineer,Intern,Google Cloud,cloud,5,28,17.86,9,"[""Apache Kafka"", ""FastAPI"", ""Deep Learning"", ""Machine Learning"", ""SQL""]",10.6,falling,10.0,37.5,False,5
+ML Engineer,Intern,TensorFlow,ML/AI,5,28,17.86,9,"[""Terraform"", ""REST API"", ""SQL"", ""Scikit-learn"", ""FastAPI""]",19.0,falling,15.0,25.0,False,5
+ML Engineer,Intern,Docker,tool,4,28,14.29,12,"[""Python"", ""Terraform"", ""REST API"", ""FastAPI"", ""TensorFlow""]",18.5,rising,20.0,0.0,False,5
+ML Engineer,Intern,MLOps,ML/AI,4,28,14.29,12,"[""PyTorch"", ""REST API"", ""Apache Kafka"", ""FastAPI"", ""Machine Learning""]",14.38,falling,10.0,25.0,False,5
+ML Engineer,Intern,Scikit-learn,ML/AI,4,28,14.29,12,"[""SQL"", ""FastAPI"", ""Terraform"", ""TensorFlow"", ""AWS""]",14.62,falling,10.0,25.0,False,5
+ML Engineer,Intern,AWS,cloud,3,28,10.71,15,"[""Terraform"", ""SQL"", ""TensorFlow"", ""Scikit-learn"", ""FastAPI""]",18.67,rising,15.0,0.0,False,5
+ML Engineer,Intern,Kubernetes,tool,1,28,3.57,16,"[""SQL"", ""Apache Kafka"", ""TensorFlow"", ""REST API""]",19.5,rising,5.0,0.0,False,5
+ML Engineer,Mid,Google Cloud,cloud,19,63,30.16,1,"[""Kubernetes"", ""FastAPI"", ""AWS"", ""Machine Learning"", ""MLOps""]",21.24,stable,30.19,30.0,False,5
+ML Engineer,Mid,Kubernetes,tool,19,63,30.16,1,"[""Google Cloud"", ""AWS"", ""Docker"", ""Machine Learning"", ""SQL""]",18.76,stable,30.19,30.0,False,5
+ML Engineer,Mid,Machine Learning,ML/AI,17,63,26.98,3,"[""Docker"", ""REST API"", ""Kubernetes"", ""Google Cloud"", ""Scikit-learn""]",21.62,stable,26.42,30.0,False,5
+ML Engineer,Mid,Scikit-learn,ML/AI,16,63,25.4,4,"[""AWS"", ""Apache Kafka"", ""Machine Learning"", ""Google Cloud"", ""SQL""]",22.59,falling,22.64,40.0,False,5
+ML Engineer,Mid,AWS,cloud,15,63,23.81,5,"[""Kubernetes"", ""REST API"", ""Google Cloud"", ""Scikit-learn"", ""SQL""]",20.53,falling,20.75,40.0,False,5
+ML Engineer,Mid,Apache Kafka,tool,14,63,22.22,6,"[""Scikit-learn"", ""Machine Learning"", ""Docker"", ""Kubernetes"", ""Terraform""]",21.11,stable,22.64,20.0,False,5
+ML Engineer,Mid,Docker,tool,14,63,22.22,6,"[""Kubernetes"", ""Machine Learning"", ""MLOps"", ""Apache Kafka"", ""Deep Learning""]",22.14,stable,22.64,20.0,False,5
+ML Engineer,Mid,FastAPI,framework,14,63,22.22,6,"[""Google Cloud"", ""PyTorch"", ""Deep Learning"", ""MLOps"", ""Python""]",21.96,rising,24.53,10.0,False,5
+ML Engineer,Mid,MLOps,ML/AI,13,63,20.63,9,"[""FastAPI"", ""Deep Learning"", ""Google Cloud"", ""Docker"", ""Kubernetes""]",20.92,falling,18.87,30.0,False,5
+ML Engineer,Mid,Deep Learning,ML/AI,12,63,19.05,10,"[""FastAPI"", ""MLOps"", ""Google Cloud"", ""Docker"", ""AWS""]",19.75,stable,18.87,20.0,False,5
+ML Engineer,Mid,PyTorch,ML/AI,12,63,19.05,10,"[""FastAPI"", ""Google Cloud"", ""Machine Learning"", ""Deep Learning"", ""Scikit-learn""]",19.17,rising,20.75,10.0,False,5
+ML Engineer,Mid,REST API,framework,11,63,17.46,12,"[""AWS"", ""Machine Learning"", ""Google Cloud"", ""FastAPI"", ""Kubernetes""]",22.23,falling,15.09,30.0,False,5
+ML Engineer,Mid,SQL,language,10,63,15.87,13,"[""Kubernetes"", ""Scikit-learn"", ""AWS"", ""TensorFlow"", ""PyTorch""]",21.55,stable,15.09,20.0,False,5
+ML Engineer,Mid,TensorFlow,ML/AI,10,63,15.87,13,"[""Scikit-learn"", ""PyTorch"", ""Deep Learning"", ""SQL"", ""REST API""]",21.55,stable,15.09,20.0,False,5
+ML Engineer,Mid,Terraform,tool,9,63,14.29,15,"[""Machine Learning"", ""Docker"", ""Apache Kafka"", ""FastAPI"", ""Kubernetes""]",26.17,rising,16.98,0.0,False,5
+ML Engineer,Mid,Python,language,8,63,12.7,16,"[""FastAPI"", ""Google Cloud"", ""Deep Learning"", ""Docker"", ""TensorFlow""]",21.81,falling,11.32,20.0,False,5
+ML Engineer,Senior,AWS,cloud,10,34,29.41,1,"[""Docker"", ""Kubernetes"", ""Apache Kafka"", ""SQL"", ""Machine Learning""]",17.05,rising,32.0,22.22,False,5
+ML Engineer,Senior,Deep Learning,ML/AI,10,34,29.41,1,"[""PyTorch"", ""Scikit-learn"", ""Apache Kafka"", ""TensorFlow"", ""Terraform""]",16.65,rising,32.0,22.22,False,5
+ML Engineer,Senior,Python,language,10,34,29.41,1,"[""Terraform"", ""Apache Kafka"", ""MLOps"", ""SQL"", ""Machine Learning""]",15.55,falling,28.0,33.33,False,5
+ML Engineer,Senior,SQL,language,9,34,26.47,4,"[""Python"", ""MLOps"", ""Terraform"", ""AWS"", ""Scikit-learn""]",13.94,rising,28.0,22.22,False,5
+ML Engineer,Senior,Terraform,tool,9,34,26.47,4,"[""Python"", ""MLOps"", ""SQL"", ""PyTorch"", ""Docker""]",17.28,rising,32.0,11.11,False,5
+ML Engineer,Senior,Apache Kafka,tool,8,34,23.53,6,"[""Python"", ""AWS"", ""Machine Learning"", ""Deep Learning"", ""Docker""]",14.75,falling,20.0,33.33,False,5
+ML Engineer,Senior,Docker,tool,8,34,23.53,6,"[""AWS"", ""Kubernetes"", ""Machine Learning"", ""Terraform"", ""Apache Kafka""]",13.81,rising,28.0,11.11,False,5
+ML Engineer,Senior,Kubernetes,tool,8,34,23.53,6,"[""Docker"", ""AWS"", ""Machine Learning"", ""Apache Kafka"", ""TensorFlow""]",16.0,stable,24.0,22.22,False,5
+ML Engineer,Senior,REST API,framework,8,34,23.53,6,"[""Python"", ""Machine Learning"", ""Apache Kafka"", ""Terraform"", ""Deep Learning""]",14.56,falling,16.0,44.44,False,5
+ML Engineer,Senior,Machine Learning,ML/AI,7,34,20.59,10,"[""Kubernetes"", ""Apache Kafka"", ""Python"", ""Docker"", ""PyTorch""]",17.57,falling,16.0,33.33,False,5
+ML Engineer,Senior,MLOps,ML/AI,7,34,20.59,10,"[""Terraform"", ""Python"", ""SQL"", ""REST API"", ""Scikit-learn""]",16.5,rising,24.0,11.11,False,5
+ML Engineer,Senior,PyTorch,ML/AI,7,34,20.59,10,"[""Deep Learning"", ""Terraform"", ""Machine Learning"", ""Docker"", ""SQL""]",17.07,rising,28.0,0.0,False,5
+ML Engineer,Senior,TensorFlow,ML/AI,7,34,20.59,10,"[""Scikit-learn"", ""Deep Learning"", ""SQL"", ""Kubernetes"", ""Google Cloud""]",17.21,falling,16.0,33.33,False,5
+ML Engineer,Senior,Scikit-learn,ML/AI,6,34,17.65,14,"[""Deep Learning"", ""TensorFlow"", ""Python"", ""SQL"", ""Terraform""]",16.25,falling,16.0,22.22,False,5
+ML Engineer,Senior,FastAPI,framework,4,34,11.76,15,"[""Terraform"", ""SQL"", ""TensorFlow"", ""Machine Learning"", ""Kubernetes""]",22.38,stable,12.0,11.11,False,5
+ML Engineer,Senior,Google Cloud,cloud,3,34,8.82,16,"[""Scikit-learn"", ""TensorFlow"", ""Deep Learning"", ""MLOps"", ""Docker""]",17.33,rising,12.0,0.0,False,5

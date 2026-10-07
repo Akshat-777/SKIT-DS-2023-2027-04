@@ -1,0 +1,145 @@
+{
+  "generated_at_utc": "2026-10-06T19:38:43.970241+00:00",
+  "row_count": 1200,
+  "source_counts": {
+    "mock": 1200
+  },
+  "missing_values": {
+    "job_id": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "source": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "title": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "company": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "location": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "remote_flag": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "experience_min": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "experience_max": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "salary_min": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "salary_max": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "currency": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "salary_unit": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "skills_required": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "description": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "posted_at": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "url": {
+      "count": 0,
+      "percent": 0.0
+    }
+  },
+  "salary_coverage": {
+    "rows_with_salary": 1200,
+    "percent": 100.0,
+    "outlier_value_count": 0,
+    "q1_lpa": 12.000000000000002,
+    "q3_lpa": 25.000000000000004,
+    "outlier_values_lpa": []
+  },
+  "role_distribution": {
+    "Data Scientist": 200,
+    "ML Engineer": 200,
+    "Backend Developer": 200,
+    "Frontend Developer": 200,
+    "Data Analyst": 200,
+    "DevOps Engineer": 200
+  },
+  "skills_frequency": {
+    "Python": 253,
+    "AWS": 246,
+    "SQL": 179,
+    "Docker": 175,
+    "PostgreSQL": 168,
+    "Kubernetes": 140,
+    "REST API": 134,
+    "Git": 122,
+    "Problem Solving": 117,
+    "Scikit-learn": 101,
+    "Kafka": 99,
+    "NumPy": 98,
+    "Data Analysis": 98,
+    "Terraform": 95,
+    "FastAPI": 95,
+    "Linux": 95,
+    "CI/CD": 93,
+    "GCP": 92,
+    "Statistics": 91,
+    "R": 90,
+    "Pandas": 89,
+    "Data Visualization": 88,
+    "TensorFlow": 88,
+    "Machine Learning": 87,
+    "Node.js": 83,
+    "PyTorch": 79,
+    "Deep Learning": 79,
+    "JavaScript": 78,
+    "Communication": 76,
+    "GraphQL": 72,
+    "Next.js": 59,
+    "Azure": 52,
+    "CSS": 49,
+    "Power BI": 47,
+    "Tableau": 47,
+    "NLP": 46,
+    "Java": 44,
+    "Agile": 43,
+    "Flask": 42,
+    "Redis": 41,
+    "Django": 41,
+    "Excel": 41,
+    "Spark": 38,
+    "MLOps": 37,
+    "Airflow": 37,
+    "Monitoring": 37,
+    "React": 34,
+    "TypeScript": 32,
+    "HTML": 32,
+    "Go": 29
+  },
+  "charts": [
+    "role_distribution.svg",
+    "skills_frequency.svg"
+  ]
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "role": "Backend Developer",
+    "seniority": "Entry",
+    "posting_count": 65,
+    "low_sample": false
+  },
+  {
+    "role": "Backend Developer",
+    "seniority": "Intern",
+    "posting_count": 29,
+    "low_sample": false
+  },
+  {
+    "role": "Backend Developer",
+    "seniority": "Mid",
+    "posting_count": 70,
+    "low_sample": false
+  },
+  {
+    "role": "Backend Developer",
+    "seniority": "Senior",
+    "posting_count": 36,
+    "low_sample": false
+  },
+  {
+    "role": "Data Analyst",
+    "seniority": "Entry",
+    "posting_count": 63,
+    "low_sample": false
+  },
+  {
+    "role": "Data Analyst",
+    "seniority": "Intern",
+    "posting_count": 42,
+    "low_sample": false
+  },
+  {
+    "role": "Data Analyst",
+    "seniority": "Mid",
+    "posting_count": 62,
+    "low_sample": false
+  },
+  {
+    "role": "Data Analyst",
+    "seniority": "Senior",
+    "posting_count": 33,
+    "low_sample": false
+  },
+  {
+    "role": "Data Scientist",
+    "seniority": "Entry",
+    "posting_count": 77,
+    "low_sample": false
+  },
+  {
+    "role": "Data Scientist",
+    "seniority": "Intern",
+    "posting_count": 38,
+    "low_sample": false
+  },
+  {
+    "role": "Data Scientist",
+    "seniority": "Mid",
+    "posting_count": 53,
+    "low_sample": false
+  },
+  {
+    "role": "Data Scientist",
+    "seniority": "Senior",
+    "posting_count": 32,
+    "low_sample": false
+  },
+  {
+    "role": "DevOps Engineer",
+    "seniority": "Entry",
+    "posting_count": 61,
+    "low_sample": false
+  },
+  {
+    "role": "DevOps Engineer",
+    "seniority": "Intern",
+    "posting_count": 36,
+    "low_sample": false
+  },
+  {
+    "role": "DevOps Engineer",
+    "seniority": "Mid",
+    "posting_count": 64,
+    "low_sample": false
+  },
+  {
+    "role": "DevOps Engineer",
+    "seniority": "Senior",
+    "posting_count": 39,
+    "low_sample": false
+  },
+  {
+    "role": "Frontend Developer",
+    "seniority": "Entry",
+    "posting_count": 69,
+    "low_sample": false
+  },
+  {
+    "role": "Frontend Developer",
+    "seniority": "Intern",
+    "posting_count": 32,
+    "low_sample": false
+  },
+  {
+    "role": "Frontend Developer",
+    "seniority": "Mid",
+    "posting_count": 62,
+    "low_sample": false
+  },
+  {
+    "role": "Frontend Developer",
+    "seniority": "Senior",
+    "posting_count": 37,
+    "low_sample": false
+  },
+  {
+    "role": "ML Engineer",
+    "seniority": "Entry",
+    "posting_count": 75,
+    "low_sample": false
+  },
+  {
+    "role": "ML Engineer",
+    "seniority": "Intern",
+    "posting_count": 28,
+    "low_sample": false
+  },
+  {
+    "role": "ML Engineer",
+    "seniority": "Mid",
+    "posting_count": 63,
+    "low_sample": false
+  },
+  {
+    "role": "ML Engineer",
+    "seniority": "Senior",
+    "posting_count": 34,
+    "low_sample": false
+  },
+  {
+    "role": "Backend Developer",
+    "seniority": "All",
+    "posting_count": 200,
+    "low_sample": false
+  },
+  {
+    "role": "Data Analyst",
+    "seniority": "All",
+    "posting_count": 200,
+    "low_sample": false
+  },
+  {
+    "role": "Data Scientist",
+    "seniority": "All",
+    "posting_count": 200,
+    "low_sample": false
+  },
+  {
+    "role": "DevOps Engineer",
+    "seniority": "All",
+    "posting_count": 200,
+    "low_sample": false
+  },
+  {
+    "role": "Frontend Developer",
+    "seniority": "All",
+    "posting_count": 200,
+    "low_sample": false
+  },
+  {
+    "role": "ML Engineer",
+    "seniority": "All",
+    "posting_count": 200,
+    "low_sample": false
+  }
+]
