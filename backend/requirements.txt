@@ -12,5 +12,17 @@ alembic>=1.13.0
 psycopg2-binary>=2.9.0
 cryptography>=42.0.0
 email-validator>=2.1.0
-
-
+python-magic-bin; sys_platform == 'win32'
+python-magic; sys_platform != 'win32'
+pdfplumber
+pymupdf
+python-docx
+pdf2image
+opencv-python
+pytesseract
+torch
+transformers
+datasets
+seqeval
+scikit-learn
+accelerate
