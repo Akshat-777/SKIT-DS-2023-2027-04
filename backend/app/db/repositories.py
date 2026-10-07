@@ -277,7 +277,24 @@ class SkillRepository:
 
 class JobPostingRepository:
     @staticmethod
-    def create(db: Session, title: str, company: str, target_role: str, skills: List[str], location: Optional[str] = None, experience: Optional[str] = None, salary_min: Optional[float] = None, salary_max: Optional[float] = None, currency: str = "INR", unit: str = "LPA", description: Optional[str] = None, source: str = "live_api", posted_at: Optional[datetime] = None) -> JobPosting:
+    def create(
+        db: Session,
+        title: str,
+        company: str,
+        target_role: str,
+        skills: List[str],
+        location: Optional[str] = None,
+        experience: Optional[str] = None,
+        salary_min: Optional[float] = None,
+        salary_max: Optional[float] = None,
+        currency: str = "INR",
+        unit: str = "LPA",
+        description: Optional[str] = None,
+        source: str = "live_api",
+        external_id: Optional[str] = None,
+        dedup_hash: Optional[str] = None,
+        posted_at: Optional[datetime] = None
+    ) -> JobPosting:
         posting = JobPosting(
             id=generate_id("job"),
             title=title,
@@ -292,6 +309,8 @@ class JobPostingRepository:
             unit=unit,
             description=description,
             source=source,
+            external_id=external_id,
+            dedup_hash=dedup_hash,
             posted_at=posted_at or utc_now(),
             created_at=utc_now()
         )
@@ -299,6 +318,17 @@ class JobPostingRepository:
         db.commit()
         db.refresh(posting)
         return posting
+
+    @staticmethod
+    def get_by_external_id(db: Session, external_id: str, source: str) -> Optional[JobPosting]:
+        return db.query(JobPosting).filter(
+            JobPosting.external_id == external_id,
+            JobPosting.source == source
+        ).first()
+
+    @staticmethod
+    def get_by_dedup_hash(db: Session, dedup_hash: str) -> Optional[JobPosting]:
+        return db.query(JobPosting).filter(JobPosting.dedup_hash == dedup_hash).first()
 
     @staticmethod
     def get_by_id(db: Session, job_id: str) -> Optional[JobPosting]:

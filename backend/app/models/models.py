@@ -116,6 +116,8 @@ class JobPosting(Base):
     description = Column(Text, nullable=True)
     posted_at = Column(DateTime, nullable=False, default=utc_now, index=True)
     source = Column(String(50), nullable=False, default="live_api")
+    external_id = Column(String(255), nullable=True, index=True)
+    dedup_hash = Column(String(64), nullable=True, index=True)
     created_at = Column(DateTime, nullable=False, default=utc_now)
 
 

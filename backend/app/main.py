@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, status, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.exceptions import RequestValidationError
@@ -6,8 +7,26 @@ from fastapi.responses import JSONResponse
 from app.core.config import settings
 from app.core.logging import RequestIDMiddleware, logger, sanitize_pii
 from app.api.routes import (
-    health, resumes, users, parsed_entities, skills, job_postings, analyses, audit_logs
+    health, resumes, users, parsed_entities, skills, job_postings, analyses, audit_logs, market
 )
+from app.services.market.scheduler import start_market_scheduler, stop_market_scheduler
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup: Start APScheduler for 6-hour market refresh
+    logger.info("Starting up CareerLens FastAPI Backend...")
+    try:
+        start_market_scheduler()
+    except Exception as e:
+        logger.warning(f"Could not start market scheduler on app launch: {e}")
+    yield
+    # Shutdown: Stop APScheduler
+    logger.info("Shutting down CareerLens FastAPI Backend...")
+    try:
+        stop_market_scheduler()
+    except Exception as e:
+        logger.warning(f"Error stopping market scheduler: {e}")
+
 
 def create_app() -> FastAPI:
     app = FastAPI(
@@ -16,7 +35,8 @@ def create_app() -> FastAPI:
         description="CareerLens AI Backend API - Smart Resume & Market Analysis System",
         docs_url="/docs",
         redoc_url="/redoc",
-        openapi_url="/openapi.json"
+        openapi_url="/openapi.json",
+        lifespan=lifespan
     )
 
     # CORS Setup
@@ -40,6 +60,8 @@ def create_app() -> FastAPI:
     app.include_router(job_postings.router, prefix=settings.API_V1_STR)
     app.include_router(analyses.router, prefix=settings.API_V1_STR)
     app.include_router(audit_logs.router, prefix=settings.API_V1_STR)
+    app.include_router(market.router)
+    app.include_router(market.router, prefix=settings.API_V1_STR)
 
     # Global Exception Handlers conforming strictly to {"error": {"code": str, "message": str}}
     @app.exception_handler(HTTPException)

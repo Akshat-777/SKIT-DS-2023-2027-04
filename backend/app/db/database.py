@@ -5,31 +5,31 @@ import logging
 
 logger = logging.getLogger("careerlens.db")
 
-# Setup database URL and engine options
 DATABASE_URL = settings.DATABASE_URL
 
-connect_args = {}
-if DATABASE_URL.startswith("sqlite"):
-    connect_args["check_same_thread"] = False
+def get_engine():
+    """Initializes database engine with automatic SQLite file fallback if PostgreSQL is unavailable."""
+    if DATABASE_URL.startswith("postgresql"):
+        try:
+            test_engine = create_engine(DATABASE_URL, pool_pre_ping=True, echo=False)
+            # Test actual connection
+            with test_engine.connect() as conn:
+                pass
+            return test_engine
+        except Exception as e:
+            logger.warning(f"Failed to connect to primary DB ({DATABASE_URL}), using SQLite file fallback: {str(e)}")
+            fallback_url = "sqlite:///./careerlens_dev.db"
+            return create_engine(
+                fallback_url,
+                connect_args={"check_same_thread": False},
+                pool_pre_ping=True
+            )
+    else:
+        connect_args = {"check_same_thread": False} if DATABASE_URL.startswith("sqlite") else {}
+        return create_engine(DATABASE_URL, connect_args=connect_args, pool_pre_ping=True)
 
-try:
-    engine = create_engine(
-        DATABASE_URL,
-        connect_args=connect_args,
-        pool_pre_ping=True,
-        echo=False
-    )
-except Exception as e:
-    logger.warning(f"Failed to connect to primary DB ({DATABASE_URL}), using SQLite memory fallback: {str(e)}")
-    DATABASE_URL = "sqlite:///./careerlens_dev.db"
-    engine = create_engine(
-        DATABASE_URL,
-        connect_args={"check_same_thread": False},
-        pool_pre_ping=True
-    )
-
+engine = get_engine()
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
 Base = declarative_base()
 
 def get_db():

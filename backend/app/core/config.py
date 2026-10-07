@@ -22,6 +22,17 @@ class Settings(BaseSettings):
     EMBEDDING_SERVICE_URL: str = "http://localhost:8002"
     SCORING_SERVICE_URL: str = "http://localhost:8003"
 
+    # Vector Store & Market Ingestion Configuration
+    CHROMA_DB_DIR: str = "./chroma_db"
+    JOB_BOARD_API_KEY: str = ""
+    JOB_BOARD_APP_ID: str = ""
+    JOB_BOARD_API_URL: str = "https://api.adzuna.com/v1/api/jobs/in/search/1"
+    LINKEDIN_ENABLED: bool = False
+    LINKEDIN_CLIENT_ID: str = ""
+    LINKEDIN_CLIENT_SECRET: str = ""
+    LINKEDIN_ACCESS_TOKEN: str = ""
+    MARKET_REFRESH_INTERVAL_HOURS: int = 6
+
     # CORS Origins
     BACKEND_CORS_ORIGINS: List[str] = ["http://localhost:5173", "http://localhost:3000"]
 
@@ -33,3 +44,4 @@ class Settings(BaseSettings):
     )
 
 settings = Settings()
+
