@@ -85,6 +85,10 @@ def normalize_headings(text: str) -> Tuple[str, List[str], int]:
     
     for line in lines:
         clean_line = line.strip().lower()
+        if clean_line.startswith('[') and clean_line.endswith(']'):
+            new_lines.append(line)
+            sections_detected.append(clean_line[1:-1].capitalize())
+            continue
         if len(clean_line) < 30 and clean_line:
             # Check mappings
             mapped = SECTION_MAPPINGS.get(clean_line)
