@@ -10,5 +10,15 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Uploaded files
+# Databases & Vector Persistence
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+**/chroma_db/
+test_chroma_db/
+**/test_chroma_db/
+
+# Uploaded files & scratch
 uploads/
+scratch/

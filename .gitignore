@@ -24,9 +24,20 @@ __pycache__/
 .coverage
 htmlcov/
 
-# User Storage & Uploads
+# Databases & Vector Index Persistence (DO NOT COMMIT DATABASES/VECTOR FILES)
+*.db
+*.sqlite
+*.sqlite3
+careerlens_dev.db
+chroma_db/
+**/chroma_db/
+test_chroma_db/
+**/test_chroma_db/
+
+# User Storage, Uploads & Temporary Scratch Files
 uploads/
 storage/
+scratch/
 
 # IDEs & System Files
 .vscode/
