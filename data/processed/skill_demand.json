@@ -32,8 +32,8 @@
     "demand_pct": 23.0,
     "rank": 2,
     "co_occurring_skills": [
-      "Python",
       "Django",
+      "Python",
       "JavaScript",
       "FastAPI",
       "REST API"
@@ -59,7 +59,7 @@
       "Java",
       "FastAPI",
       "Docker",
-      "JavaScript"
+      "Redis"
     ],
     "average_salary_lpa": 19.98,
     "trend": "rising",
@@ -311,8 +311,8 @@
       "Java",
       "Django",
       "Kubernetes",
-      "JavaScript",
-      "Redis"
+      "Redis",
+      "JavaScript"
     ],
     "average_salary_lpa": 18.83,
     "trend": "stable",
@@ -356,8 +356,8 @@
     "co_occurring_skills": [
       "FastAPI",
       "Kubernetes",
-      "Flask",
       "AWS",
+      "Flask",
       "Redis"
     ],
     "average_salary_lpa": 16.84,
@@ -539,8 +539,8 @@
     "rank": 4,
     "co_occurring_skills": [
       "Linux",
-      "FastAPI",
       "Redis",
+      "FastAPI",
       "Django",
       "Flask"
     ],
@@ -634,7 +634,7 @@
       "Kubernetes",
       "FastAPI",
       "Redis",
-      "Flask"
+      "Java"
     ],
     "average_salary_lpa": 16.11,
     "trend": "rising",
@@ -656,8 +656,8 @@
       "Python",
       "JavaScript",
       "Kubernetes",
-      "Flask",
-      "Linux"
+      "Linux",
+      "Flask"
     ],
     "average_salary_lpa": 18.38,
     "trend": "stable",
@@ -839,8 +839,8 @@
     "co_occurring_skills": [
       "FastAPI",
       "PostgreSQL",
-      "REST API",
       "Docker",
+      "REST API",
       "Kubernetes"
     ],
     "average_salary_lpa": 18.89,
@@ -886,8 +886,8 @@
       "CI/CD",
       "Flask",
       "Node.js",
-      "REST API",
-      "AWS"
+      "AWS",
+      "REST API"
     ],
     "average_salary_lpa": 13.69,
     "trend": "rising",
@@ -910,7 +910,7 @@
       "JavaScript",
       "Redis",
       "Node.js",
-      "FastAPI"
+      "Docker"
     ],
     "average_salary_lpa": 15.14,
     "trend": "rising",
@@ -930,9 +930,9 @@
     "rank": 4,
     "co_occurring_skills": [
       "Redis",
-      "REST API",
-      "Python",
       "PostgreSQL",
+      "Python",
+      "REST API",
       "Docker"
     ],
     "average_salary_lpa": 11.64,
@@ -999,8 +999,8 @@
     "rank": 8,
     "co_occurring_skills": [
       "AWS",
-      "REST API",
       "Flask",
+      "REST API",
       "Java",
       "Django"
     ],
@@ -1022,10 +1022,10 @@
     "rank": 8,
     "co_occurring_skills": [
       "Java",
-      "Git",
       "AWS",
+      "Git",
       "PostgreSQL",
-      "Redis"
+      "Python"
     ],
     "average_salary_lpa": 14.17,
     "trend": "falling",
@@ -1047,8 +1047,8 @@
       "Kubernetes",
       "Node.js",
       "Django",
-      "REST API",
-      "Docker"
+      "Docker",
+      "PostgreSQL"
     ],
     "average_salary_lpa": 15.83,
     "trend": "falling",
@@ -1070,8 +1070,8 @@
       "Node.js",
       "GraphQL",
       "Django",
-      "Go",
-      "Java"
+      "Java",
+      "Go"
     ],
     "average_salary_lpa": 15.17,
     "trend": "rising",
@@ -1160,10 +1160,10 @@
     "rank": 13,
     "co_occurring_skills": [
       "Git",
-      "FastAPI",
       "Java",
-      "REST API",
-      "Python"
+      "FastAPI",
+      "Python",
+      "Flask"
     ],
     "average_salary_lpa": 14.3,
     "trend": "falling",
@@ -1185,8 +1185,8 @@
       "Kubernetes",
       "Docker",
       "CI/CD",
-      "Node.js",
-      "GraphQL"
+      "GraphQL",
+      "Node.js"
     ],
     "average_salary_lpa": 20.12,
     "trend": "rising",
@@ -1229,10 +1229,10 @@
     "rank": 18,
     "co_occurring_skills": [
       "Kubernetes",
-      "Java",
       "Docker",
-      "Python",
-      "Git"
+      "Java",
+      "Git",
+      "Django"
     ],
     "average_salary_lpa": 16.25,
     "trend": "rising",
@@ -1320,10 +1320,10 @@
     "demand_pct": 21.43,
     "rank": 3,
     "co_occurring_skills": [
-      "FastAPI",
       "Kubernetes",
-      "Python",
+      "FastAPI",
       "CI/CD",
+      "Python",
       "PostgreSQL"
     ],
     "average_salary_lpa": 18.1,
@@ -1347,7 +1347,7 @@
       "REST API",
       "FastAPI",
       "Kubernetes",
-      "Django"
+      "Git"
     ],
     "average_salary_lpa": 17.13,
     "trend": "stable",
@@ -1416,7 +1416,7 @@
       "CI/CD",
       "JavaScript",
       "Django",
-      "REST API"
+      "AWS"
     ],
     "average_salary_lpa": 20.75,
     "trend": "falling",
@@ -1435,10 +1435,10 @@
     "demand_pct": 18.57,
     "rank": 9,
     "co_occurring_skills": [
-      "Flask",
       "Linux",
-      "GraphQL",
+      "Flask",
       "Kubernetes",
+      "GraphQL",
       "Python"
     ],
     "average_salary_lpa": 19.27,
@@ -1460,8 +1460,8 @@
     "co_occurring_skills": [
       "CI/CD",
       "PostgreSQL",
-      "Node.js",
       "AWS",
+      "Node.js",
       "Kubernetes"
     ],
     "average_salary_lpa": 19.15,
@@ -1484,8 +1484,8 @@
       "Redis",
       "CI/CD",
       "PostgreSQL",
-      "REST API",
-      "AWS"
+      "AWS",
+      "REST API"
     ],
     "average_salary_lpa": 16.08,
     "trend": "stable",
@@ -1505,9 +1505,9 @@
     "rank": 9,
     "co_occurring_skills": [
       "FastAPI",
-      "Python",
-      "JavaScript",
       "Kubernetes",
+      "JavaScript",
+      "Python",
       "PostgreSQL"
     ],
     "average_salary_lpa": 19.54,
@@ -1551,8 +1551,8 @@
     "rank": 9,
     "co_occurring_skills": [
       "FastAPI",
-      "Flask",
       "Linux",
+      "Flask",
       "CI/CD",
       "PostgreSQL"
     ],
@@ -1620,8 +1620,8 @@
     "rank": 17,
     "co_occurring_skills": [
       "REST API",
-      "Node.js",
       "AWS",
+      "Node.js",
       "Python",
       "GraphQL"
     ],
@@ -1642,10 +1642,10 @@
     "demand_pct": 8.57,
     "rank": 18,
     "co_occurring_skills": [
-      "JavaScript",
       "Git",
-      "CI/CD",
+      "JavaScript",
       "Flask",
+      "CI/CD",
       "Python"
     ],
     "average_salary_lpa": 19.33,
@@ -1714,8 +1714,8 @@
       "Django",
       "Linux",
       "JavaScript",
-      "Go",
-      "Node.js"
+      "Node.js",
+      "Go"
     ],
     "average_salary_lpa": 19.72,
     "trend": "rising",
@@ -1734,9 +1734,9 @@
     "demand_pct": 25.0,
     "rank": 3,
     "co_occurring_skills": [
-      "FastAPI",
       "Docker",
       "JavaScript",
+      "FastAPI",
       "Redis",
       "Kubernetes"
     ],
@@ -1781,9 +1781,9 @@
     "rank": 5,
     "co_occurring_skills": [
       "PostgreSQL",
-      "REST API",
       "Linux",
       "Git",
+      "REST API",
       "Docker"
     ],
     "average_salary_lpa": 18.69,
@@ -1803,8 +1803,8 @@
     "demand_pct": 22.22,
     "rank": 5,
     "co_occurring_skills": [
-      "Docker",
       "Linux",
+      "Docker",
       "PostgreSQL",
       "AWS",
       "Kubernetes"
@@ -1829,8 +1829,8 @@
       "Linux",
       "Git",
       "Python",
-      "Django",
-      "Docker"
+      "Docker",
+      "Django"
     ],
     "average_salary_lpa": 14.93,
     "trend": "falling",
@@ -1851,8 +1851,8 @@
     "co_occurring_skills": [
       "Docker",
       "Linux",
-      "JavaScript",
       "Redis",
+      "JavaScript",
       "Node.js"
     ],
     "average_salary_lpa": 21.86,
@@ -1876,7 +1876,7 @@
       "Kubernetes",
       "FastAPI",
       "Docker",
-      "Flask"
+      "Java"
     ],
     "average_salary_lpa": 22.29,
     "trend": "stable",
@@ -1898,8 +1898,8 @@
       "Docker",
       "Kubernetes",
       "Node.js",
-      "REST API",
-      "PostgreSQL"
+      "PostgreSQL",
+      "REST API"
     ],
     "average_salary_lpa": 22.17,
     "trend": "falling",
@@ -1918,11 +1918,11 @@
     "demand_pct": 16.67,
     "rank": 11,
     "co_occurring_skills": [
-      "FastAPI",
       "Linux",
+      "FastAPI",
       "CI/CD",
       "AWS",
-      "REST API"
+      "Java"
     ],
     "average_salary_lpa": 19.17,
     "trend": "falling",
@@ -1944,8 +1944,8 @@
       "Docker",
       "REST API",
       "Kubernetes",
-      "FastAPI",
-      "Linux"
+      "Linux",
+      "FastAPI"
     ],
     "average_salary_lpa": 18.33,
     "trend": "stable",
@@ -1966,8 +1966,8 @@
     "co_occurring_skills": [
       "Docker",
       "Linux",
-      "FastAPI",
       "Java",
+      "FastAPI",
       "AWS"
     ],
     "average_salary_lpa": 20.58,
@@ -2010,8 +2010,8 @@
     "demand_pct": 13.89,
     "rank": 15,
     "co_occurring_skills": [
-      "Django",
       "AWS",
+      "Django",
       "JavaScript",
       "Linux",
       "PostgreSQL"
@@ -2035,8 +2035,8 @@
     "co_occurring_skills": [
       "Docker",
       "Linux",
-      "JavaScript",
       "Kubernetes",
+      "JavaScript",
       "PostgreSQL"
     ],
     "average_salary_lpa": 15.7,
@@ -2060,7 +2060,7 @@
       "Linux",
       "Redis",
       "Flask",
-      "REST API"
+      "Docker"
     ],
     "average_salary_lpa": 13.25,
     "trend": "falling",
@@ -2082,8 +2082,8 @@
       "Data Analysis",
       "SQL",
       "Python",
-      "Excel",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Excel"
     ],
     "average_salary_lpa": 18.26,
     "trend": "falling",
@@ -2105,8 +2105,8 @@
       "NumPy",
       "PostgreSQL",
       "Pandas",
-      "Python",
-      "AWS"
+      "AWS",
+      "Python"
     ],
     "average_salary_lpa": 18.16,
     "trend": "falling",
@@ -2174,8 +2174,8 @@
       "Python",
       "PostgreSQL",
       "Tableau",
-      "Excel",
-      "Statistics"
+      "Statistics",
+      "Excel"
     ],
     "average_salary_lpa": 17.92,
     "trend": "rising",
@@ -2219,8 +2219,8 @@
     "co_occurring_skills": [
       "Statistics",
       "NumPy",
-      "Data Analysis",
       "Problem Solving",
+      "Data Analysis",
       "AWS"
     ],
     "average_salary_lpa": 20.81,
@@ -2242,9 +2242,9 @@
     "co_occurring_skills": [
       "Python",
       "Communication",
-      "Pandas",
+      "AWS",
       "Tableau",
-      "AWS"
+      "Pandas"
     ],
     "average_salary_lpa": 17.69,
     "trend": "rising",
@@ -2611,8 +2611,8 @@
       "NumPy",
       "Data Visualization",
       "Tableau",
-      "Python",
-      "AWS"
+      "AWS",
+      "Python"
     ],
     "average_salary_lpa": 17.17,
     "trend": "stable",
@@ -2681,7 +2681,7 @@
       "NumPy",
       "Data Visualization",
       "Problem Solving",
-      "Excel"
+      "Statistics"
     ],
     "average_salary_lpa": 18.5,
     "trend": "rising",
@@ -2748,8 +2748,8 @@
     "co_occurring_skills": [
       "Power BI",
       "Excel",
-      "Tableau",
       "Python",
+      "Tableau",
       "NumPy"
     ],
     "average_salary_lpa": 23.58,
@@ -2769,11 +2769,11 @@
     "demand_pct": 33.33,
     "rank": 1,
     "co_occurring_skills": [
-      "Excel",
       "Power BI",
+      "Excel",
       "Statistics",
-      "Python",
-      "Communication"
+      "Communication",
+      "Python"
     ],
     "average_salary_lpa": 19.07,
     "trend": "falling",
@@ -2792,8 +2792,8 @@
     "demand_pct": 28.57,
     "rank": 2,
     "co_occurring_skills": [
-      "Data Analysis",
       "SQL",
+      "Data Analysis",
       "R",
       "Problem Solving",
       "Python"
@@ -2884,11 +2884,11 @@
     "demand_pct": 28.57,
     "rank": 2,
     "co_occurring_skills": [
-      "NumPy",
       "SQL",
+      "NumPy",
       "Problem Solving",
-      "Python",
-      "Communication"
+      "Communication",
+      "Python"
     ],
     "average_salary_lpa": 17.0,
     "trend": "rising",
@@ -3002,8 +3002,8 @@
       "Pandas",
       "Data Analysis",
       "Communication",
-      "Problem Solving",
-      "Tableau"
+      "Tableau",
+      "Problem Solving"
     ],
     "average_salary_lpa": 18.78,
     "trend": "falling",
@@ -3023,8 +3023,8 @@
     "rank": 12,
     "co_occurring_skills": [
       "Statistics",
-      "Pandas",
       "Python",
+      "Pandas",
       "Communication",
       "Excel"
     ],
@@ -3068,8 +3068,8 @@
     "demand_pct": 16.67,
     "rank": 14,
     "co_occurring_skills": [
-      "Statistics",
       "SQL",
+      "Statistics",
       "Pandas",
       "Communication",
       "PostgreSQL"
@@ -3092,8 +3092,8 @@
     "rank": 14,
     "co_occurring_skills": [
       "Communication",
-      "Pandas",
       "Tableau",
+      "Pandas",
       "Statistics",
       "Data Visualization"
     ],
@@ -3116,8 +3116,8 @@
     "co_occurring_skills": [
       "AWS",
       "Data Analysis",
-      "PostgreSQL",
       "SQL",
+      "PostgreSQL",
       "Excel"
     ],
     "average_salary_lpa": 17.12,
@@ -3184,10 +3184,10 @@
     "rank": 3,
     "co_occurring_skills": [
       "SQL",
-      "Excel",
       "NumPy",
+      "Excel",
       "PostgreSQL",
-      "Problem Solving"
+      "Python"
     ],
     "average_salary_lpa": 17.91,
     "trend": "rising",
@@ -3231,8 +3231,8 @@
     "co_occurring_skills": [
       "Power BI",
       "Statistics",
-      "Problem Solving",
       "NumPy",
+      "Problem Solving",
       "AWS"
     ],
     "average_salary_lpa": 15.59,
@@ -3256,7 +3256,7 @@
       "PostgreSQL",
       "Problem Solving",
       "Data Analysis",
-      "Communication"
+      "Power BI"
     ],
     "average_salary_lpa": 18.5,
     "trend": "falling",
@@ -3298,8 +3298,8 @@
     "demand_pct": 22.58,
     "rank": 9,
     "co_occurring_skills": [
-      "AWS",
       "PostgreSQL",
+      "AWS",
       "Statistics",
       "NumPy",
       "Tableau"
@@ -3323,8 +3323,8 @@
     "co_occurring_skills": [
       "Data Analysis",
       "PostgreSQL",
-      "NumPy",
       "SQL",
+      "NumPy",
       "Statistics"
     ],
     "average_salary_lpa": 17.12,
@@ -3345,8 +3345,8 @@
     "rank": 11,
     "co_occurring_skills": [
       "SQL",
-      "Pandas",
       "NumPy",
+      "Pandas",
       "PostgreSQL",
       "Python"
     ],
@@ -3368,8 +3368,8 @@
     "rank": 11,
     "co_occurring_skills": [
       "Communication",
-      "NumPy",
       "AWS",
+      "NumPy",
       "Python",
       "PostgreSQL"
     ],
@@ -3460,10 +3460,10 @@
     "rank": 1,
     "co_occurring_skills": [
       "Tableau",
-      "Excel",
       "Power BI",
+      "Excel",
       "Pandas",
-      "Python"
+      "PostgreSQL"
     ],
     "average_salary_lpa": 18.54,
     "trend": "rising",
@@ -3506,9 +3506,9 @@
     "rank": 3,
     "co_occurring_skills": [
       "Communication",
-      "Pandas",
       "Power BI",
       "Tableau",
+      "Pandas",
       "PostgreSQL"
     ],
     "average_salary_lpa": 21.65,
@@ -3529,8 +3529,8 @@
     "rank": 3,
     "co_occurring_skills": [
       "Pandas",
-      "Python",
       "Communication",
+      "Python",
       "Excel",
       "Power BI"
     ],
@@ -3552,8 +3552,8 @@
     "rank": 3,
     "co_occurring_skills": [
       "R",
-      "Python",
       "Communication",
+      "Python",
       "Power BI",
       "Data Analysis"
     ],
@@ -3577,8 +3577,8 @@
       "Data Analysis",
       "Python",
       "R",
-      "Power BI",
-      "AWS"
+      "AWS",
+      "Power BI"
     ],
     "average_salary_lpa": 20.95,
     "trend": "stable",
@@ -3599,9 +3599,9 @@
     "co_occurring_skills": [
       "R",
       "Excel",
-      "Pandas",
+      "AWS",
       "Tableau",
-      "AWS"
+      "Pandas"
     ],
     "average_salary_lpa": 17.95,
     "trend": "rising",
@@ -3620,11 +3620,11 @@
     "demand_pct": 24.24,
     "rank": 8,
     "co_occurring_skills": [
-      "Pandas",
       "Communication",
+      "Pandas",
       "Excel",
       "R",
-      "Data Analysis"
+      "Power BI"
     ],
     "average_salary_lpa": 21.69,
     "trend": "rising",
@@ -3646,8 +3646,8 @@
       "R",
       "AWS",
       "SQL",
-      "Pandas",
-      "Data Analysis"
+      "Data Analysis",
+      "Pandas"
     ],
     "average_salary_lpa": 18.43,
     "trend": "falling",
@@ -3713,8 +3713,8 @@
     "rank": 9,
     "co_occurring_skills": [
       "R",
-      "Power BI",
       "AWS",
+      "Power BI",
       "Communication",
       "PostgreSQL"
     ],
@@ -3738,8 +3738,8 @@
       "R",
       "Communication",
       "Data Visualization",
-      "Pandas",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Pandas"
     ],
     "average_salary_lpa": 18.2,
     "trend": "stable",
@@ -3782,8 +3782,8 @@
     "rank": 15,
     "co_occurring_skills": [
       "Data Visualization",
-      "Data Analysis",
       "Tableau",
+      "Data Analysis",
       "R",
       "PostgreSQL"
     ],
@@ -4128,8 +4128,8 @@
     "co_occurring_skills": [
       "Data Analysis",
       "PyTorch",
-      "Data Visualization",
       "Machine Learning",
+      "Data Visualization",
       "Pandas"
     ],
     "average_salary_lpa": 19.46,
@@ -4173,8 +4173,8 @@
     "rank": 1,
     "co_occurring_skills": [
       "Apache Spark",
-      "AWS",
       "Natural Language Processing",
+      "AWS",
       "Pandas",
       "Python"
     ],
@@ -4222,7 +4222,7 @@
       "Python",
       "R",
       "Natural Language Processing",
-      "Pandas"
+      "NumPy"
     ],
     "average_salary_lpa": 17.95,
     "trend": "falling",
@@ -4356,9 +4356,9 @@
     "demand_pct": 20.78,
     "rank": 9,
     "co_occurring_skills": [
+      "SQL",
       "TensorFlow",
       "Scikit-learn",
-      "SQL",
       "Apache Spark",
       "Data Visualization"
     ],
@@ -4381,8 +4381,8 @@
     "co_occurring_skills": [
       "NumPy",
       "PyTorch",
-      "TensorFlow",
       "SQL",
+      "TensorFlow",
       "AWS"
     ],
     "average_salary_lpa": 18.69,
@@ -4404,8 +4404,8 @@
     "co_occurring_skills": [
       "Data Visualization",
       "Data Analysis",
-      "Pandas",
       "Natural Language Processing",
+      "Pandas",
       "Scikit-learn"
     ],
     "average_salary_lpa": 21.13,
@@ -4448,8 +4448,8 @@
     "demand_pct": 18.18,
     "rank": 13,
     "co_occurring_skills": [
-      "Pandas",
       "AWS",
+      "Pandas",
       "Data Visualization",
       "TensorFlow",
       "Natural Language Processing"
@@ -4657,8 +4657,8 @@
     "co_occurring_skills": [
       "NumPy",
       "Statistics",
-      "Pandas",
       "TensorFlow",
+      "Pandas",
       "Data Visualization"
     ],
     "average_salary_lpa": 21.55,
@@ -4679,8 +4679,8 @@
     "rank": 3,
     "co_occurring_skills": [
       "Natural Language Processing",
-      "Data Visualization",
       "Machine Learning",
+      "Data Visualization",
       "Deep Learning",
       "SQL"
     ],
@@ -4701,8 +4701,8 @@
     "demand_pct": 23.68,
     "rank": 8,
     "co_occurring_skills": [
-      "NumPy",
       "Machine Learning",
+      "NumPy",
       "Python",
       "Data Analysis",
       "Deep Learning"
@@ -4725,9 +4725,9 @@
     "rank": 9,
     "co_occurring_skills": [
       "Deep Learning",
-      "Pandas",
-      "Data Visualization",
       "SQL",
+      "Data Visualization",
+      "Pandas",
       "PyTorch"
     ],
     "average_salary_lpa": 19.81,
@@ -4795,9 +4795,9 @@
     "co_occurring_skills": [
       "Python",
       "Natural Language Processing",
-      "NumPy",
       "Machine Learning",
-      "Deep Learning"
+      "NumPy",
+      "Apache Spark"
     ],
     "average_salary_lpa": 19.31,
     "trend": "falling",
@@ -5000,11 +5000,11 @@
     "demand_pct": 24.53,
     "rank": 5,
     "co_occurring_skills": [
-      "Python",
       "Scikit-learn",
+      "Python",
       "Natural Language Processing",
-      "Statistics",
-      "AWS"
+      "AWS",
+      "Statistics"
     ],
     "average_salary_lpa": 16.12,
     "trend": "rising",
@@ -5071,9 +5071,9 @@
     "co_occurring_skills": [
       "Scikit-learn",
       "Data Analysis",
-      "TensorFlow",
       "SQL",
-      "Statistics"
+      "TensorFlow",
+      "Machine Learning"
     ],
     "average_salary_lpa": 16.29,
     "trend": "stable",
@@ -5094,8 +5094,8 @@
     "co_occurring_skills": [
       "Scikit-learn",
       "Python",
-      "Pandas",
       "Machine Learning",
+      "Pandas",
       "SQL"
     ],
     "average_salary_lpa": 16.05,
@@ -5210,8 +5210,8 @@
       "Statistics",
       "Data Analysis",
       "TensorFlow",
-      "Scikit-learn",
-      "SQL"
+      "SQL",
+      "Scikit-learn"
     ],
     "average_salary_lpa": 18.39,
     "trend": "stable",
@@ -5322,8 +5322,8 @@
     "demand_pct": 25.0,
     "rank": 1,
     "co_occurring_skills": [
-      "PyTorch",
       "SQL",
+      "PyTorch",
       "Pandas",
       "Natural Language Processing",
       "Scikit-learn"
@@ -5368,8 +5368,8 @@
     "demand_pct": 21.88,
     "rank": 5,
     "co_occurring_skills": [
-      "NumPy",
       "Data Analysis",
+      "NumPy",
       "Machine Learning",
       "SQL",
       "Python"
@@ -5415,10 +5415,10 @@
     "rank": 5,
     "co_occurring_skills": [
       "Pandas",
-      "Statistics",
       "Data Analysis",
-      "Python",
-      "R"
+      "Statistics",
+      "Natural Language Processing",
+      "Python"
     ],
     "average_salary_lpa": 18.5,
     "trend": "rising",
@@ -5440,8 +5440,8 @@
       "Python",
       "PyTorch",
       "Statistics",
-      "Natural Language Processing",
-      "Machine Learning"
+      "Machine Learning",
+      "Natural Language Processing"
     ],
     "average_salary_lpa": 21.5,
     "trend": "falling",
@@ -5463,8 +5463,8 @@
       "Data Analysis",
       "Statistics",
       "Deep Learning",
-      "NumPy",
-      "Natural Language Processing"
+      "Natural Language Processing",
+      "NumPy"
     ],
     "average_salary_lpa": 15.58,
     "trend": "falling",
@@ -5556,7 +5556,7 @@
       "Natural Language Processing",
       "PyTorch",
       "SQL",
-      "Deep Learning"
+      "AWS"
     ],
     "average_salary_lpa": 22.0,
     "trend": "falling",
@@ -5575,8 +5575,8 @@
     "demand_pct": 15.62,
     "rank": 12,
     "co_occurring_skills": [
-      "TensorFlow",
       "AWS",
+      "TensorFlow",
       "Statistics",
       "Scikit-learn",
       "Data Analysis"
@@ -5598,8 +5598,8 @@
     "demand_pct": 15.62,
     "rank": 12,
     "co_occurring_skills": [
-      "TensorFlow",
       "Natural Language Processing",
+      "TensorFlow",
       "SQL",
       "Apache Spark",
       "Statistics"
@@ -5900,8 +5900,8 @@
       "Microsoft Azure",
       "Kubernetes",
       "Terraform",
-      "Google Cloud",
-      "Apache Kafka"
+      "Apache Kafka",
+      "Google Cloud"
     ],
     "average_salary_lpa": 18.45,
     "trend": "stable",
@@ -6038,8 +6038,8 @@
       "Google Cloud",
       "Git",
       "Microsoft Azure",
-      "Kubernetes",
-      "Docker"
+      "Docker",
+      "Kubernetes"
     ],
     "average_salary_lpa": 16.58,
     "trend": "rising",
@@ -6062,7 +6062,7 @@
       "Kubernetes",
       "CI/CD",
       "Problem Solving",
-      "Apache Airflow"
+      "SQL"
     ],
     "average_salary_lpa": 15.5,
     "trend": "falling",
@@ -6129,8 +6129,8 @@
     "co_occurring_skills": [
       "Linux",
       "Terraform",
-      "CI/CD",
       "Microsoft Azure",
+      "CI/CD",
       "Kubernetes"
     ],
     "average_salary_lpa": 16.56,
@@ -6197,8 +6197,8 @@
     "rank": 8,
     "co_occurring_skills": [
       "Kubernetes",
-      "Google Cloud",
       "Microsoft Azure",
+      "Google Cloud",
       "Terraform",
       "Docker"
     ],
@@ -6380,8 +6380,8 @@
     "demand_pct": 30.56,
     "rank": 1,
     "co_occurring_skills": [
-      "Git",
       "Google Cloud",
+      "Git",
       "Docker",
       "PostgreSQL",
       "Microsoft Azure"
@@ -6404,10 +6404,10 @@
     "rank": 2,
     "co_occurring_skills": [
       "CI/CD",
-      "AWS",
-      "Apache Airflow",
+      "Kubernetes",
       "PostgreSQL",
-      "Kubernetes"
+      "AWS",
+      "Apache Airflow"
     ],
     "average_salary_lpa": 18.65,
     "trend": "stable",
@@ -6541,9 +6541,9 @@
     "demand_pct": 22.22,
     "rank": 7,
     "co_occurring_skills": [
+      "Kubernetes",
       "Apache Airflow",
       "Google Cloud",
-      "Kubernetes",
       "PostgreSQL",
       "Apache Kafka"
     ],
@@ -6567,8 +6567,8 @@
       "Monitoring",
       "Kubernetes",
       "Docker",
-      "PostgreSQL",
-      "Terraform"
+      "Terraform",
+      "PostgreSQL"
     ],
     "average_salary_lpa": 15.88,
     "trend": "falling",
@@ -6659,8 +6659,8 @@
       "Google Cloud",
       "CI/CD",
       "Monitoring",
-      "AWS",
-      "Apache Airflow"
+      "Kubernetes",
+      "AWS"
     ],
     "average_salary_lpa": 13.5,
     "trend": "falling",
@@ -6705,8 +6705,8 @@
       "AWS",
       "Monitoring",
       "Git",
-      "Google Cloud",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Google Cloud"
     ],
     "average_salary_lpa": 16.6,
     "trend": "falling",
@@ -6729,7 +6729,7 @@
       "Docker",
       "PostgreSQL",
       "Microsoft Azure",
-      "Git"
+      "Apache Airflow"
     ],
     "average_salary_lpa": 16.62,
     "trend": "stable",
@@ -6772,8 +6772,8 @@
     "rank": 2,
     "co_occurring_skills": [
       "Terraform",
-      "AWS",
       "Problem Solving",
+      "AWS",
       "Google Cloud",
       "Python"
     ],
@@ -6818,8 +6818,8 @@
     "rank": 4,
     "co_occurring_skills": [
       "Git",
-      "Problem Solving",
       "Monitoring",
+      "Problem Solving",
       "Microsoft Azure",
       "AWS"
     ],
@@ -6889,8 +6889,8 @@
       "Apache Kafka",
       "Microsoft Azure",
       "Problem Solving",
-      "AWS",
-      "Linux"
+      "Linux",
+      "AWS"
     ],
     "average_salary_lpa": 17.12,
     "trend": "stable",
@@ -6959,7 +6959,7 @@
       "SQL",
       "AWS",
       "CI/CD",
-      "Apache Airflow"
+      "Linux"
     ],
     "average_salary_lpa": 16.93,
     "trend": "rising",
@@ -6979,8 +6979,8 @@
     "rank": 10,
     "co_occurring_skills": [
       "PostgreSQL",
-      "Python",
       "Apache Kafka",
+      "Python",
       "Git",
       "Docker"
     ],
@@ -7027,8 +7027,8 @@
       "CI/CD",
       "Linux",
       "Problem Solving",
-      "Google Cloud",
-      "AWS"
+      "AWS",
+      "Google Cloud"
     ],
     "average_salary_lpa": 17.58,
     "trend": "stable",
@@ -7050,8 +7050,8 @@
       "Microsoft Azure",
       "Terraform",
       "SQL",
-      "Problem Solving",
-      "Docker"
+      "Docker",
+      "Problem Solving"
     ],
     "average_salary_lpa": 19.5,
     "trend": "stable",
@@ -7071,8 +7071,8 @@
     "rank": 15,
     "co_occurring_skills": [
       "Linux",
-      "PostgreSQL",
       "Terraform",
+      "PostgreSQL",
       "Microsoft Azure",
       "Kubernetes"
     ],
@@ -7163,8 +7163,8 @@
     "rank": 3,
     "co_occurring_skills": [
       "Docker",
-      "Monitoring",
       "AWS",
+      "Monitoring",
       "Microsoft Azure",
       "SQL"
     ],
@@ -7187,8 +7187,8 @@
     "co_occurring_skills": [
       "Microsoft Azure",
       "Linux",
-      "Apache Airflow",
       "Kubernetes",
+      "Apache Airflow",
       "Google Cloud"
     ],
     "average_salary_lpa": 20.95,
@@ -7301,9 +7301,9 @@
     "rank": 9,
     "co_occurring_skills": [
       "SQL",
-      "Monitoring",
       "AWS",
       "Apache Airflow",
+      "Monitoring",
       "Docker"
     ],
     "average_salary_lpa": 18.19,
@@ -7324,10 +7324,10 @@
     "rank": 9,
     "co_occurring_skills": [
       "Docker",
-      "SQL",
       "Git",
-      "Monitoring",
-      "Apache Airflow"
+      "SQL",
+      "Apache Airflow",
+      "Monitoring"
     ],
     "average_salary_lpa": 20.75,
     "trend": "falling",
@@ -7346,8 +7346,8 @@
     "demand_pct": 17.95,
     "rank": 11,
     "co_occurring_skills": [
-      "Monitoring",
       "Apache Airflow",
+      "Monitoring",
       "Google Cloud",
       "Kubernetes",
       "Linux"
@@ -7370,10 +7370,10 @@
     "rank": 11,
     "co_occurring_skills": [
       "Monitoring",
-      "AWS",
       "Linux",
+      "AWS",
       "Git",
-      "Apache Kafka"
+      "Microsoft Azure"
     ],
     "average_salary_lpa": 23.29,
     "trend": "rising",
@@ -7441,8 +7441,8 @@
       "SQL",
       "Google Cloud",
       "Monitoring",
-      "Terraform",
-      "Kubernetes"
+      "Kubernetes",
+      "Terraform"
     ],
     "average_salary_lpa": 18.58,
     "trend": "falling",
@@ -7462,8 +7462,8 @@
     "rank": 16,
     "co_occurring_skills": [
       "AWS",
-      "Apache Airflow",
       "Microsoft Azure",
+      "Apache Airflow",
       "SQL",
       "Git"
     ],
@@ -7829,8 +7829,8 @@
     "demand_pct": 15.0,
     "rank": 16,
     "co_occurring_skills": [
-      "Next.js",
       "GraphQL",
+      "Next.js",
       "HTML",
       "CSS",
       "Python"
@@ -7853,8 +7853,8 @@
     "rank": 17,
     "co_occurring_skills": [
       "Node.js",
-      "TypeScript",
       "Docker",
+      "TypeScript",
       "PostgreSQL",
       "Next.js"
     ],
@@ -7876,10 +7876,10 @@
     "rank": 1,
     "co_occurring_skills": [
       "GraphQL",
-      "REST API",
       "CSS",
-      "Node.js",
-      "Git"
+      "REST API",
+      "Git",
+      "React"
     ],
     "average_salary_lpa": 22.22,
     "trend": "falling",
@@ -7901,8 +7901,8 @@
       "Next.js",
       "JavaScript",
       "TypeScript",
-      "REST API",
-      "Python"
+      "Python",
+      "REST API"
     ],
     "average_salary_lpa": 20.22,
     "trend": "falling",
@@ -7922,8 +7922,8 @@
     "rank": 2,
     "co_occurring_skills": [
       "Node.js",
-      "TypeScript",
       "Problem Solving",
+      "TypeScript",
       "PostgreSQL",
       "REST API"
     ],
@@ -7971,7 +7971,7 @@
       "CSS",
       "JavaScript",
       "AWS",
-      "TypeScript"
+      "PostgreSQL"
     ],
     "average_salary_lpa": 18.82,
     "trend": "falling",
@@ -8063,7 +8063,7 @@
       "Python",
       "React",
       "Next.js",
-      "TypeScript"
+      "Agile"
     ],
     "average_salary_lpa": 22.14,
     "trend": "stable",
@@ -8083,9 +8083,9 @@
     "rank": 9,
     "co_occurring_skills": [
       "Docker",
+      "CSS",
       "Next.js",
       "Python",
-      "CSS",
       "REST API"
     ],
     "average_salary_lpa": 22.07,
@@ -8108,8 +8108,8 @@
       "Agile",
       "Git",
       "Node.js",
-      "REST API",
-      "GraphQL"
+      "GraphQL",
+      "REST API"
     ],
     "average_salary_lpa": 23.83,
     "trend": "falling",
@@ -8131,8 +8131,8 @@
       "CSS",
       "Agile",
       "AWS",
-      "TypeScript",
-      "Problem Solving"
+      "Problem Solving",
+      "TypeScript"
     ],
     "average_salary_lpa": 23.21,
     "trend": "stable",
@@ -8153,8 +8153,8 @@
     "co_occurring_skills": [
       "Next.js",
       "PostgreSQL",
-      "TypeScript",
       "CSS",
+      "TypeScript",
       "Node.js"
     ],
     "average_salary_lpa": 23.04,
@@ -8176,8 +8176,8 @@
     "co_occurring_skills": [
       "Next.js",
       "PostgreSQL",
-      "Node.js",
       "Git",
+      "Node.js",
       "Python"
     ],
     "average_salary_lpa": 22.25,
@@ -8267,8 +8267,8 @@
     "rank": 1,
     "co_occurring_skills": [
       "REST API",
-      "Node.js",
       "Next.js",
+      "Node.js",
       "Docker",
       "React"
     ],
@@ -8476,8 +8476,8 @@
       "Next.js",
       "Python",
       "GraphQL",
-      "JavaScript",
-      "Git"
+      "Git",
+      "JavaScript"
     ],
     "average_salary_lpa": 13.25,
     "trend": "falling",
@@ -8497,10 +8497,10 @@
     "rank": 11,
     "co_occurring_skills": [
       "TypeScript",
-      "Problem Solving",
       "Node.js",
-      "REST API",
-      "Docker"
+      "Problem Solving",
+      "Docker",
+      "Git"
     ],
     "average_salary_lpa": 20.6,
     "trend": "falling",
@@ -8522,8 +8522,8 @@
       "CSS",
       "Python",
       "AWS",
-      "Agile",
-      "REST API"
+      "Docker",
+      "Agile"
     ],
     "average_salary_lpa": 15.0,
     "trend": "stable",
@@ -8543,8 +8543,8 @@
     "rank": 12,
     "co_occurring_skills": [
       "CSS",
-      "REST API",
       "Docker",
+      "REST API",
       "Next.js",
       "JavaScript"
     ],
@@ -8569,7 +8569,7 @@
       "TypeScript",
       "Agile",
       "Node.js",
-      "Communication"
+      "CSS"
     ],
     "average_salary_lpa": 14.83,
     "trend": "rising",
@@ -8590,9 +8590,9 @@
     "co_occurring_skills": [
       "Agile",
       "Node.js",
-      "TypeScript",
+      "CSS",
       "Git",
-      "CSS"
+      "TypeScript"
     ],
     "average_salary_lpa": 14.83,
     "trend": "falling",
@@ -8611,8 +8611,8 @@
     "demand_pct": 9.38,
     "rank": 14,
     "co_occurring_skills": [
-      "Problem Solving",
       "Node.js",
+      "Problem Solving",
       "Communication",
       "REST API"
     ],
@@ -8659,8 +8659,8 @@
       "Next.js",
       "Docker",
       "Python",
-      "GraphQL",
-      "JavaScript"
+      "JavaScript",
+      "GraphQL"
     ],
     "average_salary_lpa": 16.07,
     "trend": "falling",
@@ -8683,7 +8683,7 @@
       "REST API",
       "GraphQL",
       "CSS",
-      "Agile"
+      "Docker"
     ],
     "average_salary_lpa": 17.19,
     "trend": "falling",
@@ -8704,9 +8704,9 @@
     "co_occurring_skills": [
       "REST API",
       "JavaScript",
-      "Agile",
       "Python",
-      "TypeScript"
+      "Agile",
+      "Docker"
     ],
     "average_salary_lpa": 21.65,
     "trend": "rising",
@@ -8772,8 +8772,8 @@
     "rank": 5,
     "co_occurring_skills": [
       "Next.js",
-      "REST API",
       "React",
+      "REST API",
       "Python",
       "Communication"
     ],
@@ -8819,8 +8819,8 @@
     "co_occurring_skills": [
       "Docker",
       "React",
-      "Next.js",
       "Python",
+      "Next.js",
       "GraphQL"
     ],
     "average_salary_lpa": 17.0,
@@ -8864,10 +8864,10 @@
     "rank": 7,
     "co_occurring_skills": [
       "Next.js",
-      "Python",
       "HTML",
-      "Agile",
-      "Problem Solving"
+      "Python",
+      "Problem Solving",
+      "Agile"
     ],
     "average_salary_lpa": 16.54,
     "trend": "rising",
@@ -8887,8 +8887,8 @@
     "rank": 7,
     "co_occurring_skills": [
       "Docker",
-      "REST API",
       "GraphQL",
+      "REST API",
       "Communication",
       "HTML"
     ],
@@ -8911,8 +8911,8 @@
     "co_occurring_skills": [
       "Next.js",
       "REST API",
-      "Node.js",
       "Python",
+      "Node.js",
       "Communication"
     ],
     "average_salary_lpa": 20.88,
@@ -9004,7 +9004,7 @@
       "CSS",
       "PostgreSQL",
       "Node.js",
-      "REST API",
+      "GraphQL",
       "Next.js"
     ],
     "average_salary_lpa": 20.69,
@@ -9025,8 +9025,8 @@
     "rank": 17,
     "co_occurring_skills": [
       "Node.js",
-      "Agile",
       "Docker",
+      "Agile",
       "Communication",
       "PostgreSQL"
     ],
@@ -9070,8 +9070,8 @@
     "demand_pct": 27.03,
     "rank": 2,
     "co_occurring_skills": [
-      "Python",
       "JavaScript",
+      "Python",
       "REST API",
       "CSS",
       "Agile"
@@ -9118,8 +9118,8 @@
     "co_occurring_skills": [
       "Python",
       "PostgreSQL",
-      "REST API",
       "AWS",
+      "REST API",
       "Docker"
     ],
     "average_salary_lpa": 22.39,
@@ -9187,8 +9187,8 @@
     "co_occurring_skills": [
       "Docker",
       "GraphQL",
-      "Node.js",
       "CSS",
+      "Node.js",
       "JavaScript"
     ],
     "average_salary_lpa": 15.93,
@@ -9211,7 +9211,7 @@
       "JavaScript",
       "REST API",
       "Docker",
-      "Next.js",
+      "CSS",
       "GraphQL"
     ],
     "average_salary_lpa": 21.43,
@@ -9324,8 +9324,8 @@
     "co_occurring_skills": [
       "Problem Solving",
       "JavaScript",
-      "Git",
       "Agile",
+      "Git",
       "AWS"
     ],
     "average_salary_lpa": 19.2,
@@ -9372,7 +9372,7 @@
       "CSS",
       "TypeScript",
       "AWS",
-      "Next.js"
+      "HTML"
     ],
     "average_salary_lpa": 19.25,
     "trend": "stable",
@@ -9441,7 +9441,7 @@
       "Apache Kafka",
       "Scikit-learn",
       "PyTorch",
-      "Google Cloud"
+      "Kubernetes"
     ],
     "average_salary_lpa": 19.87,
     "trend": "falling",
@@ -9625,7 +9625,7 @@
       "Deep Learning",
       "Machine Learning",
       "SQL",
-      "MLOps"
+      "Kubernetes"
     ],
     "average_salary_lpa": 18.98,
     "trend": "falling",
@@ -9669,8 +9669,8 @@
     "co_occurring_skills": [
       "Scikit-learn",
       "Terraform",
-      "Apache Kafka",
       "REST API",
+      "Apache Kafka",
       "AWS"
     ],
     "average_salary_lpa": 17.17,
@@ -9786,7 +9786,7 @@
       "FastAPI",
       "Google Cloud",
       "Terraform",
-      "Deep Learning"
+      "Apache Kafka"
     ],
     "average_salary_lpa": 19.12,
     "trend": "stable",
@@ -9830,8 +9830,8 @@
     "co_occurring_skills": [
       "REST API",
       "Machine Learning",
-      "FastAPI",
       "Docker",
+      "FastAPI",
       "AWS"
     ],
     "average_salary_lpa": 17.73,
@@ -9855,7 +9855,7 @@
       "REST API",
       "Docker",
       "TensorFlow",
-      "Apache Kafka"
+      "Machine Learning"
     ],
     "average_salary_lpa": 18.23,
     "trend": "falling",
@@ -9875,10 +9875,10 @@
     "rank": 4,
     "co_occurring_skills": [
       "FastAPI",
-      "Python",
       "Kubernetes",
-      "Terraform",
-      "Machine Learning"
+      "Python",
+      "Machine Learning",
+      "Terraform"
     ],
     "average_salary_lpa": 17.05,
     "trend": "rising",
@@ -9993,7 +9993,7 @@
       "Terraform",
       "Machine Learning",
       "Deep Learning",
-      "PyTorch"
+      "Scikit-learn"
     ],
     "average_salary_lpa": 19.22,
     "trend": "falling",
@@ -10037,8 +10037,8 @@
     "co_occurring_skills": [
       "Machine Learning",
       "Scikit-learn",
-      "TensorFlow",
       "Apache Kafka",
+      "TensorFlow",
       "Google Cloud"
     ],
     "average_salary_lpa": 16.33,
@@ -10061,8 +10061,8 @@
       "Apache Kafka",
       "Machine Learning",
       "FastAPI",
-      "AWS",
-      "Kubernetes"
+      "Kubernetes",
+      "AWS"
     ],
     "average_salary_lpa": 20.14,
     "trend": "rising",
@@ -10106,9 +10106,9 @@
     "co_occurring_skills": [
       "Scikit-learn",
       "Google Cloud",
+      "Kubernetes",
       "FastAPI",
-      "TensorFlow",
-      "Kubernetes"
+      "TensorFlow"
     ],
     "average_salary_lpa": 19.42,
     "trend": "stable",
@@ -10129,9 +10129,9 @@
     "co_occurring_skills": [
       "Scikit-learn",
       "REST API",
+      "Apache Kafka",
       "Python",
-      "MLOps",
-      "Apache Kafka"
+      "MLOps"
     ],
     "average_salary_lpa": 18.91,
     "trend": "rising",
@@ -10153,8 +10153,8 @@
       "Google Cloud",
       "Terraform",
       "Docker",
-      "REST API",
-      "Scikit-learn"
+      "Scikit-learn",
+      "REST API"
     ],
     "average_salary_lpa": 18.2,
     "trend": "stable",
@@ -10173,11 +10173,11 @@
     "demand_pct": 42.86,
     "rank": 1,
     "co_occurring_skills": [
-      "Apache Kafka",
       "REST API",
+      "Apache Kafka",
       "FastAPI",
-      "Scikit-learn",
-      "Terraform"
+      "Terraform",
+      "Scikit-learn"
     ],
     "average_salary_lpa": 15.08,
     "trend": "rising",
@@ -10243,8 +10243,8 @@
     "rank": 3,
     "co_occurring_skills": [
       "FastAPI",
-      "TensorFlow",
       "SQL",
+      "TensorFlow",
       "AWS",
       "Scikit-learn"
     ],
@@ -10268,8 +10268,8 @@
       "Terraform",
       "SQL",
       "Scikit-learn",
-      "Google Cloud",
-      "Apache Kafka"
+      "Apache Kafka",
+      "Google Cloud"
     ],
     "average_salary_lpa": 15.69,
     "trend": "falling",
@@ -10312,8 +10312,8 @@
     "rank": 7,
     "co_occurring_skills": [
       "Python",
-      "Apache Kafka",
       "Google Cloud",
+      "Apache Kafka",
       "SQL",
       "PyTorch"
     ],
@@ -10336,9 +10336,9 @@
     "co_occurring_skills": [
       "Docker",
       "Machine Learning",
-      "Terraform",
       "SQL",
-      "Apache Kafka"
+      "Terraform",
+      "PyTorch"
     ],
     "average_salary_lpa": 16.5,
     "trend": "falling",
@@ -10358,8 +10358,8 @@
     "rank": 9,
     "co_occurring_skills": [
       "Apache Kafka",
-      "Google Cloud",
       "SQL",
+      "Google Cloud",
       "FastAPI",
       "Machine Learning"
     ],
@@ -10405,8 +10405,8 @@
     "co_occurring_skills": [
       "Terraform",
       "REST API",
-      "Scikit-learn",
       "SQL",
+      "Scikit-learn",
       "FastAPI"
     ],
     "average_salary_lpa": 19.0,
@@ -10427,8 +10427,8 @@
     "rank": 12,
     "co_occurring_skills": [
       "Python",
-      "REST API",
       "Terraform",
+      "REST API",
       "FastAPI",
       "TensorFlow"
     ],
@@ -10453,7 +10453,7 @@
       "REST API",
       "Apache Kafka",
       "FastAPI",
-      "Google Cloud"
+      "Machine Learning"
     ],
     "average_salary_lpa": 14.38,
     "trend": "falling",
@@ -10474,8 +10474,8 @@
     "co_occurring_skills": [
       "SQL",
       "FastAPI",
-      "TensorFlow",
       "Terraform",
+      "TensorFlow",
       "AWS"
     ],
     "average_salary_lpa": 14.62,
@@ -10518,10 +10518,10 @@
     "demand_pct": 3.57,
     "rank": 16,
     "co_occurring_skills": [
-      "REST API",
-      "TensorFlow",
+      "SQL",
       "Apache Kafka",
-      "SQL"
+      "TensorFlow",
+      "REST API"
     ],
     "average_salary_lpa": 19.5,
     "trend": "rising",
@@ -10543,8 +10543,8 @@
       "Kubernetes",
       "FastAPI",
       "AWS",
-      "MLOps",
-      "Machine Learning"
+      "Machine Learning",
+      "MLOps"
     ],
     "average_salary_lpa": 21.24,
     "trend": "stable",
@@ -10586,10 +10586,10 @@
     "demand_pct": 26.98,
     "rank": 3,
     "co_occurring_skills": [
-      "REST API",
       "Docker",
-      "Google Cloud",
+      "REST API",
       "Kubernetes",
+      "Google Cloud",
       "Scikit-learn"
     ],
     "average_salary_lpa": 21.62,
@@ -10611,8 +10611,8 @@
     "co_occurring_skills": [
       "AWS",
       "Apache Kafka",
-      "Google Cloud",
       "Machine Learning",
+      "Google Cloud",
       "SQL"
     ],
     "average_salary_lpa": 22.59,
@@ -10636,7 +10636,7 @@
       "REST API",
       "Google Cloud",
       "Scikit-learn",
-      "Deep Learning"
+      "SQL"
     ],
     "average_salary_lpa": 20.53,
     "trend": "falling",
@@ -10656,8 +10656,8 @@
     "rank": 6,
     "co_occurring_skills": [
       "Scikit-learn",
-      "Docker",
       "Machine Learning",
+      "Docker",
       "Kubernetes",
       "Terraform"
     ],
@@ -10774,7 +10774,7 @@
       "Google Cloud",
       "Machine Learning",
       "Deep Learning",
-      "TensorFlow"
+      "Scikit-learn"
     ],
     "average_salary_lpa": 19.17,
     "trend": "rising",
@@ -10839,8 +10839,8 @@
     "demand_pct": 15.87,
     "rank": 13,
     "co_occurring_skills": [
-      "PyTorch",
       "Scikit-learn",
+      "PyTorch",
       "Deep Learning",
       "SQL",
       "REST API"
@@ -10862,9 +10862,9 @@
     "demand_pct": 14.29,
     "rank": 15,
     "co_occurring_skills": [
+      "Machine Learning",
       "Docker",
       "Apache Kafka",
-      "Machine Learning",
       "FastAPI",
       "Kubernetes"
     ],
@@ -10912,7 +10912,7 @@
       "Kubernetes",
       "Apache Kafka",
       "SQL",
-      "PyTorch"
+      "Machine Learning"
     ],
     "average_salary_lpa": 17.05,
     "trend": "rising",
@@ -10977,11 +10977,11 @@
     "demand_pct": 26.47,
     "rank": 4,
     "co_occurring_skills": [
-      "MLOps",
       "Python",
+      "MLOps",
       "Terraform",
       "AWS",
-      "TensorFlow"
+      "Scikit-learn"
     ],
     "average_salary_lpa": 13.94,
     "trend": "rising",
@@ -11000,8 +11000,8 @@
     "demand_pct": 26.47,
     "rank": 4,
     "co_occurring_skills": [
-      "MLOps",
       "Python",
+      "MLOps",
       "SQL",
       "PyTorch",
       "Docker"
@@ -11093,8 +11093,8 @@
     "rank": 6,
     "co_occurring_skills": [
       "Python",
-      "Apache Kafka",
       "Machine Learning",
+      "Apache Kafka",
       "Terraform",
       "Deep Learning"
     ],
@@ -11115,9 +11115,9 @@
     "demand_pct": 20.59,
     "rank": 10,
     "co_occurring_skills": [
-      "Python",
       "Kubernetes",
       "Apache Kafka",
+      "Python",
       "Docker",
       "PyTorch"
     ],
@@ -11163,9 +11163,9 @@
     "co_occurring_skills": [
       "Deep Learning",
       "Terraform",
-      "Docker",
       "Machine Learning",
-      "Python"
+      "Docker",
+      "SQL"
     ],
     "average_salary_lpa": 17.07,
     "trend": "rising",
@@ -11231,10 +11231,10 @@
     "rank": 15,
     "co_occurring_skills": [
       "Terraform",
-      "TensorFlow",
       "SQL",
-      "Kubernetes",
-      "Machine Learning"
+      "TensorFlow",
+      "Machine Learning",
+      "Kubernetes"
     ],
     "average_salary_lpa": 22.38,
     "trend": "stable",
@@ -11253,11 +11253,11 @@
     "demand_pct": 8.82,
     "rank": 16,
     "co_occurring_skills": [
-      "TensorFlow",
       "Scikit-learn",
+      "TensorFlow",
       "Deep Learning",
       "MLOps",
-      "FastAPI"
+      "Docker"
     ],
     "average_salary_lpa": 17.33,
     "trend": "rising",
