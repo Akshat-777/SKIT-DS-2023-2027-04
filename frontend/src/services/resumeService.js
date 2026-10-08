@@ -166,7 +166,7 @@ export const resumeService = {
    * @returns {Promise<typeof mockParsedResume>}
    */
   async getResume(resumeId) {
-    if (IS_MOCK_MODE || resumeId.startsWith('mock-')) {
+    if (resumeId.startsWith('mock-')) {
       await new Promise((r) => setTimeout(r, 200));
       return {
         ...mockParsedResume,
@@ -178,11 +178,8 @@ export const resumeService = {
       const data = await apiClient.get(`/resumes/${resumeId}`);
       return data;
     } catch (err) {
-      console.warn(`resumeService.getResume fallback for ${resumeId}:`, err.message);
-      return {
-        ...mockParsedResume,
-        resume_id: resumeId,
-      };
+      console.warn(`resumeService.getResume error for ${resumeId}:`, err.message);
+      throw err;
     }
   },
 
@@ -225,18 +222,9 @@ export const resumeService = {
       const data = await apiClient.get('/resumes/history');
       return data;
     } catch (err) {
-      console.warn('resumeService.getResumeHistory fallback:', err.message);
-      return [
-        {
-          resume_id: 'mock-resume-101',
-          fileName: 'Aarav_Sharma_Resume_2026.pdf',
-          target_role: 'Data Scientist / ML Engineer',
-          uploadedAt: new Date().toISOString(),
-          ats_score: 82,
-          fit_score: 88,
-          status: 'parsed',
-        },
-      ];
+      console.warn('resumeService.getResumeHistory error:', err.message);
+      // Return empty history rather than leaking another user's data
+      return [];
     }
   },
 };

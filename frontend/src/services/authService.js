@@ -26,9 +26,15 @@ export const authService = {
         throw err;
       }
 
+      // Derive a display name from the email (e.g. "john.doe@example.com" → "John Doe")
+      const derivedName = email
+        .split('@')[0]
+        .replace(/[._-]+/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+
       const mockUser = {
-        id: 'usr_skit_2026_01',
-        name: email.includes('recruiter') ? 'Akshat Agarwal (Recruiter Demo)' : 'Aarav Sharma',
+        id: `usr_${Date.now()}`,
+        name: email.includes('recruiter') ? 'Akshat Agarwal (Recruiter Demo)' : derivedName,
         email: email,
         role: email.includes('recruiter') ? 'recruiter' : 'candidate',
         college: 'SKIT Jaipur',
@@ -116,16 +122,8 @@ export const authService = {
     if (!token) return null;
 
     if (IS_MOCK_MODE) {
-      return (
-        cached || {
-          id: 'usr_skit_2026_01',
-          name: 'Aarav Sharma',
-          email: 'aarav.sharma@skit.ac.in',
-          role: 'candidate',
-          college: 'SKIT Jaipur',
-          department: 'B.Tech CSE (Data Science)',
-        }
-      );
+      // Always prefer the cached user (set at login/register time)
+      return cached || null;
     }
 
     try {

@@ -3,6 +3,10 @@ import os
 import time
 import pytest
 
+# Skip the entire module if PyTorch (or its deps) is not installed.
+# These tests require the heavy careerlens NLP sub-package which depends on torch.
+torch = pytest.importorskip("torch", reason="PyTorch not installed – skipping NER tests")
+
 # Ensure backend root is in sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 

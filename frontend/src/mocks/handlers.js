@@ -272,9 +272,15 @@ export const handlers = [
       });
     }
 
+    // Return structural/scoring mock fields only — do NOT spread personal identity
+    // fields (name, email) from mockParsedResume, as those belong to Aarav Sharma.
     return HttpResponse.json({
-      ...mockParsedResume,
       resume_id: resumeId,
+      skills: mockParsedResume.skills,
+      education: mockParsedResume.education,
+      experience: mockParsedResume.experience,
+      sections: mockParsedResume.sections,
+      status: 'completed',
     });
   }),
 ];

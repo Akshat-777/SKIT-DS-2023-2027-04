@@ -7,12 +7,16 @@
  * - MarketFit: LightGBM Salary Range (INR LPA) + Market Fit Score
  * - Roadmap: RAG-Grounded Curated Learning Phases & Projects
  * - Critique: Multi-Agent Recruiter Persona (Recruiter, HR, Hiring Manager)
+ *
+ * Mock mode: only triggered when resumeId starts with 'mock-'
+ * Real mode: all other resumeIds go directly to the FastAPI backend
  */
 
-import { apiClient, IS_MOCK_MODE } from './apiClient';
+import { apiClient } from './apiClient';
 import { mockScoreResult, mockMarketFit, mockRoadmap, mockCritique } from '../data/mockData';
 
 const MOCK_DELAY = 300;
+const isMockId = (resumeId) => resumeId?.startsWith('mock-');
 
 export const dashboardService = {
   /**
@@ -22,28 +26,14 @@ export const dashboardService = {
    * @returns {Promise<typeof mockScoreResult>}
    */
   async getAtsScore(resumeId, targetRole = 'Data Scientist') {
-    if (IS_MOCK_MODE || resumeId.startsWith('mock-')) {
+    if (isMockId(resumeId)) {
       await new Promise((r) => setTimeout(r, MOCK_DELAY));
-      return {
-        ...mockScoreResult,
-        resume_id: resumeId,
-        target_role: targetRole || mockScoreResult.target_role,
-      };
+      return { ...mockScoreResult, resume_id: resumeId, target_role: targetRole || mockScoreResult.target_role };
     }
 
-    try {
-      const data = await apiClient.get(`/analysis/${resumeId}/ats-score`, {
-        params: { target_role: targetRole },
-      });
-      return data;
-    } catch (err) {
-      console.warn(`dashboardService.getAtsScore fallback for ${resumeId}:`, err.message);
-      return {
-        ...mockScoreResult,
-        resume_id: resumeId,
-        target_role: targetRole || mockScoreResult.target_role,
-      };
-    }
+    const data = await apiClient.get(`/resumes/${resumeId}/analysis`);
+    // Backend returns { parsed_resume, score_result }
+    return data?.score_result ?? data;
   },
 
   /**
@@ -52,55 +42,29 @@ export const dashboardService = {
    * @returns {Promise<typeof mockMarketFit>}
    */
   async getMarketFit(resumeId) {
-    if (IS_MOCK_MODE || resumeId.startsWith('mock-')) {
+    if (isMockId(resumeId)) {
       await new Promise((r) => setTimeout(r, MOCK_DELAY));
-      return {
-        ...mockMarketFit,
-        resume_id: resumeId,
-      };
+      return { ...mockMarketFit, resume_id: resumeId };
     }
 
-    try {
-      const data = await apiClient.get(`/analysis/${resumeId}/market-fit`);
-      return data;
-    } catch (err) {
-      console.warn(`dashboardService.getMarketFit fallback for ${resumeId}:`, err.message);
-      return {
-        ...mockMarketFit,
-        resume_id: resumeId,
-      };
-    }
+    return apiClient.get(`/resumes/${resumeId}/market-fit`);
   },
 
   /**
-   * Fetch RAG-Grounded Personalized Learning Roadmap
+   * Fetch RAG-Grounded Personalised Learning Roadmap
    * @param {string} resumeId
    * @param {string} targetRole
    * @returns {Promise<typeof mockRoadmap>}
    */
   async getRoadmap(resumeId, targetRole) {
-    if (IS_MOCK_MODE || resumeId.startsWith('mock-')) {
+    if (isMockId(resumeId)) {
       await new Promise((r) => setTimeout(r, MOCK_DELAY));
-      return {
-        ...mockRoadmap,
-        resume_id: resumeId,
-        target_role: targetRole || mockRoadmap.target_role,
-      };
+      return { ...mockRoadmap, resume_id: resumeId, target_role: targetRole || mockRoadmap.target_role };
     }
 
-    try {
-      const data = await apiClient.get(`/analysis/${resumeId}/roadmap`, {
-        params: { target_role: targetRole },
-      });
-      return data;
-    } catch (err) {
-      console.warn(`dashboardService.getRoadmap fallback for ${resumeId}:`, err.message);
-      return {
-        ...mockRoadmap,
-        resume_id: resumeId,
-        target_role: targetRole || mockRoadmap.target_role,
-      };
-    }
+    return apiClient.get(`/resumes/${resumeId}/roadmap`, {
+      params: { target_role: targetRole },
+    });
   },
 
   /**
@@ -109,24 +73,12 @@ export const dashboardService = {
    * @returns {Promise<typeof mockCritique>}
    */
   async getCritique(resumeId) {
-    if (IS_MOCK_MODE || resumeId.startsWith('mock-')) {
+    if (isMockId(resumeId)) {
       await new Promise((r) => setTimeout(r, MOCK_DELAY));
-      return {
-        ...mockCritique,
-        resume_id: resumeId,
-      };
+      return { ...mockCritique, resume_id: resumeId };
     }
 
-    try {
-      const data = await apiClient.get(`/analysis/${resumeId}/critique`);
-      return data;
-    } catch (err) {
-      console.warn(`dashboardService.getCritique fallback for ${resumeId}:`, err.message);
-      return {
-        ...mockCritique,
-        resume_id: resumeId,
-      };
-    }
+    return apiClient.get(`/resumes/${resumeId}/critique`);
   },
 };
 

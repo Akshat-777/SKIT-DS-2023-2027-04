@@ -52,6 +52,6 @@ def test_file_too_large(monkeypatch):
         response = client.post("/ingest/extract", files={"file": ("dummy.pdf", f, "application/pdf")})
         
     assert response.status_code == 400
-    assert "File size exceeds" in response.json()["detail"]["error"]["message"]
+    assert "exceeds limit of" in response.json()["detail"]["error"]["message"]
     
     os.remove(test_file_path)

@@ -35,8 +35,13 @@ async def upload_resume(
     user_id = current_user.get("sub", "default_user")
     record = await ResumeService.save_and_initiate_upload(file, user_id, db=db)
 
-    # Launch background parsing pipeline (opens its own DB session internally)
-    background_tasks.add_task(process_resume_background, record["resume_id"], user_id)
+    # Launch background parsing pipeline — pass saved_file_path so the NLP parser can read the file
+    background_tasks.add_task(
+        process_resume_background,
+        record["resume_id"],
+        user_id,
+        record["saved_file_path"],
+    )
 
     return ResumeUploadResponse(
         resume_id=record["resume_id"],
