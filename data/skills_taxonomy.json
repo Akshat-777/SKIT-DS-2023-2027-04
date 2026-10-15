@@ -1,0 +1,4635 @@
+[
+  {
+    "name": "Python",
+    "aliases": [
+      "py",
+      "python3",
+      "python 3",
+      "cpython"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "developed backend microservices and ETL scripts in Python",
+      "wrote clean modular object-oriented Python code",
+      "automated data scraping and processing using Python scripts"
+    ]
+  },
+  {
+    "name": "JavaScript",
+    "aliases": [
+      "js",
+      "ecmascript",
+      "es6",
+      "es6+",
+      "vanilla js"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "built interactive client-side web interfaces with dynamic DOM manipulation",
+      "implemented asynchronous client logic using Promises and async/await in JavaScript"
+    ]
+  },
+  {
+    "name": "TypeScript",
+    "aliases": [
+      "ts",
+      "typescript lang"
+    ],
+    "category": "Programming Languages",
+    "parent": "JavaScript",
+    "exemplars": [
+      "engineered type-safe enterprise frontends with strict compile-time types",
+      "designed reusable generic interfaces and types across the frontend codebase"
+    ]
+  },
+  {
+    "name": "Java",
+    "aliases": [
+      "java se",
+      "java ee",
+      "core java",
+      "java 17",
+      "java 11",
+      "java 8"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "engineered enterprise Java server applications with multithreading and JVM tuning",
+      "built backend microservices and RESTful services using object-oriented Java"
+    ]
+  },
+  {
+    "name": "C++",
+    "aliases": [
+      "cpp",
+      "cplusplus",
+      "c/c++",
+      "modern c++",
+      "c++17",
+      "c++20"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "implemented low-latency memory-efficient algorithms and data structures",
+      "managed manual memory allocation pointers and RAII patterns in systems software"
+    ]
+  },
+  {
+    "name": "C",
+    "aliases": [
+      "c language",
+      "ansi c",
+      "embedded c"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "developed embedded firmware and low-level kernel drivers",
+      "wrote high-performance system routines interacting directly with hardware memory registers"
+    ]
+  },
+  {
+    "name": "C#",
+    "aliases": [
+      "c sharp",
+      "c-sharp",
+      "csharp",
+      "dotnet c#"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "built scalable enterprise desktop and web APIs in C# on .NET",
+      "implemented asynchronous LINQ queries and dependency-injected services"
+    ]
+  },
+  {
+    "name": "Go",
+    "aliases": [
+      "golang",
+      "go language",
+      "go programming"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "developed high-throughput microservices leveraging goroutines and channels",
+      "built low-latency backend systems with concurrent routines and gRPC"
+    ]
+  },
+  {
+    "name": "Rust",
+    "aliases": [
+      "rustlang",
+      "rust programming"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "built memory-safe high-performance network tools with strict zero-cost abstractions",
+      "implemented concurrent systems using borrow checker and fearless concurrency"
+    ]
+  },
+  {
+    "name": "Ruby",
+    "aliases": [
+      "ruby programming",
+      "mruby"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "developed full-stack web applications and background workers with Ruby",
+      "wrote domain-specific scripts and metaprogramming logic in Ruby"
+    ]
+  },
+  {
+    "name": "PHP",
+    "aliases": [
+      "php7",
+      "php8",
+      "modern php"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "built server-rendered web applications with database integrations",
+      "developed dynamic web portals and backend APIs in modern PHP"
+    ]
+  },
+  {
+    "name": "Swift",
+    "aliases": [
+      "swift language",
+      "swift 5"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "engineered native iOS mobile applications with SwiftUI and Combine",
+      "implemented mobile client architectural patterns like MVVM in Swift"
+    ]
+  },
+  {
+    "name": "Kotlin",
+    "aliases": [
+      "kotlin lang",
+      "kotlin multiplatform"
+    ],
+    "category": "Programming Languages",
+    "parent": "Java",
+    "exemplars": [
+      "developed modern Android applications using Kotlin coroutines and Jetpack Compose",
+      "built type-safe backend microservices using Kotlin on the JVM"
+    ]
+  },
+  {
+    "name": "R",
+    "aliases": [
+      "r language",
+      "r programming",
+      "r script"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "conducted rigorous statistical hypothesis testing and ggplot2 visualizations",
+      "performed bioinformatics data modeling and regression analysis using R"
+    ]
+  },
+  {
+    "name": "Scala",
+    "aliases": [
+      "scala lang"
+    ],
+    "category": "Programming Languages",
+    "parent": "Java",
+    "exemplars": [
+      "built distributed data streaming jobs using functional programming patterns",
+      "engineered big data analytics pipelines on Spark using Scala"
+    ]
+  },
+  {
+    "name": "Dart",
+    "aliases": [
+      "dart language",
+      "dart lang"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "developed cross-platform mobile and web client apps with reactive state",
+      "wrote asynchronous reactive client code and UI widgets in Dart"
+    ]
+  },
+  {
+    "name": "Julia",
+    "aliases": [
+      "julia lang"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "implemented high-performance numerical simulations and scientific computing algorithms",
+      "accelerated mathematical matrix computations with just-in-time compilation"
+    ]
+  },
+  {
+    "name": "Shell Scripting",
+    "aliases": [
+      "bash",
+      "sh",
+      "zsh",
+      "shell",
+      "bash scripting"
+    ],
+    "category": "Programming Languages",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "wrote automated deployment and system maintenance shell scripts",
+      "automated cron jobs, file backups, and environment provisioning via Bash"
+    ]
+  },
+  {
+    "name": "Perl",
+    "aliases": [
+      "perl script"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "maintained legacy text processing and system automation scripts",
+      "parsed log files and generated automated administrative reports"
+    ]
+  },
+  {
+    "name": "Lua",
+    "aliases": [
+      "lua scripting"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "wrote embedded scripts for game engines and high-performance Nginx proxies",
+      "customized server routing logic using lightweight embedded Lua"
+    ]
+  },
+  {
+    "name": "Haskell",
+    "aliases": [
+      "pure functional haskell"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "implemented pure functional algorithms with monads and strong static typing",
+      "modeled complex mathematical domains without side effects"
+    ]
+  },
+  {
+    "name": "Elixir",
+    "aliases": [
+      "elixir lang"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "built fault-tolerant concurrent web systems running on the Erlang BEAM VM",
+      "designed real-time distributed messaging systems with OTP actors"
+    ]
+  },
+  {
+    "name": "Clojure",
+    "aliases": [
+      "clojurescript"
+    ],
+    "category": "Programming Languages",
+    "parent": "Java",
+    "exemplars": [
+      "built data-driven functional services leveraging persistent immutable data structures",
+      "developed concurrent JVM backend services with Clojure"
+    ]
+  },
+  {
+    "name": "Solidity",
+    "aliases": [
+      "solidity smart contracts",
+      "ethereum solidity"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "authored secure ERC-20 smart contracts and deployed decentralized apps on Ethereum",
+      "implemented decentralized financial logic and performed smart contract gas audits"
+    ]
+  },
+  {
+    "name": "MATLAB",
+    "aliases": [
+      "matlab simulink"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "simulated signal processing and control systems with mathematical models",
+      "analyzed multi-channel sensor data using Simulink and linear algebra matrices"
+    ]
+  },
+  {
+    "name": "SQL",
+    "aliases": [
+      "structured query language",
+      "ansi sql"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "authored complex multi-table joins, subqueries, and window functions",
+      "optimized slow database queries with indexes and execution plan analysis"
+    ]
+  },
+  {
+    "name": "HTML",
+    "aliases": [
+      "html5",
+      "semantic html"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "structured accessible semantic web documents conforming to WCAG standards",
+      "implemented responsive web layouts with accessible semantic tags"
+    ]
+  },
+  {
+    "name": "CSS",
+    "aliases": [
+      "css3",
+      "vanilla css"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "styled modern responsive layouts using CSS Flexbox and CSS Grid",
+      "crafted fluid CSS animations, transitions, and media queries for mobile viewports"
+    ]
+  },
+  {
+    "name": "Sass",
+    "aliases": [
+      "scss",
+      "syntactically awesome stylesheets"
+    ],
+    "category": "Programming Languages",
+    "parent": "CSS",
+    "exemplars": [
+      "modularized UI design tokens using nested mixins and SCSS variables",
+      "architected maintainable stylesheet hierarchies using BEM and SCSS modules"
+    ]
+  },
+  {
+    "name": "Assembly",
+    "aliases": [
+      "asm",
+      "x86",
+      "arm assembly",
+      "x86-64"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "analyzed compiled binaries and optimized assembly instructions for CPU registers",
+      "conducted reverse engineering and low-level disassembly of firmware"
+    ]
+  },
+  {
+    "name": "Groovy",
+    "aliases": [
+      "apache groovy"
+    ],
+    "category": "Programming Languages",
+    "parent": "Java",
+    "exemplars": [
+      "wrote declarative Jenkins CI/CD pipeline scripts and Gradle build automation",
+      "built rapid JVM automation scripts and unit test specifications"
+    ]
+  },
+  {
+    "name": "PowerShell",
+    "aliases": [
+      "powershell scripting",
+      "posh"
+    ],
+    "category": "Programming Languages",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "automated Windows Active Directory provisioning and cloud administration tasks",
+      "wrote automation scripts for Windows server fleets and Azure resources"
+    ]
+  },
+  {
+    "name": "PL/SQL",
+    "aliases": [
+      "oracle pl/sql",
+      "plsql"
+    ],
+    "category": "Programming Languages",
+    "parent": "SQL",
+    "exemplars": [
+      "authored database stored procedures, triggers, and cursors for financial batch jobs",
+      "optimized complex transactional stored procedures in enterprise databases"
+    ]
+  },
+  {
+    "name": "GraphQL",
+    "aliases": [
+      "graphql api",
+      "gql"
+    ],
+    "category": "Programming Languages",
+    "parent": "Web Frameworks",
+    "exemplars": [
+      "designed flexible schema queries and mutations to prevent over-fetching of data",
+      "implemented Apollo GraphQL federation resolvers connecting backend microservices"
+    ]
+  },
+  {
+    "name": "Spring",
+    "aliases": [
+      "spring framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Java",
+    "exemplars": [
+      "developed enterprise Java backend services using the Spring framework",
+      "configured dependency injection beans and transactional services in Spring"
+    ]
+  },
+  {
+    "name": "Excel",
+    "aliases": [
+      "microsoft excel",
+      "ms excel",
+      "excel spreadsheets",
+      "advanced excel"
+    ],
+    "category": "Product & Design",
+    "parent": "Office Tools",
+    "exemplars": [
+      "built advanced financial models using VLOOKUP, INDEX-MATCH, and pivot tables in Excel",
+      "analyzed business performance metrics using Excel spreadsheets and macros"
+    ]
+  },
+  {
+    "name": "Visual Basic",
+    "aliases": [
+      "vb.net",
+      "vba",
+      "excel vba"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "automated financial spreadsheet workflows and repetitive reporting with macros",
+      "maintained legacy internal line-of-business desktop forms"
+    ]
+  },
+  {
+    "name": "Objective-C",
+    "aliases": [
+      "objc",
+      "obj-c"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "maintained legacy native iOS codebase and bridged Cocoa libraries to modern Swift",
+      "managed manual reference counting and Cocoa Touch APIs in legacy iOS apps"
+    ]
+  },
+  {
+    "name": "Rust Embedded",
+    "aliases": [
+      "embedded rust"
+    ],
+    "category": "Programming Languages",
+    "parent": "Rust",
+    "exemplars": [
+      "developed bare-metal microcontroller drivers with zero-cost memory safety",
+      "programmed ARM Cortex-M microchips with no-std Rust firmware"
+    ]
+  },
+  {
+    "name": "VHDL",
+    "aliases": [
+      "vhdl fpga",
+      "verilog"
+    ],
+    "category": "Programming Languages",
+    "parent": null,
+    "exemplars": [
+      "synthesized digital logic circuits and state machines on FPGA hardware",
+      "simulated register-transfer level timing diagrams for ASIC verification"
+    ]
+  },
+  {
+    "name": "React",
+    "aliases": [
+      "react.js",
+      "reactjs",
+      "react framework"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "built responsive reusable single-page application components using custom hooks",
+      "optimized virtual DOM rendering performance with useMemo and useCallback"
+    ]
+  },
+  {
+    "name": "Next.js",
+    "aliases": [
+      "nextjs",
+      "next js",
+      "next.js 14",
+      "next.js 13"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "React",
+    "exemplars": [
+      "implemented server-side rendering (SSR) and static site generation (SSG) for SEO",
+      "built full-stack web applications utilizing App Router and Server Components"
+    ]
+  },
+  {
+    "name": "Vue.js",
+    "aliases": [
+      "vue",
+      "vuejs",
+      "vue 3",
+      "vue 2"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "built reactive modular user interfaces using Composition API and Pinia state management",
+      "implemented dynamic component routers and transitions in single-page apps"
+    ]
+  },
+  {
+    "name": "Nuxt.js",
+    "aliases": [
+      "nuxt",
+      "nuxtjs"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "Vue.js",
+    "exemplars": [
+      "engineered universal SSR Vue applications with automated routing and SEO tags",
+      "built high-performance Jamstack web portals with prerendered Vue routes"
+    ]
+  },
+  {
+    "name": "Angular",
+    "aliases": [
+      "angularjs",
+      "angular 2+",
+      "angular 17",
+      "angular framework"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "TypeScript",
+    "exemplars": [
+      "architected enterprise web applications using dependency injection, RxJS observables, and NgModules",
+      "managed complex asynchronous form validation and modular lazy-loaded routing"
+    ]
+  },
+  {
+    "name": "Svelte",
+    "aliases": [
+      "sveltejs",
+      "svelte 4",
+      "svelte 5"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "created ultra-lightweight compile-time reactive interfaces with zero virtual DOM overhead",
+      "built fast reactive components with simple stores and reactive assignments"
+    ]
+  },
+  {
+    "name": "SvelteKit",
+    "aliases": [
+      "svelte kit"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "Svelte",
+    "exemplars": [
+      "developed full-stack web applications with server endpoints and file-based routing",
+      "optimized client page load times through compile-time code splitting"
+    ]
+  },
+  {
+    "name": "Redux",
+    "aliases": [
+      "redux toolkit",
+      "rtk",
+      "react-redux"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "React",
+    "exemplars": [
+      "managed global application state with predictable unidirectional data flows and RTK slices",
+      "debugged state mutations using Redux DevTools and dispatched async thunk actions"
+    ]
+  },
+  {
+    "name": "Zustand",
+    "aliases": [
+      "zustand state management"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "React",
+    "exemplars": [
+      "built simplified lightweight global state stores with zero boilerplate in React",
+      "managed persistent cross-component UI state with minimal re-renders"
+    ]
+  },
+  {
+    "name": "Tailwind CSS",
+    "aliases": [
+      "tailwind",
+      "tailwindcss"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "CSS",
+    "exemplars": [
+      "designed modern mobile-first responsive interfaces using utility-first CSS classes",
+      "customized design systems, color palettes, and glassmorphism styling via Tailwind config"
+    ]
+  },
+  {
+    "name": "Bootstrap",
+    "aliases": [
+      "bootstrap 5",
+      "twitter bootstrap"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "CSS",
+    "exemplars": [
+      "prototyped responsive landing pages rapidly using standard grid columns and modal dialogs",
+      "customized theme stylesheets and responsive navigation bars"
+    ]
+  },
+  {
+    "name": "Material-UI",
+    "aliases": [
+      "mui",
+      "material ui",
+      "material design"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "React",
+    "exemplars": [
+      "implemented consistent accessible enterprise dashboards with Material Design theme providers",
+      "customized typography, color themes, and complex data grid components"
+    ]
+  },
+  {
+    "name": "Chakra UI",
+    "aliases": [
+      "chakra-ui"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "React",
+    "exemplars": [
+      "composed accessible styled components with flexible style props and dark mode support",
+      "built modular component layouts adhering strictly to WAI-ARIA standards"
+    ]
+  },
+  {
+    "name": "shadcn/ui",
+    "aliases": [
+      "shadcn",
+      "shadcn ui"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "React",
+    "exemplars": [
+      "built high-polish accessible UI components by copying unstyled Radix primitives with Tailwind",
+      "crafted dark-mode dashboard interfaces with Radix dialogs and forms"
+    ]
+  },
+  {
+    "name": "jQuery",
+    "aliases": [
+      "jquery library"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "maintained legacy DOM event handling, AJAX requests, and UI animation plugins",
+      "refactored legacy jQuery selectors into modern vanilla JavaScript modules"
+    ]
+  },
+  {
+    "name": "Vite",
+    "aliases": [
+      "vitejs",
+      "vite build tool"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "accelerated developer frontend builds with instant hot module replacement (HMR) and Rollup bundling",
+      "configured optimized production asset bundling and environment variables"
+    ]
+  },
+  {
+    "name": "Webpack",
+    "aliases": [
+      "webpack 5"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "configured custom loaders, code splitting chunks, and tree-shaking optimizations for production",
+      "reduced initial JavaScript bundle size by splitting vendor chunks"
+    ]
+  },
+  {
+    "name": "Babel",
+    "aliases": [
+      "babeljs",
+      "babel compiler"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "transpiled modern ECMAScript features and JSX into backward-compatible browser scripts",
+      "configured polyfills and preset-env plugins for cross-browser support"
+    ]
+  },
+  {
+    "name": "RxJS",
+    "aliases": [
+      "reactive extensions",
+      "rxjs library"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "handled complex real-time asynchronous event streams with debouncing, mapping, and filtering",
+      "orchestrated reactive WebSocket and HTTP responses with observable pipelines"
+    ]
+  },
+  {
+    "name": "Three.js",
+    "aliases": [
+      "threejs",
+      "webgl 3d"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "rendered interactive 3D graphics, shaders, and particle animations in the browser with WebGL",
+      "loaded 3D GLTF models and controlled scene cameras and lighting"
+    ]
+  },
+  {
+    "name": "D3.js",
+    "aliases": [
+      "d3",
+      "d3js"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "visualized complex interactive data charts and geospatial networks using SVG manipulation",
+      "bound dynamic JSON datasets to interactive SVG bar charts and network graphs"
+    ]
+  },
+  {
+    "name": "Chart.js",
+    "aliases": [
+      "chartjs"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "rendered responsive HTML5 canvas line and bar charts for analytics dashboards",
+      "configured interactive tooltips, legends, and animations for business metrics"
+    ]
+  },
+  {
+    "name": "Storybook",
+    "aliases": [
+      "storybook js"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "isolated and visually tested reusable design system components across various state permutations",
+      "documented frontend component libraries with interactive controls for team review"
+    ]
+  },
+  {
+    "name": "Jest",
+    "aliases": [
+      "jest test framework"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "wrote unit and integration tests with mocked APIs, spies, and coverage reporting",
+      "automated snapshot testing and assertion suites for React components"
+    ]
+  },
+  {
+    "name": "Cypress",
+    "aliases": [
+      "cypress io",
+      "cypress e2e"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "Frontend Frameworks",
+    "exemplars": [
+      "automated end-to-end browser user flow tests ensuring checkout and auth reliability",
+      "intercepted network requests and validated browser DOM states across workflows"
+    ]
+  },
+  {
+    "name": "Playwright",
+    "aliases": [
+      "microsoft playwright"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "conducted cross-browser headless end-to-end testing across Chromium, Firefox, and WebKit",
+      "automated web regression tests and generated visual screenshot diffs"
+    ]
+  },
+  {
+    "name": "React Router",
+    "aliases": [
+      "react-router",
+      "react router dom"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "React",
+    "exemplars": [
+      "configured declarative client-side nested routing, protected route guards, and URL parameters",
+      "handled asynchronous page transitions and 404 fallback views"
+    ]
+  },
+  {
+    "name": "MobX",
+    "aliases": [
+      "mobx state"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "implemented transparent functional reactive state management using observable data classes",
+      "bound mutable observable models to React views without manual dispatchers"
+    ]
+  },
+  {
+    "name": "Ant Design",
+    "aliases": [
+      "antd"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "React",
+    "exemplars": [
+      "built complex enterprise internal admin portals using Ant Design data tables and tree pickers",
+      "configured customizable localization and enterprise theme configurations"
+    ]
+  },
+  {
+    "name": "Framer Motion",
+    "aliases": [
+      "framer-motion"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "React",
+    "exemplars": [
+      "crafted delightful fluid UI animations, drag-and-drop gestures, and layout transitions",
+      "implemented spring physics and scroll-driven micro-interactions"
+    ]
+  },
+  {
+    "name": "WebSockets",
+    "aliases": [
+      "websocket",
+      "ws",
+      "socket.io"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "Web Frameworks",
+    "exemplars": [
+      "established low-latency bidirectional real-time communication for live notifications and chat",
+      "managed connection heartbeat reconnects and event broadcasting"
+    ]
+  },
+  {
+    "name": "PWA",
+    "aliases": [
+      "progressive web apps",
+      "progressive web app",
+      "service workers"
+    ],
+    "category": "Frontend Frameworks",
+    "parent": "Web Frameworks",
+    "exemplars": [
+      "configured offline service worker caching, background sync, and installable web manifests",
+      "optimized mobile lighthouse audits for offline app performance"
+    ]
+  },
+  {
+    "name": "Node.js",
+    "aliases": [
+      "nodejs",
+      "node",
+      "node js"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "engineered asynchronous event-driven backend services capable of handling thousands of requests",
+      "built server-side microservices with stream processing and custom event emitters"
+    ]
+  },
+  {
+    "name": "Express",
+    "aliases": [
+      "express.js",
+      "expressjs"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Node.js",
+    "exemplars": [
+      "built RESTful API routing, JWT authentication middleware, and error-handling controllers",
+      "structured modular router endpoints and integrated MongoDB schemas"
+    ]
+  },
+  {
+    "name": "NestJS",
+    "aliases": [
+      "nestjs framework",
+      "nest.js"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Node.js",
+    "exemplars": [
+      "architected scalable modular TypeScript backend services with dependency injection and decorators",
+      "implemented microservices with RabbitMQ transport and OpenAPI Swagger documentation"
+    ]
+  },
+  {
+    "name": "FastAPI",
+    "aliases": [
+      "fast-api",
+      "fastapi framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Python",
+    "exemplars": [
+      "developed high-performance asynchronous REST endpoints with Pydantic request validation",
+      "auto-generated OpenAPI interactive Swagger docs and integrated async database sessions"
+    ]
+  },
+  {
+    "name": "Django",
+    "aliases": [
+      "django framework",
+      "django rest framework",
+      "drf"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Python",
+    "exemplars": [
+      "built secure web platforms utilizing Django ORM, built-in admin, and session management",
+      "developed RESTful serializers and permission classes with Django REST Framework"
+    ]
+  },
+  {
+    "name": "Flask",
+    "aliases": [
+      "flask framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Python",
+    "exemplars": [
+      "developed lightweight microservices and AI model inference endpoints",
+      "configured Flask blueprints, SQLAlchemy database models, and CORS handlers"
+    ]
+  },
+  {
+    "name": "Spring Boot",
+    "aliases": [
+      "springboot",
+      "spring boot 3",
+      "spring framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Java",
+    "exemplars": [
+      "built enterprise microservices using Spring Data JPA, Spring Security, and Maven",
+      "engineered resilient REST APIs with dependency injection, auto-configuration, and Actuator metrics"
+    ]
+  },
+  {
+    "name": "Spring MVC",
+    "aliases": [
+      "spring-mvc"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Java",
+    "exemplars": [
+      "implemented model-view-controller web architecture with enterprise bean validation",
+      "mapped HTTP requests to service controllers and structured backend responses"
+    ]
+  },
+  {
+    "name": ".NET Core",
+    "aliases": [
+      "dotnet",
+      "asp.net core",
+      ".net 8",
+      ".net 7",
+      "asp.net"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "C#",
+    "exemplars": [
+      "engineered high-throughput cross-platform microservices with Entity Framework Core",
+      "implemented JWT authentication middleware and async dependency injection pipelines"
+    ]
+  },
+  {
+    "name": "Ruby on Rails",
+    "aliases": [
+      "rails",
+      "ror"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Ruby",
+    "exemplars": [
+      "built convention-over-configuration MVC platforms with ActiveRecord ORM migrations",
+      "implemented background processing jobs via Sidekiq and Redis"
+    ]
+  },
+  {
+    "name": "Laravel",
+    "aliases": [
+      "laravel framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "PHP",
+    "exemplars": [
+      "developed scalable web applications using Eloquent ORM, Blade templates, and queue workers",
+      "structured database migrations and RESTful API authentication via Laravel Sanctum"
+    ]
+  },
+  {
+    "name": "Gin",
+    "aliases": [
+      "gin gonic",
+      "gin web framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Go",
+    "exemplars": [
+      "engineered ultra-fast Go REST APIs with custom middleware and JSON model binding",
+      "optimized HTTP request routing achieving sub-millisecond response latencies"
+    ]
+  },
+  {
+    "name": "Echo",
+    "aliases": [
+      "echo framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Go",
+    "exemplars": [
+      "built lightweight high-performance Go web microservices with structured logging",
+      "implemented centralized error-handling middleware and WebSocket endpoints"
+    ]
+  },
+  {
+    "name": "Fastify",
+    "aliases": [
+      "fastify js"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Node.js",
+    "exemplars": [
+      "built high-throughput Node.js microservices with JSON schema compilation and low overhead",
+      "optimized request serialization speed and implemented modular plugins"
+    ]
+  },
+  {
+    "name": "Koa",
+    "aliases": [
+      "koa.js",
+      "koajs"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Node.js",
+    "exemplars": [
+      "developed lightweight modular middleware chains using async/await cascading functions",
+      "implemented custom auth and logging middleware for Node microservices"
+    ]
+  },
+  {
+    "name": "Tornado",
+    "aliases": [
+      "tornado web"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Python",
+    "exemplars": [
+      "built non-blocking asynchronous web servers supporting long-polling WebSockets",
+      "handled thousands of concurrent open socket connections for real-time telemetry"
+    ]
+  },
+  {
+    "name": "Celery",
+    "aliases": [
+      "celery workers"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Python",
+    "exemplars": [
+      "offloaded heavy computation, email notifications, and report exports to async workers",
+      "managed distributed worker queues with Redis broker and scheduled cron tasks"
+    ]
+  },
+  {
+    "name": "Actix Web",
+    "aliases": [
+      "actix",
+      "actix-web"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Rust",
+    "exemplars": [
+      "engineered blazingly fast asynchronous Rust web services with actor concurrency",
+      "achieved top-tier benchmark throughput with minimal memory footprint"
+    ]
+  },
+  {
+    "name": "Axum",
+    "aliases": [
+      "axum rust"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Rust",
+    "exemplars": [
+      "built ergonomic modular web APIs in Rust using Tower services and Tokio runtime",
+      "implemented type-safe request extractors and state management"
+    ]
+  },
+  {
+    "name": "Phoenix",
+    "aliases": [
+      "phoenix framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Elixir",
+    "exemplars": [
+      "built real-time collaborative web applications with Phoenix LiveView and WebSockets",
+      "leveraged Erlang BEAM concurrency to handle millions of simultaneous socket connections"
+    ]
+  },
+  {
+    "name": "Micronaut",
+    "aliases": [
+      "micronaut framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Java",
+    "exemplars": [
+      "built low-memory ahead-of-time (AOT) compiled Java microservices with fast startup",
+      "optimized cloud-native microservices for GraalVM native binary execution"
+    ]
+  },
+  {
+    "name": "Quarkus",
+    "aliases": [
+      "quarkus io"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Java",
+    "exemplars": [
+      "developed Kubernetes-native Java microservices with sub-atomic memory usage",
+      "compiled enterprise Java services to GraalVM native images for instant startup"
+    ]
+  },
+  {
+    "name": "gRPC",
+    "aliases": [
+      "grpc proto",
+      "google rpc"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Software Architecture",
+    "exemplars": [
+      "designed Protocol Buffer (.proto) service contracts for high-speed inter-service communications",
+      "implemented bidirectional streaming RPCs reducing binary network serialization overhead"
+    ]
+  },
+  {
+    "name": "REST API",
+    "aliases": [
+      "restful api",
+      "rest apis",
+      "restful web services"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Software Architecture",
+    "exemplars": [
+      "designed standardized RESTful endpoints following HTTP status codes and JSON formatting",
+      "implemented API versioning, pagination, query filtering, and rate limiting"
+    ]
+  },
+  {
+    "name": "Deno",
+    "aliases": [
+      "denojs"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "developed secure-by-default TypeScript serverless scripts with built-in standard modules",
+      "ran edge computing functions with modern web standard APIs"
+    ]
+  },
+  {
+    "name": "Bun",
+    "aliases": [
+      "bun runtime"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "JavaScript",
+    "exemplars": [
+      "accelerated package installation and script execution with all-in-one native runtime",
+      "ran backend tests and bundling with native performance gains"
+    ]
+  },
+  {
+    "name": "Apache Thrift",
+    "aliases": [
+      "thrift rpc"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Software Architecture",
+    "exemplars": [
+      "defined cross-language RPC services and data serialization schemas across polyglot systems",
+      "maintained high-throughput inter-service client-server communications"
+    ]
+  },
+  {
+    "name": "Ktor",
+    "aliases": [
+      "ktor framework"
+    ],
+    "category": "Backend Frameworks",
+    "parent": "Kotlin",
+    "exemplars": [
+      "built lightweight asynchronous Kotlin microservices using coroutines and DSL routing",
+      "developed non-blocking HTTP clients and server endpoints"
+    ]
+  },
+  {
+    "name": "PostgreSQL",
+    "aliases": [
+      "postgres",
+      "psql",
+      "postgre"
+    ],
+    "category": "Databases & Storage",
+    "parent": "SQL",
+    "exemplars": [
+      "designed relational schemas with foreign key constraints, indexes, and ACID compliance",
+      "optimized query performance via EXPLAIN ANALYZE, partial indexes, and vacuuming"
+    ]
+  },
+  {
+    "name": "MySQL",
+    "aliases": [
+      "mysql database",
+      "mysql 8"
+    ],
+    "category": "Databases & Storage",
+    "parent": "SQL",
+    "exemplars": [
+      "managed relational databases with InnoDB transactional storage and replication",
+      "architected normalized schemas and optimized complex SQL joins and query indexes"
+    ]
+  },
+  {
+    "name": "SQLite",
+    "aliases": [
+      "sqlite3"
+    ],
+    "category": "Databases & Storage",
+    "parent": "SQL",
+    "exemplars": [
+      "embedded serverless zero-configuration transactional databases for local testing and mobile apps",
+      "managed embedded application state with lightweight local database tables"
+    ]
+  },
+  {
+    "name": "MongoDB",
+    "aliases": [
+      "mongo",
+      "mongodb database",
+      "documentdb"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "modeled polymorphic document schemas and executed complex aggregation pipeline queries",
+      "scaled distributed document collections through horizontal sharding and replica sets"
+    ]
+  },
+  {
+    "name": "Redis",
+    "aliases": [
+      "redis cache",
+      "redis key-value"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "implemented distributed in-memory caching, Pub/Sub channels, and session management",
+      "accelerated API response latencies by caching frequent database queries in memory"
+    ]
+  },
+  {
+    "name": "Apache Cassandra",
+    "aliases": [
+      "cassandra",
+      "cql"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "architected horizontally scalable wide-column NoSQL databases for high-volume time-series telemetry",
+      "tuned tunable consistency levels across multi-datacenter Cassandra clusters"
+    ]
+  },
+  {
+    "name": "DynamoDB",
+    "aliases": [
+      "amazon dynamodb",
+      "aws dynamodb"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "designed single-table DynamoDB schemas with partition and sort keys for sub-10ms queries",
+      "managed auto-scaling provisioned capacity and Global Secondary Indexes (GSIs)"
+    ]
+  },
+  {
+    "name": "Neo4j",
+    "aliases": [
+      "neo4j graph",
+      "cypher"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "modeled complex interconnected relationship networks and executed Cypher graph queries",
+      "performed shortest path calculations and recommendation algorithms on graph nodes"
+    ]
+  },
+  {
+    "name": "Elasticsearch",
+    "aliases": [
+      "elastic search",
+      "es cluster"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Search & Analytics",
+    "exemplars": [
+      "indexed unstructured documents and executed fuzzy full-text search with tokenizers",
+      "built faceted filtering aggregations and managed multi-node Elasticsearch clusters"
+    ]
+  },
+  {
+    "name": "OpenSearch",
+    "aliases": [
+      "amazon opensearch"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Search & Analytics",
+    "exemplars": [
+      "built scalable log analytics and distributed search clusters using OpenSearch",
+      "managed index lifecycle policies and automated search index snapshots"
+    ]
+  },
+  {
+    "name": "ChromaDB",
+    "aliases": [
+      "chroma",
+      "chroma vector database",
+      "chromadb vector"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Vector Databases",
+    "exemplars": [
+      "indexed dense text embeddings and conducted cosine similarity nearest-neighbor search for RAG",
+      "persisted vector collections and queried semantic document chunks in real time"
+    ]
+  },
+  {
+    "name": "Pinecone",
+    "aliases": [
+      "pinecone vector"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Vector Databases",
+    "exemplars": [
+      "stored millions of high-dimensional embedding vectors for semantic similarity search",
+      "integrated managed vector index with LLM retrieval pipelines with metadata filtering"
+    ]
+  },
+  {
+    "name": "Weaviate",
+    "aliases": [
+      "weaviate vector db"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Vector Databases",
+    "exemplars": [
+      "built hybrid keyword and vector semantic search pipelines with GraphQL queries",
+      "stored multi-modal embeddings for fast vector retrieval and AI grounding"
+    ]
+  },
+  {
+    "name": "Milvus",
+    "aliases": [
+      "milvus vector"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Vector Databases",
+    "exemplars": [
+      "deployed distributed vector search engine capable of billion-scale embedding indexing",
+      "tuned IVF_FLAT and HNSW index parameters for millisecond similarity queries"
+    ]
+  },
+  {
+    "name": "Qdrant",
+    "aliases": [
+      "qdrant vector"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Vector Databases",
+    "exemplars": [
+      "implemented vector similarity search with rich payload filtering using Qdrant Rust engine",
+      "stored embeddings for semantic document search and recommender engines"
+    ]
+  },
+  {
+    "name": "Snowflake",
+    "aliases": [
+      "snowflake data warehouse"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Data Warehousing",
+    "exemplars": [
+      "built cloud analytical data warehouses separating storage and multi-cluster compute virtual warehouses",
+      "managed role-based data sharing, zero-copy cloning, and time-travel queries"
+    ]
+  },
+  {
+    "name": "Google BigQuery",
+    "aliases": [
+      "bigquery",
+      "gbq"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Data Warehousing",
+    "exemplars": [
+      "queried petabyte-scale analytical datasets with serverless SQL and partitioned clustering",
+      "optimized query processing costs through column partitioning and materialized views"
+    ]
+  },
+  {
+    "name": "Amazon Redshift",
+    "aliases": [
+      "redshift",
+      "aws redshift"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Data Warehousing",
+    "exemplars": [
+      "managed columnar storage data warehouse clusters and tuned sort keys and distribution styles",
+      "executed complex aggregations over large-scale historical transaction data"
+    ]
+  },
+  {
+    "name": "ClickHouse",
+    "aliases": [
+      "clickhouse db"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Databases & Storage",
+    "exemplars": [
+      "engineered real-time analytical reporting with columnar storage processing billions of events per second",
+      "designed MergeTree engine tables for lightning-fast aggregation queries"
+    ]
+  },
+  {
+    "name": "InfluxDB",
+    "aliases": [
+      "influx",
+      "influxdb time series"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Databases & Storage",
+    "exemplars": [
+      "collected and visualized high-frequency IoT sensor metrics and time-series telemetry",
+      "configured retention policies and downsampling continuous queries"
+    ]
+  },
+  {
+    "name": "CockroachDB",
+    "aliases": [
+      "cockroach db"
+    ],
+    "category": "Databases & Storage",
+    "parent": "SQL",
+    "exemplars": [
+      "deployed geo-distributed SQL database providing serializable ACID transactions across regions",
+      "managed multi-region data survival and automated range replication"
+    ]
+  },
+  {
+    "name": "MariaDB",
+    "aliases": [
+      "mariadb server"
+    ],
+    "category": "Databases & Storage",
+    "parent": "SQL",
+    "exemplars": [
+      "managed high-availability relational databases with Galera multi-master clustering",
+      "optimized relational tables, indexes, and stored procedures"
+    ]
+  },
+  {
+    "name": "Oracle Database",
+    "aliases": [
+      "oracle db",
+      "oracle 19c"
+    ],
+    "category": "Databases & Storage",
+    "parent": "SQL",
+    "exemplars": [
+      "managed enterprise relational databases with PL/SQL packages, partitioning, and RAC clustering",
+      "optimized large-scale enterprise ERP transaction queries"
+    ]
+  },
+  {
+    "name": "Microsoft SQL Server",
+    "aliases": [
+      "mssql",
+      "sql server",
+      "t-sql"
+    ],
+    "category": "Databases & Storage",
+    "parent": "SQL",
+    "exemplars": [
+      "authored complex T-SQL queries, stored procedures, and triggers for enterprise systems",
+      "configured Always On availability groups and database backup maintenance plans"
+    ]
+  },
+  {
+    "name": "Firebase Firestore",
+    "aliases": [
+      "firestore",
+      "firebase database"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "structured real-time NoSQL document collections and wrote security rules for mobile clients",
+      "synchronized live client state updates with offline document persistence"
+    ]
+  },
+  {
+    "name": "Supabase",
+    "aliases": [
+      "supabase postgres"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Databases & Storage",
+    "exemplars": [
+      "built backend platforms using hosted PostgreSQL, Row-Level Security (RLS), and auto-generated APIs",
+      "implemented real-time database change broadcasts and authentication"
+    ]
+  },
+  {
+    "name": "TimescaleDB",
+    "aliases": [
+      "timescale"
+    ],
+    "category": "Databases & Storage",
+    "parent": "PostgreSQL",
+    "exemplars": [
+      "stored financial time-series metrics inside hypertables while retaining full SQL join capabilities",
+      "configured automated continuous data rollups and compression policies"
+    ]
+  },
+  {
+    "name": "Memcached",
+    "aliases": [
+      "memcache"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "deployed distributed memory object caching systems to reduce database query loads",
+      "cached user session payloads and serialized tokens in memory"
+    ]
+  },
+  {
+    "name": "Couchbase",
+    "aliases": [
+      "couchbase server"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "developed distributed document services utilizing N1QL declarative queries and sub-millisecond memory caching",
+      "managed cross-datacenter replication (XDCR) for global availability"
+    ]
+  },
+  {
+    "name": "FaunaDB",
+    "aliases": [
+      "fauna db"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "modeled serverless globally distributed transactional graphs with FQL queries",
+      "ensured strictly serializable global transactions with zero database operations overhead"
+    ]
+  },
+  {
+    "name": "ScyllaDB",
+    "aliases": [
+      "scylla"
+    ],
+    "category": "Databases & Storage",
+    "parent": "NoSQL",
+    "exemplars": [
+      "deployed C++ re-implementation of Cassandra for ultra-low p99 latency at scale",
+      "handled millions of write operations per second with predictable latency"
+    ]
+  },
+  {
+    "name": "Database Migration",
+    "aliases": [
+      "alembic",
+      "flyway",
+      "liquibase",
+      "schema migrations"
+    ],
+    "category": "Databases & Storage",
+    "parent": "Databases & Storage",
+    "exemplars": [
+      "managed version-controlled schema migrations with zero-downtime rollback strategies",
+      "automated database schema upgrades across CI/CD deployment stages"
+    ]
+  },
+  {
+    "name": "AWS",
+    "aliases": [
+      "amazon web services",
+      "amazon aws"
+    ],
+    "category": "Cloud Platforms",
+    "parent": null,
+    "exemplars": [
+      "architected scalable cloud infrastructure utilizing IAM, VPC, EC2, S3, and CloudWatch",
+      "configured secure cloud networks, security groups, and automated scaling policies"
+    ]
+  },
+  {
+    "name": "Amazon EC2",
+    "aliases": [
+      "ec2",
+      "aws ec2"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "provisioned and hardened virtual compute instances across multiple availability zones",
+      "configured Auto Scaling Groups and target tracking policies based on CPU utilization"
+    ]
+  },
+  {
+    "name": "Amazon S3",
+    "aliases": [
+      "s3",
+      "aws s3",
+      "simple storage service"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "managed object storage buckets with lifecycle expiration rules, bucket policies, and encryption",
+      "served static assets and large dataset archives securely via S3"
+    ]
+  },
+  {
+    "name": "AWS Lambda",
+    "aliases": [
+      "lambda",
+      "aws serverless"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "built event-driven serverless functions triggered by S3 uploads, SQS messages, and API Gateway",
+      "optimized cold start latency and memory provisioning for serverless workloads"
+    ]
+  },
+  {
+    "name": "Amazon ECS",
+    "aliases": [
+      "ecs",
+      "aws fargate"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "deployed containerized microservices on AWS ECS using serverless AWS Fargate tasks",
+      "managed task definitions, service auto-scaling, and Application Load Balancer routing"
+    ]
+  },
+  {
+    "name": "Amazon EKS",
+    "aliases": [
+      "eks",
+      "aws eks"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "managed production Kubernetes clusters on AWS EKS with managed node groups and IAM roles for service accounts (IRSA)",
+      "configured VPC CNI networking and horizontal pod autoscalers on AWS"
+    ]
+  },
+  {
+    "name": "AWS CloudFormation",
+    "aliases": [
+      "cloudformation",
+      "aws cfn"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "authored declarative Infrastructure as Code templates to provision reproducible cloud environments",
+      "managed automated stack rollbacks and drift detection across AWS regions"
+    ]
+  },
+  {
+    "name": "Microsoft Azure",
+    "aliases": [
+      "azure",
+      "ms azure"
+    ],
+    "category": "Cloud Platforms",
+    "parent": null,
+    "exemplars": [
+      "managed enterprise cloud resources, virtual networks, Azure AD, and App Services",
+      "deployed secure cloud architectures utilizing Azure Resource Manager (ARM)"
+    ]
+  },
+  {
+    "name": "Azure Functions",
+    "aliases": [
+      "azure serverless"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "Microsoft Azure",
+    "exemplars": [
+      "developed event-driven serverless functions with HTTP, Event Hub, and Blob triggers",
+      "integrated serverless workers with Azure Cosmos DB and Event Grid"
+    ]
+  },
+  {
+    "name": "Azure DevOps",
+    "aliases": [
+      "azure devops pipelines",
+      "ado"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "Microsoft Azure",
+    "exemplars": [
+      "configured CI/CD release pipelines, work item boards, and artifact feeds",
+      "automated multi-stage deployments with gated approval checks"
+    ]
+  },
+  {
+    "name": "Google Cloud",
+    "aliases": [
+      "gcp",
+      "google cloud platform"
+    ],
+    "category": "Cloud Platforms",
+    "parent": null,
+    "exemplars": [
+      "deployed scalable cloud workloads using Google Kubernetes Engine, BigQuery, and Cloud Run",
+      "managed IAM service accounts, cloud storage buckets, and VPC networks on GCP"
+    ]
+  },
+  {
+    "name": "Google Cloud Run",
+    "aliases": [
+      "cloud run",
+      "gcp cloud run"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "Google Cloud",
+    "exemplars": [
+      "deployed containerized HTTP microservices with automatic scale-to-zero serverless scaling",
+      "configured traffic splitting for canary deployments on Cloud Run"
+    ]
+  },
+  {
+    "name": "Google Kubernetes Engine",
+    "aliases": [
+      "gke",
+      "gcp gke"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "Google Cloud",
+    "exemplars": [
+      "operated resilient GKE clusters with automated node repair, upgrade, and autopilot mode",
+      "deployed containerized workloads across multi-zonal GKE clusters"
+    ]
+  },
+  {
+    "name": "Cloudflare",
+    "aliases": [
+      "cloudflare workers",
+      "cloudflare cdn"
+    ],
+    "category": "Cloud Platforms",
+    "parent": null,
+    "exemplars": [
+      "configured edge CDN caching, DDoS mitigation, DNS records, and WAF security rules",
+      "deployed JavaScript edge workers executing at global points of presence"
+    ]
+  },
+  {
+    "name": "Heroku",
+    "aliases": [
+      "heroku platform"
+    ],
+    "category": "Cloud Platforms",
+    "parent": null,
+    "exemplars": [
+      "deployed web applications and background worker dynos using Procfiles and Git pushes",
+      "configured managed add-ons including Heroku Postgres and Redis"
+    ]
+  },
+  {
+    "name": "DigitalOcean",
+    "aliases": [
+      "digital ocean",
+      "do droplets"
+    ],
+    "category": "Cloud Platforms",
+    "parent": null,
+    "exemplars": [
+      "provisioned cloud virtual machines (Droplets), block storage volumes, and managed databases",
+      "configured cloud firewalls and automated snapshots for production servers"
+    ]
+  },
+  {
+    "name": "Terraform",
+    "aliases": [
+      "hashicorp terraform",
+      "terraform iac"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "Infrastructure as Code",
+    "exemplars": [
+      "authored declarative HCL modules to provision reproducible multi-cloud infrastructure",
+      "managed remote state locking via S3 and DynamoDB with plan review in CI"
+    ]
+  },
+  {
+    "name": "Ansible",
+    "aliases": [
+      "ansible playbooks"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "automated server provisioning, configuration management, and software patching using YAML playbooks",
+      "executed idempotent configuration updates across fleets of Linux servers"
+    ]
+  },
+  {
+    "name": "Pulumi",
+    "aliases": [
+      "pulumi iac"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "Infrastructure as Code",
+    "exemplars": [
+      "defined cloud infrastructure using real programming languages like Python and TypeScript",
+      "managed cloud state transitions with typed component resources"
+    ]
+  },
+  {
+    "name": "AWS IAM",
+    "aliases": [
+      "iam",
+      "aws identity"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "implemented least-privilege access policies, roles, and cross-account assumption",
+      "managed MFA enforcement and fine-grained resource permission boundaries"
+    ]
+  },
+  {
+    "name": "AWS CloudWatch",
+    "aliases": [
+      "cloudwatch"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "configured metric alarms, custom dashboard widgets, and centralized log aggregation",
+      "triggered automated autoscaling actions and SNS alerts based on error thresholds"
+    ]
+  },
+  {
+    "name": "AWS SQS",
+    "aliases": [
+      "sqs",
+      "simple queue service"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "decoupled distributed backend microservices with reliable asynchronous message queues",
+      "configured Dead Letter Queues (DLQs) to capture and inspect failed message deliveries"
+    ]
+  },
+  {
+    "name": "AWS SNS",
+    "aliases": [
+      "sns",
+      "simple notification service"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "AWS",
+    "exemplars": [
+      "broadcasted system events and alerts across SMS, email, and fanout SQS consumer queues",
+      "implemented Pub/Sub architectures for decoupled microservice notification events"
+    ]
+  },
+  {
+    "name": "Vercel",
+    "aliases": [
+      "vercel deployment"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "Frontend Frameworks",
+    "exemplars": [
+      "configured automated preview deployments, edge middleware, and serverless API functions",
+      "optimized web vitals and edge caching on Vercel platform"
+    ]
+  },
+  {
+    "name": "Netlify",
+    "aliases": [
+      "netlify cms"
+    ],
+    "category": "Cloud Platforms",
+    "parent": "Frontend Frameworks",
+    "exemplars": [
+      "deployed static Jamstack websites with continuous deployment and split testing",
+      "configured form handling, serverless Netlify functions, and SSL certificates"
+    ]
+  },
+  {
+    "name": "OpenStack",
+    "aliases": [
+      "open stack"
+    ],
+    "category": "Cloud Platforms",
+    "parent": null,
+    "exemplars": [
+      "managed on-premise private cloud virtualization, storage pools, and virtual networks",
+      "orchestrated tenant compute instances using Nova, Neutron, and Cinder"
+    ]
+  },
+  {
+    "name": "Docker",
+    "aliases": [
+      "docker containers",
+      "containerization",
+      "dockerfile",
+      "docker-compose"
+    ],
+    "category": "DevOps & Tools",
+    "parent": null,
+    "exemplars": [
+      "containerized applications using multi-stage Dockerfiles to minimize final image size",
+      "orchestrated multi-container local microservice environments using docker-compose"
+    ]
+  },
+  {
+    "name": "Kubernetes",
+    "aliases": [
+      "k8s",
+      "kube",
+      "kubernetes cluster"
+    ],
+    "category": "DevOps & Tools",
+    "parent": null,
+    "exemplars": [
+      "orchestrated containerized microservices deployments, services, ingress, and configmaps",
+      "configured horizontal pod autoscalers (HPA), readiness probes, and rolling updates"
+    ]
+  },
+  {
+    "name": "Helm",
+    "aliases": [
+      "helm charts",
+      "helm package manager"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Kubernetes",
+    "exemplars": [
+      "packaged Kubernetes manifests into reusable, version-controlled Helm charts",
+      "managed multi-environment deployments via parameterized values.yaml files"
+    ]
+  },
+  {
+    "name": "CI/CD",
+    "aliases": [
+      "cicd",
+      "continuous integration",
+      "continuous delivery",
+      "continuous deployment"
+    ],
+    "category": "DevOps & Tools",
+    "parent": null,
+    "exemplars": [
+      "automated automated testing, linting, Docker building, and production deployment pipelines",
+      "implemented zero-downtime blue-green and canary release strategies"
+    ]
+  },
+  {
+    "name": "Jenkins",
+    "aliases": [
+      "jenkins ci"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "CI/CD",
+    "exemplars": [
+      "authored declarative Jenkinsfile pipelines orchestrating build, test, and deployment stages",
+      "configured distributed build agents and webhook integrations with GitHub"
+    ]
+  },
+  {
+    "name": "GitHub Actions",
+    "aliases": [
+      "gh actions",
+      "github ci"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "CI/CD",
+    "exemplars": [
+      "authored automated YAML workflows for PR validation, matrix testing, and cloud deployments",
+      "cached dependency artifacts and integrated security scanning steps"
+    ]
+  },
+  {
+    "name": "GitLab CI",
+    "aliases": [
+      "gitlab ci/cd",
+      "gitlab-ci.yml"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "CI/CD",
+    "exemplars": [
+      "configured multi-stage deployment pipelines, automated security scanning, and container registries",
+      "managed environment review apps and branch deployment rules in GitLab"
+    ]
+  },
+  {
+    "name": "ArgoCD",
+    "aliases": [
+      "argo cd",
+      "gitops"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Kubernetes",
+    "exemplars": [
+      "implemented declarative GitOps continuous delivery synchronizing Git state to Kubernetes clusters",
+      "managed automated rollback on deployment failure and multi-cluster app synchronization"
+    ]
+  },
+  {
+    "name": "Linux",
+    "aliases": [
+      "gnu linux",
+      "linux administration",
+      "rhel",
+      "debian"
+    ],
+    "category": "DevOps & Tools",
+    "parent": null,
+    "exemplars": [
+      "administered Linux servers, managed systemd services, cron jobs, file permissions, and firewall rules",
+      "troubleshot server resource constraints using top, htop, netstat, and journalctl"
+    ]
+  },
+  {
+    "name": "Ubuntu",
+    "aliases": [
+      "ubuntu server"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Linux",
+    "exemplars": [
+      "provisioned and secured Ubuntu server distributions with automated security updates",
+      "configured apt package managers, ufw firewalls, and system users"
+    ]
+  },
+  {
+    "name": "Nginx",
+    "aliases": [
+      "nginx server",
+      "nginx reverse proxy"
+    ],
+    "category": "DevOps & Tools",
+    "parent": null,
+    "exemplars": [
+      "configured reverse proxy routing, SSL/TLS certificate termination, load balancing, and gzip compression",
+      "optimized static asset caching and restricted rate limiting per client IP"
+    ]
+  },
+  {
+    "name": "Apache HTTP Server",
+    "aliases": [
+      "apache2",
+      "httpd"
+    ],
+    "category": "DevOps & Tools",
+    "parent": null,
+    "exemplars": [
+      "configured virtual hosts, URL rewrite rules with .htaccess, and SSL certificates",
+      "tuned Apache worker MPM processes for concurrent web traffic"
+    ]
+  },
+  {
+    "name": "Prometheus",
+    "aliases": [
+      "prometheus monitoring"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Monitoring",
+    "exemplars": [
+      "instrumented application metrics scraping and authored PromQL queries for system latency",
+      "configured Alertmanager notification routing to Slack and PagerDuty"
+    ]
+  },
+  {
+    "name": "Grafana",
+    "aliases": [
+      "grafana dashboards"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Monitoring",
+    "exemplars": [
+      "designed real-time visualization dashboards monitoring CPU, memory, request error rates, and p99 latency",
+      "configured alert rules and annotations for production incidents"
+    ]
+  },
+  {
+    "name": "Datadog",
+    "aliases": [
+      "datadog apm"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Monitoring",
+    "exemplars": [
+      "instrumented distributed APM tracing, custom application metrics, and log pipelines",
+      "created composite monitors and synthetic checks for critical API endpoints"
+    ]
+  },
+  {
+    "name": "ELK Stack",
+    "aliases": [
+      "elasticsearch logstash kibana",
+      "elastic stack"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Monitoring",
+    "exemplars": [
+      "aggregated distributed server logs via Filebeat and Logstash into centralized Elasticsearch indices",
+      "built Kibana visual queries for debugging production application error logs"
+    ]
+  },
+  {
+    "name": "Splunk",
+    "aliases": [
+      "splunk enterprise"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Monitoring",
+    "exemplars": [
+      "ingested enterprise application logs and constructed SPL queries for operational insights",
+      "monitored system anomalies and generated scheduled security audit reports"
+    ]
+  },
+  {
+    "name": "OpenTelemetry",
+    "aliases": [
+      "otel"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Monitoring",
+    "exemplars": [
+      "instrumented vendor-agnostic distributed traces, metrics, and logs across microservices",
+      "propagated trace context headers across asynchronous HTTP and gRPC calls"
+    ]
+  },
+  {
+    "name": "Vault",
+    "aliases": [
+      "hashicorp vault"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Security",
+    "exemplars": [
+      "managed centralized secrets, dynamic database credentials, and PKI certificates securely",
+      "injected encrypted secrets into Kubernetes pods at runtime"
+    ]
+  },
+  {
+    "name": "CircleCI",
+    "aliases": [
+      "circle ci"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "CI/CD",
+    "exemplars": [
+      "configured continuous integration pipelines with parallel test execution and Docker orbs",
+      "automated staging and production deployment steps with approval hold gates"
+    ]
+  },
+  {
+    "name": "Traefik",
+    "aliases": [
+      "traefik proxy"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "configured dynamic modern HTTP reverse proxy with automatic Let's Encrypt SSL certificates",
+      "routed ingress traffic dynamically across Docker containers and Kubernetes services"
+    ]
+  },
+  {
+    "name": "HAProxy",
+    "aliases": [
+      "ha proxy"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "configured high-availability TCP and HTTP load balancers with health check algorithms",
+      "balanced traffic loads and managed session stickiness across backend pools"
+    ]
+  },
+  {
+    "name": "Istio",
+    "aliases": [
+      "istio service mesh"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "Kubernetes",
+    "exemplars": [
+      "implemented microservice service mesh with mutual TLS (mTLS) encryption and traffic routing",
+      "configured fault injection, circuit breaking, and canary traffic splitting"
+    ]
+  },
+  {
+    "name": "Consul",
+    "aliases": [
+      "hashicorp consul"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "managed distributed service discovery, health monitoring, and key-value configuration",
+      "enabled secure service-to-service communication with dynamic service mesh"
+    ]
+  },
+  {
+    "name": "Vagrant",
+    "aliases": [
+      "hashicorp vagrant"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "provisioned reproducible local development virtual machines matching production specs",
+      "automated sandbox environment setup for developer onboarding"
+    ]
+  },
+  {
+    "name": "Packer",
+    "aliases": [
+      "hashicorp packer"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "automated the creation of hardened golden machine images (AMIs) across cloud providers",
+      "built immutable server templates with pre-installed application runtimes"
+    ]
+  },
+  {
+    "name": "Site Reliability Engineering",
+    "aliases": [
+      "sre",
+      "reliability engineering"
+    ],
+    "category": "DevOps & Tools",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "defined Service Level Indicators (SLIs), Service Level Objectives (SLOs), and Error Budgets",
+      "conducted blameless incident post-mortems and implemented automated remediation"
+    ]
+  },
+  {
+    "name": "Git",
+    "aliases": [
+      "git version control",
+      "version control",
+      "git scm"
+    ],
+    "category": "DevOps & Tools",
+    "parent": null,
+    "exemplars": [
+      "managed source code branches, pull requests, interactive rebases, and merge conflict resolutions",
+      "maintained clean trunk-based commit history and automated Git release tags"
+    ]
+  },
+  {
+    "name": "Machine Learning",
+    "aliases": [
+      "ml",
+      "machine-learning",
+      "predictive modeling"
+    ],
+    "category": "ML & Data Science",
+    "parent": null,
+    "exemplars": [
+      "engineered predictive models, selected features, and validated generalization with cross-validation",
+      "benchmarked regression and classification algorithms against baseline metrics"
+    ]
+  },
+  {
+    "name": "Deep Learning",
+    "aliases": [
+      "dl",
+      "deep-learning",
+      "neural networks"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "designed multi-layer neural network architectures with backpropagation, dropout, and residual connections",
+      "trained deep representations on GPU clusters with learning rate schedules"
+    ]
+  },
+  {
+    "name": "Natural Language Processing",
+    "aliases": [
+      "nlp",
+      "text processing",
+      "computational linguistics"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "implemented named entity recognition (NER), text classification, and sentiment analysis pipelines",
+      "tokenized, embedded, and extracted semantic entities from unstructured textual corpora"
+    ]
+  },
+  {
+    "name": "Computer Vision",
+    "aliases": [
+      "cv",
+      "computer-vision",
+      "image processing"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "built convolutional neural networks (CNNs) for object detection, classification, and image segmentation",
+      "augmented image datasets and extracted visual feature representations"
+    ]
+  },
+  {
+    "name": "Generative AI",
+    "aliases": [
+      "genai",
+      "gen-ai",
+      "generative artificial intelligence"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "leveraged large foundation models to generate contextual text, code, and synthetic data",
+      "built automated generative pipelines grounded on proprietary data retrieval"
+    ]
+  },
+  {
+    "name": "Large Language Models",
+    "aliases": [
+      "llm",
+      "llms",
+      "large language model"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Generative AI",
+    "exemplars": [
+      "fine-tuned and evaluated open-source LLMs using LoRA/PEFT parameter-efficient techniques",
+      "integrated model APIs with structured JSON output schemas and automated temperature tuning"
+    ]
+  },
+  {
+    "name": "Retrieval-Augmented Generation",
+    "aliases": [
+      "rag",
+      "retrieval augmented generation",
+      "vector search rag"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Large Language Models",
+    "exemplars": [
+      "architected enterprise RAG pipelines retrieving chunked vector embeddings to ground LLM answers",
+      "reduced model hallucination by re-ranking retrieved passages with cross-encoders"
+    ]
+  },
+  {
+    "name": "Prompt Engineering",
+    "aliases": [
+      "prompt design",
+      "few-shot prompting",
+      "chain-of-thought"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Large Language Models",
+    "exemplars": [
+      "crafted structured system prompts, few-shot exemplars, and chain-of-thought reasoning steps",
+      "evaluated prompt robustness against edge-case queries and adversarial jailbreaks"
+    ]
+  },
+  {
+    "name": "PyTorch",
+    "aliases": [
+      "torch",
+      "pytorch library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Deep Learning",
+    "exemplars": [
+      "built custom neural network layers, loss functions, and PyTorch Dataset/DataLoader pipelines",
+      "trained models on CUDA GPUs utilizing mixed-precision training (AMP)"
+    ]
+  },
+  {
+    "name": "TensorFlow",
+    "aliases": [
+      "tf",
+      "tensorflow 2"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Deep Learning",
+    "exemplars": [
+      "built and trained deep neural networks using Keras functional API and tf.data input pipelines",
+      "exported optimized SavedModel graphs for high-throughput serving"
+    ]
+  },
+  {
+    "name": "Keras",
+    "aliases": [
+      "keras library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Deep Learning",
+    "exemplars": [
+      "rapidly prototyped deep neural network architectures with high-level Keras layers and callbacks",
+      "configured EarlyStopping and ModelCheckpoint callbacks during model training"
+    ]
+  },
+  {
+    "name": "Scikit-learn",
+    "aliases": [
+      "sklearn",
+      "scikit learn"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "trained classification, regression, and clustering models using Pipeline and GridSearchCV",
+      "evaluated models with precision, recall, ROC-AUC, and confusion matrix analysis"
+    ]
+  },
+  {
+    "name": "LightGBM",
+    "aliases": [
+      "light-gbm",
+      "lgbm"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "trained gradient boosted decision tree models for fast tabular prediction and ranking",
+      "tuned categorical feature splits, leaf sizes, and regularization to boost AUC scores"
+    ]
+  },
+  {
+    "name": "XGBoost",
+    "aliases": [
+      "xgboost library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "engineered competitive gradient boosting models for tabular classification and regression",
+      "optimized tree depth, subsample ratios, and learning rates to prevent overfitting"
+    ]
+  },
+  {
+    "name": "CatBoost",
+    "aliases": [
+      "catboost library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "trained gradient boosting models directly on high-cardinality categorical features",
+      "prevented target leakage with CatBoost ordered boosting algorithms"
+    ]
+  },
+  {
+    "name": "Hugging Face Transformers",
+    "aliases": [
+      "transformers",
+      "huggingface",
+      "hf"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Deep Learning",
+    "exemplars": [
+      "fine-tuned BERT, RoBERTa, and DeBERTa architectures for token classification and sequence tasks",
+      "tokenized text datasets with AutoTokenizer and trained models using Trainer API"
+    ]
+  },
+  {
+    "name": "LangChain",
+    "aliases": [
+      "langchain framework"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Large Language Models",
+    "exemplars": [
+      "orchestrated multi-step LLM chains, agent tools, document loaders, and memory buffers",
+      "built conversational agents with custom tool calling and document question answering"
+    ]
+  },
+  {
+    "name": "LlamaIndex",
+    "aliases": [
+      "llamaindex",
+      "gpt index"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Large Language Models",
+    "exemplars": [
+      "built structured data connectors and hierarchical index structures for RAG applications",
+      "optimized chunking strategies and multi-document query synthesis engines"
+    ]
+  },
+  {
+    "name": "Pandas",
+    "aliases": [
+      "pandas library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "ML & Data Science",
+    "exemplars": [
+      "wrangled, cleaned, aggregated, and transformed tabular datasets using DataFrames",
+      "performed groupby aggregations, pivot tables, and handled missing data imputations"
+    ]
+  },
+  {
+    "name": "NumPy",
+    "aliases": [
+      "numpy library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "ML & Data Science",
+    "exemplars": [
+      "vectorized mathematical computations and array manipulations for high numerical efficiency",
+      "executed fast linear algebra matrix operations and broadcasting routines"
+    ]
+  },
+  {
+    "name": "SciPy",
+    "aliases": [
+      "scipy library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "ML & Data Science",
+    "exemplars": [
+      "performed statistical significance tests, curve fitting, and scientific numerical optimizations",
+      "applied spatial distance algorithms and sparse matrix computations"
+    ]
+  },
+  {
+    "name": "Matplotlib",
+    "aliases": [
+      "matplotlib library",
+      "pyplot"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Data Visualization",
+    "exemplars": [
+      "plotted customized analytical figures, error bars, scatter plots, and distributions",
+      "generated publication-quality charts and multi-panel figures for technical reports"
+    ]
+  },
+  {
+    "name": "Seaborn",
+    "aliases": [
+      "seaborn library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Data Visualization",
+    "exemplars": [
+      "visualized statistical relationships using correlation heatmaps, pairplots, and violin plots",
+      "analyzed multivariate feature interactions across categorical subgroups"
+    ]
+  },
+  {
+    "name": "OpenCV",
+    "aliases": [
+      "cv2",
+      "opencv library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Computer Vision",
+    "exemplars": [
+      "processed real-time video frames, applied morphological filters, and detected image edges",
+      "calibrated camera feeds and extracted contours for optical document detection"
+    ]
+  },
+  {
+    "name": "spaCy",
+    "aliases": [
+      "spacy library"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Natural Language Processing",
+    "exemplars": [
+      "extracted linguistic dependencies, POS tags, and named entities using pre-trained pipelines",
+      "constructed fast rule-based pattern matchers and custom pipeline extensions"
+    ]
+  },
+  {
+    "name": "NLTK",
+    "aliases": [
+      "natural language toolkit"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Natural Language Processing",
+    "exemplars": [
+      "performed tokenization, lemmatization, stop-word removal, and n-gram frequency extraction",
+      "analyzed text sentiment and parsed context-free grammars on corpora"
+    ]
+  },
+  {
+    "name": "MLOps",
+    "aliases": [
+      "ml ops",
+      "machine learning operations"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "automated end-to-end model retraining pipelines, model registries, and drift monitoring",
+      "packaged models as containerized inference endpoints with automated smoke testing"
+    ]
+  },
+  {
+    "name": "MLflow",
+    "aliases": [
+      "mlflow tracking"
+    ],
+    "category": "ML & Data Science",
+    "parent": "MLOps",
+    "exemplars": [
+      "tracked hyperparameter experiments, training loss metrics, and logged model artifacts",
+      "managed model stage transitions from staging to production in the model registry"
+    ]
+  },
+  {
+    "name": "Weights & Biases",
+    "aliases": [
+      "wandb"
+    ],
+    "category": "ML & Data Science",
+    "parent": "MLOps",
+    "exemplars": [
+      "visualized distributed training curves, gradients, and model evaluation metrics in real time",
+      "orchestrated automated hyperparameter sweeps across cloud GPU clusters"
+    ]
+  },
+  {
+    "name": "Feature Engineering",
+    "aliases": [
+      "feature extraction",
+      "feature selection"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "extracted informative predictive signals, interaction terms, and temporal aggregates",
+      "applied target encoding, scaling, and dimensionality reduction to raw input features"
+    ]
+  },
+  {
+    "name": "Model Deployment",
+    "aliases": [
+      "model serving",
+      "inference serving",
+      "triton",
+      "torchserve"
+    ],
+    "category": "ML & Data Science",
+    "parent": "MLOps",
+    "exemplars": [
+      "deployed machine learning models as high-throughput low-latency REST and gRPC endpoints",
+      "quantized neural weights and optimized inference throughput on GPU hardware"
+    ]
+  },
+  {
+    "name": "Reinforcement Learning",
+    "aliases": [
+      "rl",
+      "reinforcement-learning"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Machine Learning",
+    "exemplars": [
+      "formulated Markov Decision Processes (MDP) and trained Q-learning policy networks",
+      "optimized reward functions and tuned exploration-exploitation tradeoffs"
+    ]
+  },
+  {
+    "name": "Statistics",
+    "aliases": [
+      "applied statistics",
+      "statistical analysis",
+      "hypothesis testing"
+    ],
+    "category": "ML & Data Science",
+    "parent": null,
+    "exemplars": [
+      "conducted rigorous statistical hypothesis testing, t-tests, ANOVA, and p-value evaluations",
+      "analyzed probability distributions, confidence intervals, and variance estimators"
+    ]
+  },
+  {
+    "name": "A/B Testing",
+    "aliases": [
+      "ab testing",
+      "split testing",
+      "experimentation"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Statistics",
+    "exemplars": [
+      "designed controlled randomized split experiments and calculated required sample sizes",
+      "analyzed conversion lift with statistical significance testing and power calculations"
+    ]
+  },
+  {
+    "name": "Sentence Transformers",
+    "aliases": [
+      "sentence-transformers",
+      "sbert"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Natural Language Processing",
+    "exemplars": [
+      "generated dense semantic vector embeddings from text for nearest-neighbor similarity search",
+      "fine-tuned bi-encoders for semantic textual similarity and information retrieval"
+    ]
+  },
+  {
+    "name": "OCR",
+    "aliases": [
+      "optical character recognition",
+      "pytesseract",
+      "tesseract"
+    ],
+    "category": "ML & Data Science",
+    "parent": "Computer Vision",
+    "exemplars": [
+      "extracted structured text from scanned PDF documents and degraded image scans",
+      "preprocessed scanned documents with binarization, deskewing, and noise removal"
+    ]
+  },
+  {
+    "name": "Apache Spark",
+    "aliases": [
+      "spark",
+      "spark sql",
+      "spark streaming"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "engineered distributed data processing pipelines over terabytes of data using RDDs and DataFrames",
+      "optimized Spark shuffle partitions, broadcast joins, and caching in cluster memory"
+    ]
+  },
+  {
+    "name": "PySpark",
+    "aliases": [
+      "pyspark library"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": "Apache Spark",
+    "exemplars": [
+      "authored distributed Python data transformations and window aggregations on Spark clusters",
+      "tuned PySpark execution plans and managed memory partitions across worker nodes"
+    ]
+  },
+  {
+    "name": "Apache Kafka",
+    "aliases": [
+      "kafka",
+      "kafka streaming"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "architected real-time event streaming pipelines with partitioned topics and consumer groups",
+      "managed message serialization, consumer offsets, and backpressure under peak loads"
+    ]
+  },
+  {
+    "name": "Apache Airflow",
+    "aliases": [
+      "airflow",
+      "airflow dags"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "orchestrated complex scheduled data workflows using Python-defined Directed Acyclic Graphs (DAGs)",
+      "monitored automated task retries, dependencies, and SLAs across batch data pipelines"
+    ]
+  },
+  {
+    "name": "Apache Hadoop",
+    "aliases": [
+      "hadoop",
+      "hdfs",
+      "mapreduce"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "managed distributed data storage on HDFS and executed large-scale MapReduce batch jobs",
+      "configured Hadoop cluster nodes and managed distributed data replication"
+    ]
+  },
+  {
+    "name": "Apache Flink",
+    "aliases": [
+      "flink",
+      "flink streaming"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "engineered stateful low-latency stream processing pipelines with event-time semantics",
+      "managed distributed checkpointing and exactly-once processing guarantees"
+    ]
+  },
+  {
+    "name": "dbt",
+    "aliases": [
+      "data build tool"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "modeled modular SQL analytics transformations with automated testing and documentation",
+      "orchestrated data lineage DAGs and version-controlled warehouse data models"
+    ]
+  },
+  {
+    "name": "ETL Pipelines",
+    "aliases": [
+      "etl",
+      "elt",
+      "data pipelines",
+      "data ingestion"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "designed automated Extract, Transform, Load pipelines moving data from OLTP to data warehouses",
+      "validated schema contracts and data quality checks during ingestion pipelines"
+    ]
+  },
+  {
+    "name": "Data Warehousing",
+    "aliases": [
+      "data warehouse",
+      "edw"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "architected centralized dimensional star and snowflake schemas for enterprise reporting",
+      "optimized analytical aggregations and historical data partitioning"
+    ]
+  },
+  {
+    "name": "Data Modeling",
+    "aliases": [
+      "dimensional modeling",
+      "star schema",
+      "data model"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "designed entity-relationship diagrams, fact tables, and slowly changing dimensions (SCD)",
+      "modeled normalized and dimensional relational structures to balance query speed"
+    ]
+  },
+  {
+    "name": "Databricks",
+    "aliases": [
+      "databricks lakehouse"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": "Apache Spark",
+    "exemplars": [
+      "built unified analytics pipelines on Delta Lake using Databricks collaborative notebooks",
+      "managed autoscaling compute clusters and automated Spark workflow jobs"
+    ]
+  },
+  {
+    "name": "Delta Lake",
+    "aliases": [
+      "delta lakehouse"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": "Big Data & Data Engineering",
+    "exemplars": [
+      "implemented ACID transactional storage layers on top of cloud object storage data lakes",
+      "enabled time-travel audit queries and unified batch and streaming data feeds"
+    ]
+  },
+  {
+    "name": "Apache Hive",
+    "aliases": [
+      "hive",
+      "hive sql"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": "Apache Hadoop",
+    "exemplars": [
+      "queried petabyte datasets on HDFS using HiveQL with partition pruning and bucketing",
+      "managed Metastore schemas and optimized underlying Tez execution engines"
+    ]
+  },
+  {
+    "name": "RabbitMQ",
+    "aliases": [
+      "rabbitmq broker"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "decoupled microservice communication using AMQP message exchanges and durable queues",
+      "configured routing keys, consumer acknowledgements, and dead-letter exchanges"
+    ]
+  },
+  {
+    "name": "Presto",
+    "aliases": [
+      "presto sql"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "executed fast interactive distributed SQL queries across heterogeneous data sources",
+      "federated analytical queries across Hive, PostgreSQL, and Kafka topics"
+    ]
+  },
+  {
+    "name": "Trino",
+    "aliases": [
+      "trino sql"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "ran fast interactive SQL queries over massive distributed object stores and warehouses",
+      "optimized federated queries across multiple organizational data lakes"
+    ]
+  },
+  {
+    "name": "Apache Beam",
+    "aliases": [
+      "beam"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "authored portable unified batch and streaming data processing pipelines executed on Google Dataflow",
+      "implemented custom PTransforms, windowing strategies, and side inputs"
+    ]
+  },
+  {
+    "name": "Data Lake",
+    "aliases": [
+      "data lakes",
+      "aws lake formation"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "structured raw, silver, and gold tiered storage architectures over Parquet object files",
+      "managed granular data governance, cataloging, and access control policies"
+    ]
+  },
+  {
+    "name": "Apache NiFi",
+    "aliases": [
+      "nifi"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "automated real-time data ingestion flows between edge sensors and central databases",
+      "managed visual data provenance, backpressure buffering, and data format conversions"
+    ]
+  },
+  {
+    "name": "Luigi",
+    "aliases": [
+      "spotify luigi"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "built complex pipelines of batch jobs with dependency resolution in Python",
+      "managed task execution graphs and target file atomicity"
+    ]
+  },
+  {
+    "name": "Data Quality",
+    "aliases": [
+      "great expectations",
+      "data validation"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "implemented automated data profiling, null checks, and distribution assertions on ingested datasets",
+      "prevented downstream pipeline corruption by enforcing strict schema validations"
+    ]
+  },
+  {
+    "name": "Parquet",
+    "aliases": [
+      "apache parquet"
+    ],
+    "category": "Big Data & Data Engineering",
+    "parent": null,
+    "exemplars": [
+      "converted row-based data into compressed columnar Parquet files reducing storage footprint by 70%",
+      "optimized query scan times using dictionary encoding and statistics-based row group skipping"
+    ]
+  },
+  {
+    "name": "Microservices",
+    "aliases": [
+      "microservice architecture",
+      "distributed services"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "decomposed monolithic architectures into autonomous, loosely-coupled microservices",
+      "defined clear API boundaries, domain events, and independent deployment pipelines"
+    ]
+  },
+  {
+    "name": "Distributed Systems",
+    "aliases": [
+      "distributed computing"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "architected fault-tolerant distributed systems handling network partitions and leader elections",
+      "designed systems adhering to the CAP theorem and eventual consistency models"
+    ]
+  },
+  {
+    "name": "System Design",
+    "aliases": [
+      "high level design",
+      "low level design",
+      "system architecture"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "designed scalable end-to-end architectures balancing throughput, availability, and latency",
+      "authored comprehensive architecture decision records (ADRs) and capacity estimates"
+    ]
+  },
+  {
+    "name": "Object-Oriented Programming",
+    "aliases": [
+      "oop",
+      "object oriented"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "applied encapsulation, inheritance, polymorphism, and abstraction to build modular software",
+      "structured maintainable domain objects minimizing code duplication and side effects"
+    ]
+  },
+  {
+    "name": "Design Patterns",
+    "aliases": [
+      "gang of four",
+      "software patterns"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "implemented Factory, Singleton, Strategy, Observer, and Repository architectural patterns",
+      "refactored complex procedural logic into decoupled design pattern abstractions"
+    ]
+  },
+  {
+    "name": "Event-Driven Architecture",
+    "aliases": [
+      "eda",
+      "event driven"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "architected asynchronous Pub/Sub message publishing and event choreography across services",
+      "implemented Event Sourcing and CQRS (Command Query Responsibility Segregation) patterns"
+    ]
+  },
+  {
+    "name": "Domain-Driven Design",
+    "aliases": [
+      "ddd"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "modeled complex business domains using Bounded Contexts, Aggregates, and Value Objects",
+      "aligned software architecture with core business capabilities and ubiquitous language"
+    ]
+  },
+  {
+    "name": "Test-Driven Development",
+    "aliases": [
+      "tdd"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "wrote failing unit tests prior to writing production code following red-green-refactor cycles",
+      "achieved over 90% branch code coverage while ensuring rigorous regression protection"
+    ]
+  },
+  {
+    "name": "Unit Testing",
+    "aliases": [
+      "unit tests",
+      "automated testing"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "authored isolated automated unit test suites mocking external network and database dependencies",
+      "ensured edge-case input handling and verified deterministic algorithm logic"
+    ]
+  },
+  {
+    "name": "Integration Testing",
+    "aliases": [
+      "integration tests"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "verified end-to-end interactions between application controllers, database layers, and APIs",
+      "tested database persistence and transaction rollbacks using Testcontainers"
+    ]
+  },
+  {
+    "name": "End-to-End Testing",
+    "aliases": [
+      "e2e testing",
+      "e2e tests"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "automated full user journeys through simulated browser interactions and API assertions",
+      "prevented breaking production regressions across complex multi-step workflows"
+    ]
+  },
+  {
+    "name": "Clean Architecture",
+    "aliases": [
+      "hexagonal architecture",
+      "onion architecture"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "separated core business domain logic from external infrastructure, frameworks, and databases",
+      "enforced the dependency inversion rule with clean ports and adapters"
+    ]
+  },
+  {
+    "name": "SOLID Principles",
+    "aliases": [
+      "solid"
+    ],
+    "category": "Software Architecture",
+    "parent": "Object-Oriented Programming",
+    "exemplars": [
+      "structured decoupled class hierarchies adhering strictly to Single Responsibility and Open/Closed rules",
+      "utilized Interface Segregation and Dependency Inversion to enable easy unit testing"
+    ]
+  },
+  {
+    "name": "Concurrency",
+    "aliases": [
+      "multithreading",
+      "asynchronous programming",
+      "parallel processing"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "managed thread pools, mutex locks, semaphores, and race condition prevention in concurrent code",
+      "optimized CPU-bound computations with parallel execution routines and workers"
+    ]
+  },
+  {
+    "name": "High Availability",
+    "aliases": [
+      "ha",
+      "fault tolerance",
+      "disaster recovery"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "architected multi-zone redundant systems with automatic failover achieving 99.99% uptime",
+      "configured health check probes, circuit breakers, and automatic retry policies with backoff"
+    ]
+  },
+  {
+    "name": "Code Review",
+    "aliases": [
+      "peer review",
+      "pr review"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "conducted rigorous peer code reviews ensuring architectural consistency and code quality",
+      "identified subtle concurrency bugs, security vulnerabilities, and logic flaws before merge"
+    ]
+  },
+  {
+    "name": "Monorepo",
+    "aliases": [
+      "turborepo",
+      "nx monorepo"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "managed shared library code, linting rules, and multiple microservices within a single repository",
+      "optimized cross-project build caching and affected dependency test executions"
+    ]
+  },
+  {
+    "name": "Web Performance Optimization",
+    "aliases": [
+      "performance optimization",
+      "latency reduction",
+      "profiling"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "profiled application bottlenecks using CPU flame graphs and reduced p95 latency by 60%",
+      "minimized memory leaks and optimized memory allocations in critical paths"
+    ]
+  },
+  {
+    "name": "Backend Development",
+    "aliases": [
+      "backend",
+      "server-side development",
+      "api development"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "built secure scalable server-side business logic, APIs, and database integrations",
+      "implemented server endpoints, background tasks, and authentication flows"
+    ]
+  },
+  {
+    "name": "Frontend Development",
+    "aliases": [
+      "frontend",
+      "client-side development",
+      "web development"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "crafted responsive modern web interfaces with rich user interactions and state management",
+      "integrated client applications with backend REST and GraphQL endpoints"
+    ]
+  },
+  {
+    "name": "Full-Stack Development",
+    "aliases": [
+      "full stack",
+      "fullstack",
+      "end-to-end development"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "developed complete end-to-end features spanning frontend UI, REST backend, and database storage",
+      "engineered full-stack platforms from database schema to interactive client interfaces"
+    ]
+  },
+  {
+    "name": "API Design",
+    "aliases": [
+      "api specification",
+      "openapi",
+      "swagger"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "authored standardized OpenAPI specifications defining request/response schemas and endpoints",
+      "designed backward-compatible API contracts with semantic versioning"
+    ]
+  },
+  {
+    "name": "Load Balancing",
+    "aliases": [
+      "traffic routing",
+      "reverse proxying"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "distributed incoming client traffic evenly across application clusters using round-robin and least-connections",
+      "configured sticky sessions and health check removal for degraded instances"
+    ]
+  },
+  {
+    "name": "Caching Strategies",
+    "aliases": [
+      "cache invalidation",
+      "write-through cache"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "designed cache-aside and write-through caching layers reducing database query frequency by 80%",
+      "configured TTL expirations and handled cache stampede thundering herd problems"
+    ]
+  },
+  {
+    "name": "Database Management",
+    "aliases": [
+      "dba",
+      "database administration"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "managed database provisioning, automated backups, index tuning, and replication monitoring",
+      "monitored query locks, connection pooling, and disk I/O metrics"
+    ]
+  },
+  {
+    "name": "Scalability",
+    "aliases": [
+      "horizontal scaling",
+      "vertical scaling",
+      "high scale"
+    ],
+    "category": "Software Architecture",
+    "parent": null,
+    "exemplars": [
+      "scaled application architecture from thousands to millions of daily active users",
+      "decoupled stateful bottlenecks to enable seamless horizontal auto-scaling"
+    ]
+  },
+  {
+    "name": "Cybersecurity",
+    "aliases": [
+      "infosec",
+      "information security",
+      "security"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": null,
+    "exemplars": [
+      "implemented threat modeling, vulnerability assessments, and secure coding practices",
+      "hardened server infrastructure against unauthorized intrusions and data breaches"
+    ]
+  },
+  {
+    "name": "OAuth",
+    "aliases": [
+      "oauth 2.0",
+      "oauth2",
+      "open authorization"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "implemented secure OAuth 2.0 authorization code flows with PKCE for third-party integrations",
+      "managed token issuance, refresh token rotation, and delegated user permissions"
+    ]
+  },
+  {
+    "name": "JSON Web Tokens",
+    "aliases": [
+      "jwt",
+      "jwts",
+      "token authentication"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "implemented stateless cryptographic user authentication and authorization using signed JWTs",
+      "validated token signatures, expirations, and claim roles across microservices"
+    ]
+  },
+  {
+    "name": "Single Sign-On",
+    "aliases": [
+      "sso",
+      "saml",
+      "saml 2.0"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "integrated corporate identity providers (IdP) using SAML 2.0 and OpenID Connect (OIDC)",
+      "streamlined user enterprise login and automated user provisioning"
+    ]
+  },
+  {
+    "name": "Cryptography",
+    "aliases": [
+      "encryption",
+      "aes",
+      "rsa",
+      "hashing"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "implemented AES-256 encryption for data at rest and RSA key exchanges for data in transit",
+      "hashed sensitive user credentials using bcrypt with salted work factors"
+    ]
+  },
+  {
+    "name": "Penetration Testing",
+    "aliases": [
+      "pen testing",
+      "ethical hacking"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "conducted simulated cyber attacks to uncover security vulnerabilities in web applications",
+      "authored penetration testing reports with actionable remediation recommendations"
+    ]
+  },
+  {
+    "name": "Vulnerability Assessment",
+    "aliases": [
+      "vulnerability scanning",
+      "snyk",
+      "trivy"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "scanned dependencies and container images for known Common Vulnerabilities and Exposures (CVEs)",
+      "automated static application security testing (SAST) in CI/CD pipelines"
+    ]
+  },
+  {
+    "name": "OWASP Top 10",
+    "aliases": [
+      "owasp",
+      "web security"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "mitigated SQL Injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF)",
+      "implemented strict Content Security Policies (CSP) and input sanitization"
+    ]
+  },
+  {
+    "name": "Network Security",
+    "aliases": [
+      "firewalls",
+      "vpn",
+      "ipsec"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "configured network firewalls, intrusion detection systems (IDS), and isolated subnet routing",
+      "managed VPN tunnels and restricted SSH bastion access via private IP subnets"
+    ]
+  },
+  {
+    "name": "SSL/TLS",
+    "aliases": [
+      "tls",
+      "https",
+      "certificates",
+      "ssl"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Network Security",
+    "exemplars": [
+      "configured automated HTTPS certificate renewals and enforced TLS 1.3 protocol standards",
+      "eliminated insecure cipher suites and implemented HSTS headers"
+    ]
+  },
+  {
+    "name": "Wireshark",
+    "aliases": [
+      "packet analysis"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Network Security",
+    "exemplars": [
+      "captured and analyzed network packet traces to troubleshoot TCP retransmissions and latency",
+      "inspected application layer protocols and decoded network communication anomalies"
+    ]
+  },
+  {
+    "name": "IAM",
+    "aliases": [
+      "identity and access management",
+      "rbac"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "enforced Role-Based Access Control (RBAC) and least-privilege policies across organizations",
+      "managed user directories, privilege escalations, and automated offboarding access revocation"
+    ]
+  },
+  {
+    "name": "SIEM",
+    "aliases": [
+      "security information and event management",
+      "soc"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "monitored security alerts, correlated suspicious log activities, and responded to incident tickets",
+      "configured automated threat detection rules for abnormal login patterns"
+    ]
+  },
+  {
+    "name": "Zero Trust",
+    "aliases": [
+      "zero trust architecture"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "implemented continuous identity verification and device posture validation before granting access",
+      "eliminated implicit trust boundaries across corporate internal networks"
+    ]
+  },
+  {
+    "name": "Threat Modeling",
+    "aliases": [
+      "stride",
+      "dread"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "identified threat vectors and security risks using the STRIDE methodology during design phases",
+      "designed countermeasures and security controls to mitigate identified architectural risks"
+    ]
+  },
+  {
+    "name": "Compliance",
+    "aliases": [
+      "soc 2",
+      "gdpr",
+      "hipaa",
+      "iso 27001"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "implemented data privacy controls, audit logging, and encryption to satisfy SOC 2 and GDPR audits",
+      "maintained documented evidence and remediated security audit findings"
+    ]
+  },
+  {
+    "name": "DNS",
+    "aliases": [
+      "domain name system",
+      "bind"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Network Security",
+    "exemplars": [
+      "managed DNS record types (A, CNAME, MX, TXT) and configured DNSSEC verification",
+      "troubleshot DNS resolution failures and propagation delays across global nameservers"
+    ]
+  },
+  {
+    "name": "TCP/IP",
+    "aliases": [
+      "networking protocols",
+      "udp",
+      "http/2",
+      "http/3"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Network Security",
+    "exemplars": [
+      "optimized network socket buffers, TCP handshakes, and investigated packet loss",
+      "implemented UDP socket broadcasting for real-time multiplayer networking"
+    ]
+  },
+  {
+    "name": "Data Privacy",
+    "aliases": [
+      "pii protection",
+      "anonymization"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "anonymized personally identifiable information (PII) and enforced strict data retention schedules",
+      "implemented end-user data deletion and export endpoints complying with privacy regulations"
+    ]
+  },
+  {
+    "name": "WAF",
+    "aliases": [
+      "web application firewall",
+      "aws waf"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "configured web application firewall rules blocking malicious bot traffic and SQL injection attempts",
+      "mitigated automated credential-stuffing attacks with rate-limiting rules"
+    ]
+  },
+  {
+    "name": "Burp Suite",
+    "aliases": [
+      "burp"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Penetration Testing",
+    "exemplars": [
+      "intercepted and modified HTTP proxy requests to audit web application vulnerability surfaces",
+      "automated vulnerability scanning and analyzed hidden parameter tampering"
+    ]
+  },
+  {
+    "name": "Incident Response",
+    "aliases": [
+      "incident management",
+      "dfir"
+    ],
+    "category": "Cybersecurity & Networking",
+    "parent": "Cybersecurity",
+    "exemplars": [
+      "coordinated immediate containment and forensic analysis during security incidents",
+      "conducted root cause investigations and hardened exposed infrastructure"
+    ]
+  },
+  {
+    "name": "React Native",
+    "aliases": [
+      "react-native",
+      "rn"
+    ],
+    "category": "Mobile Development",
+    "parent": "React",
+    "exemplars": [
+      "built cross-platform iOS and Android mobile apps from a unified React codebase",
+      "integrated native device capabilities including camera, geolocation, and push notifications"
+    ]
+  },
+  {
+    "name": "Flutter",
+    "aliases": [
+      "flutter framework"
+    ],
+    "category": "Mobile Development",
+    "parent": "Dart",
+    "exemplars": [
+      "crafted responsive cross-platform mobile apps with custom widgets and 60fps animations",
+      "managed reactive application state using Provider, Bloc, and Riverpod"
+    ]
+  },
+  {
+    "name": "Android Development",
+    "aliases": [
+      "android sdk",
+      "android apps"
+    ],
+    "category": "Mobile Development",
+    "parent": null,
+    "exemplars": [
+      "engineered native Android applications following MVVM architecture and Google Jetpack guidelines",
+      "optimized memory allocations, background WorkManager jobs, and battery consumption"
+    ]
+  },
+  {
+    "name": "iOS Development",
+    "aliases": [
+      "ios sdk",
+      "iphone apps"
+    ],
+    "category": "Mobile Development",
+    "parent": null,
+    "exemplars": [
+      "engineered native iOS mobile applications utilizing UIKit, SwiftUI, and CoreData",
+      "published apps to the Apple App Store ensuring compliance with App Store Review Guidelines"
+    ]
+  },
+  {
+    "name": "SwiftUI",
+    "aliases": [
+      "swift ui"
+    ],
+    "category": "Mobile Development",
+    "parent": "Swift",
+    "exemplars": [
+      "built declarative dynamic iOS interfaces with reactive state bindings and previews",
+      "crafted fluid animations, navigation stacks, and custom view modifiers"
+    ]
+  },
+  {
+    "name": "Jetpack Compose",
+    "aliases": [
+      "compose",
+      "android compose"
+    ],
+    "category": "Mobile Development",
+    "parent": "Kotlin",
+    "exemplars": [
+      "built modern declarative Android UI layouts with reactive state management",
+      "refactored legacy XML layouts into modular reusable composable functions"
+    ]
+  },
+  {
+    "name": "Expo",
+    "aliases": [
+      "expo cli"
+    ],
+    "category": "Mobile Development",
+    "parent": "React Native",
+    "exemplars": [
+      "accelerated React Native app development and managed over-the-air (OTA) updates using EAS",
+      "configured push notifications and native device hardware permissions with Expo SDK"
+    ]
+  },
+  {
+    "name": "Mobile UI Design",
+    "aliases": [
+      "mobile design"
+    ],
+    "category": "Mobile Development",
+    "parent": "Mobile Development",
+    "exemplars": [
+      "designed touch-friendly mobile layouts adhering to Apple HIG and Material Design rules",
+      "optimized interfaces for varying screen sizes, notches, and dynamic island viewports"
+    ]
+  },
+  {
+    "name": "Push Notifications",
+    "aliases": [
+      "fcm",
+      "apns",
+      "firebase cloud messaging"
+    ],
+    "category": "Mobile Development",
+    "parent": "Mobile Development",
+    "exemplars": [
+      "configured Apple APNs and Firebase Cloud Messaging (FCM) for targeted customer engagement",
+      "handled background notification payloads and deep-link routing on device launch"
+    ]
+  },
+  {
+    "name": "App Store Optimization",
+    "aliases": [
+      "aso"
+    ],
+    "category": "Mobile Development",
+    "parent": "Mobile Development",
+    "exemplars": [
+      "optimized app store listings, screenshots, and keywords to maximize organic install conversions",
+      "managed staged rollouts and monitored crash rates in Google Play Console"
+    ]
+  },
+  {
+    "name": "CocoaPods",
+    "aliases": [
+      "pod"
+    ],
+    "category": "Mobile Development",
+    "parent": "iOS Development",
+    "exemplars": [
+      "managed third-party native iOS dependencies and configured workspace build schemes",
+      "resolved framework build conflicts across iOS target architectures"
+    ]
+  },
+  {
+    "name": "Gradle",
+    "aliases": [
+      "gradle build"
+    ],
+    "category": "Mobile Development",
+    "parent": "DevOps & Tools",
+    "exemplars": [
+      "configured custom Gradle build scripts, flavor dimensions, and multi-module project dependencies",
+      "automated release signing keys and proguard code obfuscation rules"
+    ]
+  },
+  {
+    "name": "Mobile Offline Sync",
+    "aliases": [
+      "offline first",
+      "mobile database"
+    ],
+    "category": "Mobile Development",
+    "parent": "Mobile Development",
+    "exemplars": [
+      "implemented offline-first mobile data persistence using SQLite and conflict-free data sync",
+      "synchronized cached local actions seamlessly once network connectivity resumed"
+    ]
+  },
+  {
+    "name": "Fastlane",
+    "aliases": [
+      "fastlane automation"
+    ],
+    "category": "Mobile Development",
+    "parent": "CI/CD",
+    "exemplars": [
+      "automated mobile build signing, screenshot generation, and App Store / Play Store releases",
+      "integrated Fastlane deployment lanes into CI/CD workflows"
+    ]
+  },
+  {
+    "name": "Core Data",
+    "aliases": [
+      "coredata"
+    ],
+    "category": "Mobile Development",
+    "parent": "iOS Development",
+    "exemplars": [
+      "modeled local persistent object graphs and managed schema migrations in native iOS apps",
+      "optimized background fetch queries and NSFetchedResultsController table updates"
+    ]
+  },
+  {
+    "name": "Room Database",
+    "aliases": [
+      "android room"
+    ],
+    "category": "Mobile Development",
+    "parent": "Android Development",
+    "exemplars": [
+      "modeled local SQLite database entities and DAOs with compile-time SQL verification",
+      "observed database table changes reactively using Kotlin Flows"
+    ]
+  },
+  {
+    "name": "Figma",
+    "aliases": [
+      "figma design"
+    ],
+    "category": "Product & Design",
+    "parent": null,
+    "exemplars": [
+      "created high-fidelity interactive UI prototypes, wireframes, and design component libraries",
+      "managed design token styles, auto-layout constraints, and developer handoffs in Figma"
+    ]
+  },
+  {
+    "name": "UI/UX Design",
+    "aliases": [
+      "ui/ux",
+      "user interface design",
+      "user experience"
+    ],
+    "category": "Product & Design",
+    "parent": null,
+    "exemplars": [
+      "conducted user journey mapping, usability testing, and wireframe prototyping to optimize user retention",
+      "redesigned onboarding funnels resulting in a 35% decrease in user drop-off"
+    ]
+  },
+  {
+    "name": "Wireframing",
+    "aliases": [
+      "wireframes",
+      "low-fi wireframes"
+    ],
+    "category": "Product & Design",
+    "parent": "UI/UX Design",
+    "exemplars": [
+      "sketched low-fidelity wireframes exploring multiple layout iterations and user flows",
+      "validated structural page information architecture with stakeholders before visual design"
+    ]
+  },
+  {
+    "name": "Prototyping",
+    "aliases": [
+      "rapid prototyping",
+      "interactive prototypes"
+    ],
+    "category": "Product & Design",
+    "parent": "UI/UX Design",
+    "exemplars": [
+      "built clickable interactive prototypes simulating complex animations and user flows",
+      "tested prototypes with target customers to validate core product value propositions"
+    ]
+  },
+  {
+    "name": "User Research",
+    "aliases": [
+      "user interviews",
+      "usability testing"
+    ],
+    "category": "Product & Design",
+    "parent": "UI/UX Design",
+    "exemplars": [
+      "conducted customer interviews, survey analysis, and recorded usability testing sessions",
+      "synthesized customer pain points into actionable design requirements and persona archetypes"
+    ]
+  },
+  {
+    "name": "Design Systems",
+    "aliases": [
+      "design system",
+      "component library"
+    ],
+    "category": "Product & Design",
+    "parent": "UI/UX Design",
+    "exemplars": [
+      "built unified enterprise design system containing standardized color tokens, typography, and UI widgets",
+      "aligned engineering component libraries with Figma design kits"
+    ]
+  },
+  {
+    "name": "Product Management",
+    "aliases": [
+      "product owner",
+      "product roadmap"
+    ],
+    "category": "Product & Design",
+    "parent": null,
+    "exemplars": [
+      "defined multi-quarter product roadmaps, prioritization frameworks, and feature requirement specs",
+      "aligned engineering, sales, and design teams to deliver high-impact product releases"
+    ]
+  },
+  {
+    "name": "JIRA",
+    "aliases": [
+      "jira software",
+      "atlassian jira"
+    ],
+    "category": "Product & Design",
+    "parent": "Agile",
+    "exemplars": [
+      "managed agile sprint backlogs, epics, user stories, story point estimation, and velocity charts",
+      "configured custom issue workflows, automations, and sprint board filters in JIRA"
+    ]
+  },
+  {
+    "name": "Confluence",
+    "aliases": [
+      "atlassian confluence"
+    ],
+    "category": "Product & Design",
+    "parent": "Product & Design",
+    "exemplars": [
+      "authored comprehensive technical specifications, RFC architecture proposals, and team runbooks",
+      "maintained centralized engineering knowledge bases and product documentation"
+    ]
+  },
+  {
+    "name": "Agile",
+    "aliases": [
+      "agile methodology",
+      "agile development"
+    ],
+    "category": "Product & Design",
+    "parent": null,
+    "exemplars": [
+      "participated in two-week agile sprint iterations delivering incremental software value",
+      "adapted rapidly to changing customer requirements through continuous feedback cycles"
+    ]
+  },
+  {
+    "name": "Scrum",
+    "aliases": [
+      "scrum master",
+      "scrum framework"
+    ],
+    "category": "Product & Design",
+    "parent": "Agile",
+    "exemplars": [
+      "facilitated daily standups, sprint planning, backlog grooming, and retrospective meetings",
+      "tracked team sprint velocity and removed blocking impediments for developers"
+    ]
+  },
+  {
+    "name": "Kanban",
+    "aliases": [
+      "kanban board"
+    ],
+    "category": "Product & Design",
+    "parent": "Agile",
+    "exemplars": [
+      "managed continuous work-in-progress (WIP) limits to optimize delivery cycle time",
+      "visualized engineering task bottlenecks on real-time Kanban boards"
+    ]
+  },
+  {
+    "name": "Sprint Planning",
+    "aliases": [
+      "backlog refinement",
+      "sprint estimation"
+    ],
+    "category": "Product & Design",
+    "parent": "Agile",
+    "exemplars": [
+      "broke down complex roadmap features into well-defined story point estimated tickets",
+      "negotiated sprint scope with engineering leads based on historical team capacity"
+    ]
+  },
+  {
+    "name": "User Stories",
+    "aliases": [
+      "user story mapping",
+      "acceptance criteria"
+    ],
+    "category": "Product & Design",
+    "parent": "Product Management",
+    "exemplars": [
+      "authored detailed user stories with testable Given-When-Then acceptance criteria",
+      "mapped end-to-end customer journey stories to identify release MVP boundaries"
+    ]
+  },
+  {
+    "name": "Product Analytics",
+    "aliases": [
+      "mixpanel",
+      "amplitude",
+      "funnel analysis"
+    ],
+    "category": "Product & Design",
+    "parent": "Product Management",
+    "exemplars": [
+      "tracked user cohort retention, conversion funnels, and event telemetries in Mixpanel/Amplitude",
+      "derived product recommendations from quantitative behavioral user analytics"
+    ]
+  },
+  {
+    "name": "Google Analytics",
+    "aliases": [
+      "ga4",
+      "google analytics 4"
+    ],
+    "category": "Product & Design",
+    "parent": "Product Analytics",
+    "exemplars": [
+      "configured event tracking, conversion goals, and user acquisition attribution funnels",
+      "analyzed organic web traffic trends and bounce rates across marketing campaigns"
+    ]
+  },
+  {
+    "name": "Accessibility",
+    "aliases": [
+      "a11y",
+      "wcag",
+      "aria"
+    ],
+    "category": "Product & Design",
+    "parent": "UI/UX Design",
+    "exemplars": [
+      "audited and remediated web accessibility barriers ensuring WCAG 2.1 AA compliance",
+      "implemented proper ARIA labels, semantic landmark roles, and keyboard navigation support"
+    ]
+  },
+  {
+    "name": "Adobe XD",
+    "aliases": [
+      "adobe-xd"
+    ],
+    "category": "Product & Design",
+    "parent": "UI/UX Design",
+    "exemplars": [
+      "designed responsive web layouts and interactive user flows in Adobe XD",
+      "shared clickable wireframe prototypes with clients for usability feedback"
+    ]
+  },
+  {
+    "name": "Information Architecture",
+    "aliases": [
+      "ia",
+      "site mapping"
+    ],
+    "category": "Product & Design",
+    "parent": "UI/UX Design",
+    "exemplars": [
+      "structured clear navigation taxonomies and hierarchical content models for complex apps",
+      "conducted card sorting exercises to optimize user search and menu discovery"
+    ]
+  },
+  {
+    "name": "Benchmarking",
+    "aliases": [
+      "competitive analysis",
+      "competitor benchmarking"
+    ],
+    "category": "Product & Design",
+    "parent": "Product Management",
+    "exemplars": [
+      "conducted competitive market feature benchmarking to identify product differentiation opportunities",
+      "evaluated industry standards and pricing models across competing platforms"
+    ]
+  },
+  {
+    "name": "Technical Writing",
+    "aliases": [
+      "documentation",
+      "api documentation"
+    ],
+    "category": "Product & Design",
+    "parent": null,
+    "exemplars": [
+      "authored detailed developer documentation, API reference guides, and system onboarding manuals",
+      "maintained clear public-facing integration tutorials and code snippets"
+    ]
+  },
+  {
+    "name": "Trello",
+    "aliases": [
+      "trello board"
+    ],
+    "category": "Product & Design",
+    "parent": "Kanban",
+    "exemplars": [
+      "organized cross-functional task cards, deadlines, and project deliverables on visual boards",
+      "collaborated with marketing and design stakeholders on shared deliverable timelines"
+    ]
+  },
+  {
+    "name": "Communication",
+    "aliases": [
+      "communication skills",
+      "written communication",
+      "verbal communication"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "articulated technical concepts clearly to both engineering peers and non-technical executives",
+      "authored concise project status reports, technical proposals, and release announcements"
+    ]
+  },
+  {
+    "name": "Team Leadership",
+    "aliases": [
+      "leadership",
+      "tech lead",
+      "engineering leadership"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "led and guided an engineering squad through successful architecture delivery milestones",
+      "empowered team members through clear goal setting, autonomy, and proactive obstacle removal"
+    ]
+  },
+  {
+    "name": "Problem Solving",
+    "aliases": [
+      "problem-solving",
+      "analytical troubleshooting",
+      "root cause analysis"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "diagnosed complex multi-system production bugs and implemented resilient root cause fixes",
+      "analyzed intricate engineering tradeoffs to deliver elegant, cost-effective technical solutions"
+    ]
+  },
+  {
+    "name": "Critical Thinking",
+    "aliases": [
+      "analytical thinking"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "evaluated architectural proposals critically weighing scalability, maintenance, and delivery speed",
+      "challenged assumptions and audited system constraints before committing engineering resources"
+    ]
+  },
+  {
+    "name": "Time Management",
+    "aliases": [
+      "prioritization",
+      "deadline management"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "balanced multiple concurrent high-priority engineering workstreams and met strict release deadlines",
+      "prioritized critical path tasks effectively while minimizing context switching"
+    ]
+  },
+  {
+    "name": "Collaboration",
+    "aliases": [
+      "teamwork",
+      "cross-functional collaboration"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "collaborated closely across product, design, and QA teams to deliver cohesive customer features",
+      "fostered an inclusive, psychologically safe team environment built on mutual respect"
+    ]
+  },
+  {
+    "name": "Adaptability",
+    "aliases": [
+      "flexibility",
+      "resilience"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "adapted smoothly to shifting project priorities, sudden re-architectures, and new frameworks",
+      "navigated ambiguity in fast-paced startup environments with proactive problem-solving"
+    ]
+  },
+  {
+    "name": "Mentoring",
+    "aliases": [
+      "mentorship",
+      "coaching",
+      "knowledge sharing"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "mentored junior developers on clean coding patterns, debugging skills, and career development",
+      "conducted weekly 1-on-1 pairing sessions to accelerate onboarding of new team members"
+    ]
+  },
+  {
+    "name": "Presentation Skills",
+    "aliases": [
+      "public speaking",
+      "presenting"
+    ],
+    "category": "Soft Skills",
+    "parent": "Communication",
+    "exemplars": [
+      "presented technical demos and architectural proposals to company leadership and conference audiences",
+      "distilled complex data insights into engaging, visually compelling slide presentations"
+    ]
+  },
+  {
+    "name": "Conflict Resolution",
+    "aliases": [
+      "negotiation",
+      "dispute resolution"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "mediated technical disagreements among team members to reach consensus and shared ownership",
+      "facilitated respectful discussions that aligned opposing architectural viewpoints"
+    ]
+  },
+  {
+    "name": "Decision Making",
+    "aliases": [
+      "strategic decision making"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "made decisive technical and architectural choices under conditions of uncertainty and time pressure",
+      "documented risk assessments and mitigation strategies for critical business decisions"
+    ]
+  },
+  {
+    "name": "Stakeholder Management",
+    "aliases": [
+      "stakeholder communication",
+      "client management"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "managed executive expectations through transparent project milestone tracking and risk alerts",
+      "aligned technical deliverables directly with business ROI goals and client expectations"
+    ]
+  },
+  {
+    "name": "Analytical Thinking",
+    "aliases": [
+      "data-driven thinking"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "leveraged data telemetry and user metrics to guide technical decisions rather than intuition",
+      "deconstructed ambiguous business problems into rigorous structured quantitative hypotheses"
+    ]
+  },
+  {
+    "name": "Emotional Intelligence",
+    "aliases": [
+      "eq",
+      "interpersonal skills"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "demonstrated deep empathy, active listening, and strong interpersonal awareness across teams",
+      "navigated high-stress production outage scenarios with composure and collaborative calm"
+    ]
+  },
+  {
+    "name": "Negotiation",
+    "aliases": [
+      "commercial negotiation",
+      "scope negotiation"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "negotiated project scope boundaries and delivery timelines constructively with product leads",
+      "balanced technical debt refactoring requests against urgent commercial feature deadlines"
+    ]
+  },
+  {
+    "name": "Active Listening",
+    "aliases": [
+      "listening skills"
+    ],
+    "category": "Soft Skills",
+    "parent": "Communication",
+    "exemplars": [
+      "listened attentively to customer feedback and team concerns before formulating solutions",
+      "clarified ambiguous requirements by asking targeted questions and reflecting back intent"
+    ]
+  },
+  {
+    "name": "Work Ethic",
+    "aliases": [
+      "dedication",
+      "reliability"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "demonstrated consistent ownership of critical deliverables from inception through production support",
+      "went above and beyond to ensure mission-critical platform releases succeeded seamlessly"
+    ]
+  },
+  {
+    "name": "Detail-Oriented",
+    "aliases": [
+      "attention to detail"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "caught subtle edge cases, race conditions, and formatting discrepancies before deployment",
+      "maintained exacting standards for code cleanliness, test coverage, and documentation accuracy"
+    ]
+  },
+  {
+    "name": "Strategic Thinking",
+    "aliases": [
+      "long-term planning"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "aligned immediate engineering tasks with multi-year organizational architecture roadmaps",
+      "anticipated future scalability bottlenecks and proactively designed scalable foundations"
+    ]
+  },
+  {
+    "name": "Continuous Learning",
+    "aliases": [
+      "growth mindset",
+      "self-starter"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "consistently researched emerging technologies, modern libraries, and industry best practices",
+      "rapidly mastered new programming frameworks to solve novel engineering challenges"
+    ]
+  },
+  {
+    "name": "Empathy",
+    "aliases": [
+      "user empathy",
+      "customer empathy"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "championed user empathy to design intuitive software that genuinely alleviates customer pain",
+      "advocated for user-centric design choices during technical implementation discussions"
+    ]
+  },
+  {
+    "name": "Creative Thinking",
+    "aliases": [
+      "creativity",
+      "innovation"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "conceived novel architectural workarounds to overcome rigid legacy system limitations",
+      "invented innovative automation tools that saved the team dozens of hours weekly"
+    ]
+  },
+  {
+    "name": "Accountability",
+    "aliases": [
+      "ownership"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "took complete end-to-end responsibility for system stability, defects, and sprint outcomes",
+      "owned up to production blunders transparently and led blameless post-mortem remediations"
+    ]
+  },
+  {
+    "name": "Cross-Functional Leadership",
+    "aliases": [
+      "matrix leadership"
+    ],
+    "category": "Soft Skills",
+    "parent": "Team Leadership",
+    "exemplars": [
+      "orchestrated cohesive delivery across engineering, product design, marketing, and legal teams",
+      "broke down organizational silos to drive alignment on major company-wide initiatives"
+    ]
+  },
+  {
+    "name": "Project Management",
+    "aliases": [
+      "project delivery",
+      "pmp"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "managed end-to-end project timelines, resource allocations, risk logs, and deliverables",
+      "delivered complex technical initiatives on schedule and within budget constraints"
+    ]
+  },
+  {
+    "name": "Agile Mindset",
+    "aliases": [
+      "iterative mindset"
+    ],
+    "category": "Soft Skills",
+    "parent": "Agile",
+    "exemplars": [
+      "embraced iterative feedback loops and valued functioning software over rigid documentation",
+      "iterated rapidly based on real user validation rather than speculative perfection"
+    ]
+  },
+  {
+    "name": "Customer Focus",
+    "aliases": [
+      "customer-centric",
+      "client focus"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "prioritized customer value in every technical architectural decision and bug triage session",
+      "interacted directly with key enterprise clients to resolve mission-critical issues"
+    ]
+  },
+  {
+    "name": "Organization",
+    "aliases": [
+      "organizational skills"
+    ],
+    "category": "Soft Skills",
+    "parent": null,
+    "exemplars": [
+      "maintained structured documentation, clean issue boards, and predictable release cadences",
+      "coordinated multi-team deployment dependencies with zero release conflicts"
+    ]
+  }
+]
