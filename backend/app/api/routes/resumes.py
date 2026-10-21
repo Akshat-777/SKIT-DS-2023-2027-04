@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, UploadFile, File, BackgroundTasks, status, Query, HTTPException
+from fastapi import APIRouter, Depends, UploadFile, File, BackgroundTasks, status, Query, HTTPException, Request, Response
 from typing import Dict, Any, Optional
 from sqlalchemy.orm import Session
 
@@ -7,8 +7,8 @@ from app.api.routes.auth_dep import get_current_user
 from app.services.resume_service import ResumeService, process_resume_background
 from app.db.repositories import ResumeRepository
 from app.schemas.resume import (
-    ResumeUploadResponse, ResumeStatusResponse,
-    MarketFit, Roadmap, Critique, ErrorResponse
+    ResumeUploadResponse, ResumeStatusResponse, AnalyzeResumeRequest,
+    ScoreResult, MarketFit, Roadmap, Critique, ErrorResponse
 )
 from app.schemas.crud_schemas import ResumeResponse, PaginatedResponse, PaginationMeta
 
@@ -137,17 +137,63 @@ def hard_delete_resume(
         )
     return {"message": f"Resume '{id}' and associated file permanently deleted."}
 
+@router.post(
+    "/{id}/analyze",
+    response_model=ScoreResult,
+    status_code=status.HTTP_200_OK,
+    summary="Analyze Resume with Recruiter-Grade ATS Scoring & Skill Gap",
+    responses={
+        200: {"model": ScoreResult, "description": "Analysis completed and ScoreResult returned."},
+        404: {"model": ErrorResponse, "description": "Resume not found."},
+        409: {"model": ErrorResponse, "description": "Resume parsing in progress."},
+        422: {"model": ErrorResponse, "description": "Target role not found in role taxonomy or validation error."},
+        502: {"model": ErrorResponse, "description": "Scoring service unavailable or circuit breaker open."},
+        504: {"model": ErrorResponse, "description": "Scoring service timeout."},
+    }
+)
+async def analyze_resume(
+    id: str,
+    payload: AnalyzeResumeRequest,
+    response: Response,
+    request: Request,
+    current_user: dict = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    FR-003: Loads ParsedResume from PostgreSQL, validates role taxonomy,
+    queries Aryan's scoring service via resilient HTTP client, caches result in Redis/Memory (TTL 1h),
+    stores ScoreResult in analyses table, and returns it.
+    Exposes X-Cache ('HIT' / 'MISS') and X-Response-Time-Ms headers.
+    """
+    user_id = current_user.get("sub")
+    request_id = getattr(request.state, "request_id", None)
+    score_result, is_cache_hit, latency_ms = await ResumeService.analyze_resume(
+        resume_id=id,
+        target_role=payload.target_role,
+        user_id=user_id,
+        db=db,
+        request_id=request_id
+    )
+    response.headers["X-Cache"] = "HIT" if is_cache_hit else "MISS"
+    response.headers["X-Response-Time-Ms"] = f"{latency_ms:.2f}"
+    return score_result
+
 @router.get(
     "/{id}/analysis",
-    summary="Get Parsed Resume and Score Result"
+    summary="Get Latest Stored Resume Analysis",
+    responses={
+        200: {"description": "Latest stored ScoreResult and ParsedResume."},
+        404: {"model": ErrorResponse, "description": "Analysis or resume not found."}
+    }
 )
 def get_resume_analysis(
     id: str,
     current_user: dict = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
+    """Returns the latest stored analysis result for this resume."""
     user_id = current_user.get("sub")
-    return ResumeService.get_parsed_and_score(id, user_id, db=db)
+    return ResumeService.get_latest_analysis(id, user_id, db=db)
 
 @router.get(
     "/{id}/market-fit",

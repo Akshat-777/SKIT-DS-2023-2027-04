@@ -22,6 +22,18 @@ class Settings(BaseSettings):
     EMBEDDING_SERVICE_URL: str = "http://localhost:8002"
     SCORING_SERVICE_URL: str = "http://localhost:8003"
 
+    # Aryan's Scoring Service Client & Circuit Breaker Config
+    SCORING_TIMEOUT_SEC: float = 4.5
+    SCORING_RETRY_ATTEMPTS: int = 3
+    SCORING_RETRY_BACKOFF_FACTOR: float = 0.5
+    CIRCUIT_BREAKER_FAILURE_THRESHOLD: int = 3
+    CIRCUIT_BREAKER_RECOVERY_TIMEOUT_SEC: float = 30.0
+
+    # Redis & Performance Caching
+    REDIS_URL: str = "redis://localhost:6379/0"
+    CACHE_TTL_SECONDS: int = 3600
+    MARKET_DATA_VERSION: str = "2026.10"
+
     # Vector Store & Market Ingestion Configuration
     CHROMA_DB_DIR: str = "./chroma_db"
     JOB_BOARD_API_KEY: str = ""

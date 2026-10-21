@@ -1,5 +1,5 @@
 from typing import List, Dict, Any, Optional, Literal
-from pydantic import BaseModel, Field, EmailStr
+from pydantic import BaseModel, Field, EmailStr, field_validator
 
 # Standard Error Contract
 class ErrorDetail(BaseModel):
@@ -20,6 +20,11 @@ class ResumeStatusResponse(BaseModel):
     resume_id: str
     status: Literal["uploaded", "extracting", "parsing", "scoring", "ready", "failed"]
     updated_at: str
+    failed_step: Optional[str] = None
+    error_message: Optional[str] = None
+
+class AnalyzeResumeRequest(BaseModel):
+    target_role: str = Field(..., min_length=2, max_length=100, description="Target job role to score resume against")
 
 # Shared Contract 1: ParsedResume
 class EducationItem(BaseModel):
@@ -52,16 +57,16 @@ class ParsedResume(BaseModel):
 
 # Shared Contract 2: ScoreResult
 class ScoreBreakdown(BaseModel):
-    keyword_match: float
-    semantic_similarity: float
-    section_completeness: float
-    formatting: float
-    experience_relevance: float
-    quantified_impact: float
+    keyword_match: float = Field(ge=0.0, le=100.0)
+    semantic_similarity: float = Field(ge=0.0, le=100.0)
+    section_completeness: float = Field(ge=0.0, le=100.0)
+    formatting: float = Field(ge=0.0, le=100.0)
+    experience_relevance: float = Field(ge=0.0, le=100.0)
+    quantified_impact: float = Field(ge=0.0, le=100.0)
 
 class MissingSkillItem(BaseModel):
     skill: str
-    demand_pct: float
+    demand_pct: float = Field(ge=0.0, le=100.0)
 
 class SkillGap(BaseModel):
     matched: List[str]
@@ -75,6 +80,15 @@ class ScoreResult(BaseModel):
     ats_score: int = Field(ge=0, le=100)
     breakdown: ScoreBreakdown
     skill_gap: SkillGap
+
+    @field_validator("ats_score", mode="before")
+    @classmethod
+    def validate_and_round_ats_score(cls, v: Any) -> int:
+        if isinstance(v, float):
+            return int(round(v))
+        if isinstance(v, (int, str)):
+            return int(v)
+        return v
 
 # Shared Contract 3: MarketFit
 class MarketFit(BaseModel):
