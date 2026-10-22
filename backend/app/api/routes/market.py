@@ -58,6 +58,8 @@ def get_similar_jobs(
         )
 
 
+from app.services.cache_service import cache_service
+
 @router.post(
     "/admin/market/refresh",
     summary="Trigger Manual Refresh of Market Data Pipeline"
@@ -68,9 +70,11 @@ async def refresh_market_data(
     """
     Manual trigger to pull job postings from job-board adapters, deduplicate,
     store structured data in PostgreSQL, and update ChromaDB vector collection.
+    Invalidates cached scoring results so future scores reflect fresh market data.
     """
     try:
         stats = await trigger_manual_market_refresh(db=db)
+        cache_service.invalidate_market_refresh()
         return {
             "message": "Market data ingestion pipeline executed successfully.",
             "stats": stats

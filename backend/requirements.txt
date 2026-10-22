@@ -26,3 +26,5 @@ datasets
 seqeval
 scikit-learn
 accelerate
+redis>=5.0.0
+locust>=2.20.0

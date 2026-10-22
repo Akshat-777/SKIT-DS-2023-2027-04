@@ -40,6 +40,8 @@ class Resume(Base):
     file_type = Column(String(50), nullable=False)
     status = Column(String(50), nullable=False, default="uploaded")
     ocr_used = Column(Boolean, nullable=False, default=False)
+    failed_step = Column(String(100), nullable=True)
+    error_message = Column(Text, nullable=True)
     consent_given = Column(Boolean, nullable=False, default=True)
     retention_days = Column(Integer, nullable=False, default=365)
     is_deleted = Column(Boolean, nullable=False, default=False, index=True)

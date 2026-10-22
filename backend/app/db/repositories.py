@@ -140,13 +140,24 @@ class ResumeRepository:
         return resumes, total
 
     @staticmethod
-    def update_status(db: Session, resume_id: str, status: str, ocr_used: Optional[bool] = None) -> Optional[Resume]:
+    def update_status(
+        db: Session,
+        resume_id: str,
+        status: str,
+        ocr_used: Optional[bool] = None,
+        failed_step: Optional[str] = None,
+        error_message: Optional[str] = None
+    ) -> Optional[Resume]:
         resume = db.query(Resume).filter(Resume.id == resume_id, Resume.is_deleted == False).first()
         if not resume:
             return None
         resume.status = status
         if ocr_used is not None:
             resume.ocr_used = ocr_used
+        if failed_step is not None:
+            resume.failed_step = failed_step
+        if error_message is not None:
+            resume.error_message = error_message
         resume.updated_at = utc_now()
         db.commit()
         db.refresh(resume)
@@ -429,6 +440,36 @@ class AnalysisRepository:
         total = q.count()
         items = q.order_by(desc(Analysis.created_at)).offset((page - 1) * page_size).limit(page_size).all()
         return items, total
+
+
+class RoleTaxonomyRepository:
+    KNOWN_ROLES = [
+        "Backend Developer", "Full Stack Developer", "Data Scientist",
+        "ML Engineer", "Data Analyst", "DevOps Engineer", "Software Engineer",
+        "AI / ML Engineer", "Frontend Engineer", "Full Stack Data Engineer"
+    ]
+
+    @staticmethod
+    def get_by_name(db: Session, role_name: str) -> Optional[RoleTaxonomy]:
+        normalized = role_name.strip().lower()
+        return db.query(RoleTaxonomy).filter(func.lower(RoleTaxonomy.role_name) == normalized).first()
+
+    @staticmethod
+    def list_roles(db: Session) -> List[RoleTaxonomy]:
+        return db.query(RoleTaxonomy).all()
+
+    @staticmethod
+    def is_valid_role(db: Session, role_name: str) -> bool:
+        if not role_name or not role_name.strip():
+            return False
+        normalized = role_name.strip().lower()
+        role = db.query(RoleTaxonomy).filter(func.lower(RoleTaxonomy.role_name) == normalized).first()
+        if role:
+            return True
+        for known in RoleTaxonomyRepository.KNOWN_ROLES:
+            if known.lower() == normalized:
+                return True
+        return False
 
 
 from sqlalchemy import cast
