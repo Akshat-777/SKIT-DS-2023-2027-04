@@ -6,11 +6,81 @@ from parsed resume data — all user-specific, no hardcoded values.
 
 import re
 import logging
+import json
+import math
+from functools import lru_cache
+from pathlib import Path
 from typing import List, Dict, Any, Optional
 
 from app.services.nlp_parser import ROLE_SKILL_DEMAND, TRENDING_SKILLS
+from app.services.embedding_client import embedding_client
 
 logger = logging.getLogger("careerlens.scorer")
+
+_PROJECT_ROOT = Path(__file__).resolve().parents[3]
+_WEIGHTS_PATH = Path(__file__).resolve().parents[1] / "core" / "ats_weights.json"
+
+
+@lru_cache(maxsize=1)
+def _scoring_weights() -> Dict[str, float]:
+    """Load and validate the transparent composite weights once per process."""
+    weights = json.loads(_WEIGHTS_PATH.read_text(encoding="utf-8"))
+    expected = {"keyword_match", "semantic_similarity", "section_completeness",
+                "formatting", "experience_relevance", "quantified_impact"}
+    if set(weights) != expected or not math.isclose(sum(weights.values()), 1.0, abs_tol=1e-9):
+        raise ValueError("ATS weights must define all six factors and sum to 1.0")
+    return {key: float(value) for key, value in weights.items()}
+
+
+@lru_cache(maxsize=1)
+def _skill_aliases() -> Dict[str, str]:
+    """Read canonical skill names and aliases from User Story 2's taxonomy."""
+    path = _PROJECT_ROOT / "data" / "processed" / "skills_taxonomy.json"
+    try:
+        entries = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    aliases: Dict[str, str] = {}
+    for entry in entries:
+        canonical = str(entry.get("name", "")).strip()
+        if canonical:
+            for value in [canonical, *entry.get("aliases", [])]:
+                aliases[str(value).casefold().strip()] = canonical
+    return aliases
+
+
+def _canonical_skill(value: str) -> str:
+    clean = re.sub(r"\s+", " ", str(value or "")).strip()
+    return _skill_aliases().get(clean.casefold(), clean)
+
+
+@lru_cache(maxsize=32)
+def _role_market_demand(role: str) -> Dict[str, float]:
+    """Read the processed role-wise demand index, with the legacy table as fallback."""
+    path = _PROJECT_ROOT / "data" / "processed" / "skill_demand.json"
+    try:
+        rows = json.loads(path.read_text(encoding="utf-8"))
+        matching = [row for row in rows if row.get("role", "").casefold() == role.casefold()
+                    and row.get("seniority") == "All"]
+        if matching:
+            return {_canonical_skill(row["skill"]): float(row["demand_pct"])
+                    for row in matching if row.get("skill") and row.get("demand_pct") is not None}
+    except (OSError, json.JSONDecodeError, TypeError, ValueError):
+        logger.debug("Market demand index unavailable; using configured starter demand for %s", role)
+    fallback_role = role if role in ROLE_SKILL_DEMAND else "Software Engineer"
+    return {_canonical_skill(skill): float(demand)
+            for skill, demand in ROLE_SKILL_DEMAND[fallback_role].items()}
+
+
+def _cosine_similarity(left: List[float], right: List[float]) -> float:
+    if len(left) != len(right) or not left:
+        raise ValueError("Embedding vectors must have the same non-zero dimension")
+    dot = sum(a * b for a, b in zip(left, right))
+    left_norm = math.sqrt(sum(a * a for a in left))
+    right_norm = math.sqrt(sum(b * b for b in right))
+    if not left_norm or not right_norm:
+        raise ValueError("Embedding vectors must be non-zero")
+    return max(0.0, min(1.0, dot / (left_norm * right_norm)))
 
 # ---------------------------------------------------------------------------
 # Role detection heuristic
@@ -65,24 +135,31 @@ def compute_ats_score(
     """
     Compute a breakdown ATS score from 0–100 based on the user's actual resume data.
     """
-    role_demand = ROLE_SKILL_DEMAND.get(target_role, ROLE_SKILL_DEMAND["Software Engineer"])
-    extracted_skill_names = {s["name"].lower() for s in skills}
+    role_demand = _role_market_demand(target_role)
+    extracted_skill_names = {_canonical_skill(s.get("name", "")).casefold() for s in skills
+                             if s.get("name")}
 
-    # 1. Keyword match: what % of high-demand skills appear
-    matched_required = [
-        sk for sk in role_demand
-        if sk.lower() in extracted_skill_names
-    ]
-    keyword_match = round(min(100.0, (len(matched_required) / max(len(role_demand), 1)) * 100), 1)
+    # Demand-weighted matching rewards skills that appear in more job postings.
+    total_demand = sum(max(0.0, value) for value in role_demand.values())
+    matched_required = [skill for skill in role_demand if skill.casefold() in extracted_skill_names]
+    matched_demand = sum(max(0.0, role_demand[skill]) for skill in matched_required)
+    keyword_match = round(100 * matched_demand / total_demand, 1) if total_demand else 0.0
 
-    # 2. Semantic similarity proxy: avg skill confidence of matched skills
-    matched_confidences = [
-        s["confidence"] for s in skills if s["name"] in matched_required
-    ]
-    semantic_sim = round(
-        (sum(matched_confidences) / max(len(matched_confidences), 1)) * 100,
-        1
-    ) if matched_confidences else 50.0
+    # Compare resume text with a compact role profile using the live embedding
+    # service. If that service is offline, use a neutral score and explain why.
+    demand_skills = sorted(role_demand.items(), key=lambda item: -item[1])[:15]
+    role_profile = f"Target role: {target_role}. In-demand skills: " + ", ".join(
+        skill for skill, _demand in demand_skills
+    )
+    try:
+        vectors = embedding_client.get_service_embeddings_batch(
+            [raw_text[:12000], role_profile]
+        )
+        semantic_sim = round(_cosine_similarity(vectors[0], vectors[1]) * 100, 1) if vectors else 50.0
+        semantic_available = vectors is not None
+    except (ValueError, TypeError, IndexError) as exc:
+        logger.debug("Could not score semantic similarity: %s", exc)
+        semantic_sim, semantic_available = 50.0, False
 
     # 3. Section completeness
     important_sections = ["education", "experience", "skills", "contact", "summary"]
@@ -118,17 +195,36 @@ def compute_ats_score(
         "quantified_impact": round(quantified_impact, 1),
     }
 
-    # Weighted composite ATS score
-    ats_score = round(
-        keyword_match * 0.30
-        + semantic_sim * 0.20
-        + section_completeness * 0.15
-        + formatting * 0.10
-        + experience_relevance * 0.15
-        + quantified_impact * 0.10
-    )
+    weights = _scoring_weights()
+    ats_score = round(sum(breakdown[name] * weights[name] for name in weights))
+    missing_sections = [name for name in important_sections if not sections.get(name)]
+    missing_keywords = [skill for skill, _demand in demand_skills
+                        if skill.casefold() not in extracted_skill_names][:5]
+    reasons = [
+        {"factor": "keyword_match", "score": str(keyword_match),
+         "reason": f"Matched {len(matched_required)} role skills, covering {keyword_match:.1f}% of observed market demand.",
+         "how_to_improve": ("Add evidence for: " + ", ".join(missing_keywords)) if missing_keywords
+                            else "Keep the highest-demand skills tied to concrete experience."},
+        {"factor": "semantic_similarity", "score": str(semantic_sim),
+         "reason": ("Compared the resume with the target-role profile using the embedding service."
+                    if semantic_available else "Embedding service unavailable; a neutral score was used."),
+         "how_to_improve": "Describe relevant projects and responsibilities using the language of the target role."},
+        {"factor": "section_completeness", "score": str(section_completeness),
+         "reason": f"{present} of {len(important_sections)} expected resume sections were detected.",
+         "how_to_improve": ("Add: " + ", ".join(missing_sections)) if missing_sections
+                            else "Keep each section clearly labeled."},
+        {"factor": "formatting", "score": str(round(formatting, 1)),
+         "reason": f"The resume contains {word_count} words; the current heuristic checks document length.",
+         "how_to_improve": "Use concise, consistently formatted sections and bullet points."},
+        {"factor": "experience_relevance", "score": str(experience_relevance),
+         "reason": f"{sum(bool(e.get('bullets')) for e in experience)} of {len(experience)} experience entries have bullets.",
+         "how_to_improve": "Add role-relevant accomplishment bullets to each experience entry."},
+        {"factor": "quantified_impact", "score": str(round(quantified_impact, 1)),
+         "reason": f"Found {numbers_in_text} measurable values in the resume text.",
+         "how_to_improve": "Add verified measures such as time saved, users served, or error reduction."},
+    ]
 
-    return {"ats_score": max(1, min(100, ats_score)), "breakdown": breakdown}
+    return {"ats_score": max(0, min(100, ats_score)), "breakdown": breakdown, "reasons": reasons}
 
 
 def compute_skill_gap(
@@ -137,28 +233,31 @@ def compute_skill_gap(
     target_role: str,
 ) -> Dict[str, Any]:
     """Compute matched/missing/weak/trending skill gap for the target role."""
-    role_demand = ROLE_SKILL_DEMAND.get(target_role, ROLE_SKILL_DEMAND["Software Engineer"])
-    extracted_skill_names = {s["name"].lower(): s["name"] for s in skills}
+    role_demand = _role_market_demand(target_role)
+    extracted_skill_names = {_canonical_skill(s.get("name", "")).casefold(): s.get("name", "")
+                             for s in skills if s.get("name")}
 
     matched: List[str] = []
     missing: List[Dict[str, Any]] = []
 
     for sk, demand_pct in sorted(role_demand.items(), key=lambda x: -x[1]):
-        if sk.lower() in extracted_skill_names:
-            matched.append(sk)
+        canonical = _canonical_skill(sk)
+        if canonical.casefold() in extracted_skill_names:
+            matched.append(canonical)
         else:
-            missing.append({"skill": sk, "demand_pct": demand_pct})
+            missing.append({"skill": canonical, "demand_pct": demand_pct})
 
     # Weak: matched skills with low confidence
     weak = [
         s["name"] for s in skills
-        if s["name"] in matched and s["confidence"] < 0.80
+        if _canonical_skill(s.get("name", "")) in matched
+        and float(s.get("confidence", 0.0)) < 0.80
     ]
 
     # Trending: skills not in their resume and trending in industry
     trending = [
         t for t in TRENDING_SKILLS
-        if t.lower() not in extracted_skill_names
+        if _canonical_skill(t).casefold() not in extracted_skill_names
     ][:5]
 
     return {

@@ -1,0 +1,8 @@
+{
+  "keyword_match": 0.30,
+  "semantic_similarity": 0.20,
+  "section_completeness": 0.15,
+  "formatting": 0.10,
+  "experience_relevance": 0.15,
+  "quantified_impact": 0.10
+}

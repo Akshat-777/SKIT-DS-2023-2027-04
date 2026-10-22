@@ -3,19 +3,41 @@ import logging
 import time
 import math
 import hashlib
+import os
+import threading
 from typing import List, Optional
 from app.core.config import settings
 
 logger = logging.getLogger("careerlens.embedding_client")
 
-# Optional sentence-transformers local fallback
-try:
-    from sentence_transformers import SentenceTransformer
-    _LOCAL_MODEL = SentenceTransformer("all-MiniLM-L6-v2")
-    logger.info("Local SentenceTransformer fallback initialized successfully.")
-except Exception as e:
-    logger.info(f"SentenceTransformer local model fallback using deterministic vector generator.")
-    _LOCAL_MODEL = None
+# Optional local model fallback. Load only if the embedding API is unavailable and
+# only on first use; importing the backend should not download a model or block
+# startup. Keep this model PyTorch-only because Transformers may otherwise probe
+# an optional TensorFlow installation that is broken on some Windows machines.
+_LOCAL_MODEL = None
+_LOCAL_MODEL_CHECKED = False
+_LOCAL_MODEL_LOCK = threading.Lock()
+
+
+def _get_local_model():
+    global _LOCAL_MODEL, _LOCAL_MODEL_CHECKED
+    if _LOCAL_MODEL_CHECKED:
+        return _LOCAL_MODEL
+    with _LOCAL_MODEL_LOCK:
+        if _LOCAL_MODEL_CHECKED:
+            return _LOCAL_MODEL
+        try:
+            os.environ.setdefault("USE_TF", "0")
+            os.environ.setdefault("USE_FLAX", "0")
+            from sentence_transformers import SentenceTransformer
+
+            _LOCAL_MODEL = SentenceTransformer("all-MiniLM-L6-v2")
+            logger.info("Local SentenceTransformer fallback initialized on demand.")
+        except Exception as exc:
+            logger.info("Local model fallback unavailable; using deterministic vectors: %s", exc)
+        finally:
+            _LOCAL_MODEL_CHECKED = True
+    return _LOCAL_MODEL
 
 
 def _deterministic_hash_vector(text: str, dim: int = 384) -> List[float]:
@@ -43,9 +65,10 @@ class EmbeddingClient:
 
     def _fallback_embedding(self, text: str) -> List[float]:
         """Local fallback using SentenceTransformers or deterministic vector hashing."""
-        if _LOCAL_MODEL is not None:
+        local_model = _get_local_model()
+        if local_model is not None:
             try:
-                emb = _LOCAL_MODEL.encode(text).tolist()
+                emb = local_model.encode(text).tolist()
                 return [float(x) for x in emb]
             except Exception as ex:
                 logger.warning(f"Local SentenceTransformer encode failed: {ex}. Using hash fallback.")
@@ -53,9 +76,10 @@ class EmbeddingClient:
 
     def _fallback_embeddings_batch(self, texts: List[str]) -> List[List[float]]:
         """Local batch fallback using SentenceTransformers or deterministic vector hashing."""
-        if _LOCAL_MODEL is not None:
+        local_model = _get_local_model()
+        if local_model is not None:
             try:
-                embs = _LOCAL_MODEL.encode(texts).tolist()
+                embs = local_model.encode(texts).tolist()
                 return [[float(x) for x in emb] for emb in embs]
             except Exception as ex:
                 logger.warning(f"Local SentenceTransformer batch encode failed: {ex}. Using hash fallback.")
@@ -70,6 +94,9 @@ class EmbeddingClient:
                     resp = client.post(url, json={"text": text})
                     if resp.status_code == 200:
                         data = resp.json()
+                        vectors = data.get("vectors") or data.get("embeddings")
+                        if vectors and isinstance(vectors, list):
+                            return vectors[0] if isinstance(vectors[0], list) else vectors[0].get("embedding", [])
                         if "embedding" in data:
                             return data["embedding"]
             except Exception:
@@ -82,18 +109,33 @@ class EmbeddingClient:
         if not texts:
             return []
         
-        url = f"{self.base_url}/embed/batch"
-        for attempt in range(1, self.max_retries + 1):
-            try:
-                with httpx.Client(timeout=self.timeout) as client:
-                    resp = client.post(url, json={"texts": texts})
-                    if resp.status_code == 200:
-                        data = resp.json()
-                        if "embeddings" in data:
-                            return data["embeddings"]
-            except Exception:
-                pass
+        vectors = self.get_service_embeddings_batch(texts)
+        if vectors is not None:
+            return vectors
 
         return self._fallback_embeddings_batch(texts)
+
+    def get_service_embeddings_batch(self, texts: List[str]) -> Optional[List[List[float]]]:
+        """Return vectors only from the embedding service, or None when it is offline.
+
+        ATS scoring uses this method so deterministic offline vectors are never
+        mistaken for real semantic similarity.
+        """
+        if not texts:
+            return []
+        url = f"{self.base_url}/embed/batch"
+        for _attempt in range(1, self.max_retries + 1):
+            try:
+                with httpx.Client(timeout=self.timeout) as client:
+                    response = client.post(url, json={"texts": texts})
+                    if response.status_code == 200:
+                        data = response.json()
+                        vectors = data.get("vectors") or data.get("embeddings")
+                        if (isinstance(vectors, list) and len(vectors) == len(texts)
+                                and all(isinstance(vector, list) and vector for vector in vectors)):
+                            return vectors
+            except Exception as exc:
+                logger.debug("Embedding service batch request failed: %s", exc)
+        return None
 
 embedding_client = EmbeddingClient()
