@@ -200,7 +200,7 @@ def extract_entities(clean_text: str, resume_id: str = None) -> Dict[str, Any]:
             "bullets": bullets[:5]
         })
 
-    return {
+    parsed_resume = {
         "resume_id": resume_id,
         "name": name or "Unknown Candidate",
         "email": email or "",
@@ -221,3 +221,12 @@ def extract_entities(clean_text: str, resume_id: str = None) -> Dict[str, Any]:
         "sections": {k: "\n".join(v) for k, v in sections.items()},
         "raw_text": clean_text
     }
+
+    try:
+        from careerlens.nlp.skill_extractor import TwoLayerSkillExtractor
+        extractor = TwoLayerSkillExtractor()
+        parsed_resume = extractor.enhance_parsed_resume(parsed_resume)
+    except Exception as e:
+        print(f"[CareerLens NER] Skill extraction warning: {e}")
+
+    return parsed_resume

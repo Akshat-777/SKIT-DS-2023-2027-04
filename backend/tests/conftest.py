@@ -1,3 +1,14 @@
+import os
+import sys
+
+# Prevent broken protobuf / tensorflow collisions in Windows Python environment
+os.environ["USE_TF"] = "0"
+os.environ["USE_TORCH"] = "1"
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+os.environ["TRANSFORMERS_NO_ADVISORY_WARNINGS"] = "1"
+if "tensorflow" not in sys.modules:
+    sys.modules["tensorflow"] = None  # type: ignore
+
 import pytest
 import jwt
 from fastapi.testclient import TestClient
