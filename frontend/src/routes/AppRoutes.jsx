@@ -15,6 +15,7 @@ const CritiquePage = lazy(() => import('../pages/CritiquePage'));
 const HistoryPage = lazy(() => import('../pages/HistoryPage'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
 const DemoPage = lazy(() => import('../components/DemoPage'));
+const AtsStorybookDemo = lazy(() => import('../components/demo/AtsStorybookDemo'));
 
 /**
  * Branded Suspense fallback displayed during lazy chunk resolution
@@ -95,6 +96,7 @@ export default function AppRoutes() {
 
         {/* UI Component Showcase & Wireframes (Preserved for review) */}
         <Route path="/demo" element={<DemoPage />} />
+        <Route path="/demo/ats" element={<AtsStorybookDemo />} />
 
         {/* Root Redirect to /upload */}
         <Route path="/" element={<Navigate to="/upload" replace />} />

@@ -28,12 +28,15 @@ export function formatSalary(min, max, currency = 'INR', unit = 'LPA') {
  * @param {number} score
  * @returns {{ level: 'red'|'amber'|'green', label: string, color: string, badgeVariant: string }}
  */
+export { getAtsScoreTier, SCORE_TIERS, BREAKDOWN_METRIC_CONFIG } from './scoreThresholds';
+
 export function getScoreThreshold(score) {
   const num = Number(score) || 0;
-  if (num >= 75) {
+  if (num >= 85) {
     return {
       level: 'green',
-      label: 'Recruiter Ready',
+      tier: 'Excellent',
+      label: 'Excellent (Recruiter Ready)',
       color: '#10B981',
       badgeVariant: 'success',
       textClass: 'text-emerald-600 dark:text-emerald-400',
@@ -41,10 +44,23 @@ export function getScoreThreshold(score) {
       borderClass: 'border-emerald-200 dark:border-emerald-800',
     };
   }
+  if (num >= 70) {
+    return {
+      level: 'green',
+      tier: 'Good',
+      label: 'Good (Competitive)',
+      color: '#3B82F6',
+      badgeVariant: 'primary',
+      textClass: 'text-blue-600 dark:text-blue-400',
+      bgClass: 'bg-blue-50 dark:bg-blue-950/60',
+      borderClass: 'border-blue-200 dark:border-blue-800',
+    };
+  }
   if (num >= 50) {
     return {
       level: 'amber',
-      label: 'Moderate Fit',
+      tier: 'Fair',
+      label: 'Fair (Moderate Fit)',
       color: '#F59E0B',
       badgeVariant: 'warning',
       textClass: 'text-amber-600 dark:text-amber-400',
@@ -54,7 +70,8 @@ export function getScoreThreshold(score) {
   }
   return {
     level: 'red',
-    label: 'Critical Gaps',
+    tier: 'Poor',
+    label: 'Poor (Critical Gaps)',
     color: '#EF4444',
     badgeVariant: 'danger',
     textClass: 'text-rose-600 dark:text-rose-400',

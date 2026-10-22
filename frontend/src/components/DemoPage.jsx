@@ -48,7 +48,7 @@ import MarketFitSalaryScreen from './screens/MarketFitSalaryScreen';
 import LearningRoadmapScreen from './screens/LearningRoadmapScreen';
 import RecruiterCritiqueScreen from './screens/RecruiterCritiqueScreen';
 
-// Mock Data
+import AtsStorybookDemo from './demo/AtsStorybookDemo';
 import {
   mockParsedResume,
   mockScoreResult,
@@ -114,6 +114,7 @@ export default function DemoPage() {
   const mainNavigationTabs = [
     { id: 'components', label: 'Reusable UI Library', icon: <Layers className="w-4 h-4" />, badge: '13 Components' },
     { id: 'screens', label: 'Screen Wireframes & Live Flow', icon: <Layout className="w-4 h-4" />, badge: '7 Screens' },
+    { id: 'ats-studio', label: 'ATS Storybook Studio', icon: <Sparkles className="w-4 h-4 text-brand-500" />, badge: 'FR-003' },
     { id: 'specs', label: 'Figma Design Tokens & Specs', icon: <Code2 className="w-4 h-4" /> },
   ];
 
@@ -650,6 +651,15 @@ export default function DemoPage() {
                 <RecruiterCritiqueScreen state={screenState} data={mockCritique} />
               )}
             </div>
+          </div>
+        )}
+
+        {/* ========================================================================= */}
+        {/* TAB: ATS SCORE & SKILL-GAP STORYBOOK STUDIO */}
+        {/* ========================================================================= */}
+        {activeMainTab === 'ats-studio' && (
+          <div className="animate-in fade-in duration-200">
+            <AtsStorybookDemo />
           </div>
         )}
 
