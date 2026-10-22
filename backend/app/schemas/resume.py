@@ -75,6 +75,7 @@ class ScoreResult(BaseModel):
     ats_score: int = Field(ge=0, le=100)
     breakdown: ScoreBreakdown
     skill_gap: SkillGap
+    reasons: List[Dict[str, str]] = Field(default_factory=list)
 
 # Shared Contract 3: MarketFit
 class MarketFit(BaseModel):

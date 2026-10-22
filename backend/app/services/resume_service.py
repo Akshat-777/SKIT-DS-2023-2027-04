@@ -309,6 +309,7 @@ class ResumeService:
                 weak=skill_gap["weak"],
                 trending=skill_gap["trending"],
             ),
+            reasons=ats_result.get("reasons", []),
         )
 
         return {
